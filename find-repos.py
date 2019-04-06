@@ -2,10 +2,9 @@
 import itertools
 import shutil
 import time
-import itertools
 
-from github import Github
 import requests
+from github import Github
 
 from benchmark import ALGORITHMS, clone_repo, run_experiment
 
@@ -32,7 +31,11 @@ def get_crates():
 
 
 def get_crates_io_repos():
-    return (c['repository'] for c in get_crates() if c['repository'] and verify_repo(c['repository']))
+    def extract_url(crate):
+        return crate['repository'].replace("/tree/master/", "").rstrip("/")
+
+    return (extract_url(c) for c in get_crates()
+            if c['repository'] and verify_repo(extract_url(c)))
 
 
 def get_github_repos():
@@ -42,7 +45,8 @@ def get_github_repos():
 
 
 def git_url_in_set(url, url_set):
-    return url in url_set or "{url}.git" in url_set or url.replace(".git", "") in url_set
+    return url in url_set or "{url}.git" in url_set or url.replace(
+        ".git", "") in url_set
 
 
 def verify_repo(url):
@@ -62,14 +66,18 @@ def verify_repo(url):
     try:
         results = run_experiment(ALGORITHMS[1], path)
         EMA = results if EMA is None else ALPHA * results + (1 - ALPHA) * EMA
-    except Exception as e:
-        print(f"repo {url} died, skipping and blacklisting...")
+    except RuntimeError as e:
+        print(
+            f"====\nrepo {url} died: ---\n{e}\n---\nskipping and blacklisting\n===="
+        )
         BLACKLIST.add(url)
         with open("blacklist.txt", "a") as fp:
             fp.write(f"{url}\n")
         return False
     finally:
+        assert path.stem != "work", "Clone path is weird???"
         shutil.rmtree(path)
+
     print(f"repo {url} compiled with results {results}, EMA: {EMA}")
     return True
 
@@ -81,12 +89,14 @@ def interleave_iterators(iter_a, iter_b):
         if b is not None:
             yield b
 
+
 if __name__ == '__main__':
     count = 0
     with open("repositories.txt", "w") as fp:
         for url in sorted(WHITELIST):
             fp.write(f"{url}\n")
-        for repo_url in interleave_iterators(get_github_repos(), get_crates_io_repos()):
+        for repo_url in interleave_iterators(get_github_repos(),
+                                             get_crates_io_repos()):
             fp.write(f"{repo_url}\n")
             fp.flush()
             if count % 10 == 0:

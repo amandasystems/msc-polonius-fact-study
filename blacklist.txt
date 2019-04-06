@@ -164,5 +164,6 @@ https://github.com/gchp/rustbox.git
 https://github.com/thiagopnts/groot.git
 https://github.com/rodolf0/tox
 https://github.com/danielpclark/abrute
-https://github.com/iqlusioninc/abscissa/tree/master/
 https://github.com/maiavictor/abstract-calculus
+https://github.com/SUPERAndroidAnalyzer/abxml-rs/
+https://gitlab.com/thomhuds/acacia
