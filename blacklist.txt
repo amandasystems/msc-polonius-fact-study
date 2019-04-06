@@ -162,3 +162,7 @@ https://github.com/dswd/vpncloud.git
 https://github.com/christolliday/limn.git
 https://github.com/gchp/rustbox.git
 https://github.com/thiagopnts/groot.git
+https://github.com/rodolf0/tox
+https://github.com/danielpclark/abrute
+https://github.com/iqlusioninc/abscissa/tree/master/
+https://github.com/maiavictor/abstract-calculus

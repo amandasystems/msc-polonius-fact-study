@@ -32,7 +32,7 @@ def get_crates():
 
 
 def get_crates_io_repos():
-    return (c['repository'] for c in get_crates() if verify_repo(c['repository']))
+    return (c['repository'] for c in get_crates() if c['repository'] and verify_repo(c['repository']))
 
 
 def get_github_repos():
@@ -41,22 +41,27 @@ def get_github_repos():
     return (r.clone_url for r in repo_iterator if verify_repo(r.clone_url))
 
 
+def git_url_in_set(url, url_set):
+    return url in url_set or "{url}.git" in url_set or url.replace(".git", "") in url_set
+
+
 def verify_repo(url):
-    print(f"verifying {url}")
-    if url in BLACKLIST:
+    if git_url_in_set(url, BLACKLIST):
         print(f"skipping blacklisted url {url}...")
         return False
-    elif url in WHITELIST:
-        print(f"skipping verification of whitelisted url {url}...")
+    elif git_url_in_set(url, WHITELIST):
+        #print(f"skipping verification of whitelisted url {url}...")
         return True
 
     global EMA
-
     try:
         path = clone_repo(url)
+    except RuntimeError:
+        print(f"clone error for {url}")
+        return False
+    try:
         results = run_experiment(ALGORITHMS[1], path)
         EMA = results if EMA is None else ALPHA * results + (1 - ALPHA) * EMA
-
     except Exception as e:
         print(f"repo {url} died, skipping and blacklisting...")
         BLACKLIST.add(url)
@@ -79,6 +84,8 @@ def interleave_iterators(iter_a, iter_b):
 if __name__ == '__main__':
     count = 0
     with open("repositories.txt", "w") as fp:
+        for url in sorted(WHITELIST):
+            fp.write(f"{url}\n")
         for repo_url in interleave_iterators(get_github_repos(), get_crates_io_repos()):
             fp.write(f"{repo_url}\n")
             fp.flush()
