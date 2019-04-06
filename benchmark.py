@@ -3,9 +3,11 @@ import copy
 import csv
 import os
 import pathlib
+import random
 import re
 import shutil
 import statistics
+import datetime
 import subprocess
 import sys
 import time
@@ -21,6 +23,9 @@ ALGORITHMS = [
     "-Zborrowck=mir -Ztwo-phase-borrows",
 ]
 REPEAT_TIMES = 3
+NR_BENCHES = 0
+EMA = None
+ALPHA = 0.5
 
 
 @contextmanager
@@ -76,7 +81,7 @@ def clean_dir(project=None):
 
 
 def run_experiment(option_set, directory):
-    print(f"running experiment {option_set} on {directory}")
+    #print(f"running experiment {option_set} on {directory}")
     with chdir(directory):
         clean_dir(project=directory.stem)
         start_time = time.time()
@@ -88,10 +93,10 @@ def run_experiment(option_set, directory):
 
 def run_experiments(directory):
     def go(option_set):
-        print(f"running with {option_set} on {directory}")
-        print("warming up...")
+        #print(f"running with {option_set} on {directory}")
+        #print("warming up...")
         run_experiment(option_set, directory)
-        print("warmed up!")
+        #print("warmed up!")
         return [
             run_experiment(option_set, directory) for _ in range(REPEAT_TIMES)
         ]
@@ -103,7 +108,7 @@ def run_experiments(directory):
 
 
 def clone_repo(url):
-    print(f"Cloning {url}")
+    #print(f"Cloning {url}")
     workdir = pathlib.Path("work")
     with chdir(workdir):
         repo_name = url.split("/")[-1].split(".git")[0]
@@ -111,7 +116,13 @@ def clone_repo(url):
             shutil.rmtree(repo_name)
         except FileNotFoundError:
             pass
-        run_command(["git", "clone", "--recurse-submodules", "--quiet", url])
+        run_command([
+            "git",
+            "clone",
+            #"--recurse-submodules",
+            "--quiet",
+            url
+        ])
     return workdir / repo_name
 
 
@@ -121,24 +132,38 @@ def print_experiment(results):
 
 
 def clone_repos():
-    # read a list of repositories from a file
-    # clone them into a working directory, and collect their names
-    # use their names to run benchmarks
+    global NR_BENCHES
     print("Cloning repositories...")
-    return [
-        clone_repo(url.strip())
-        for url in open(pathlib.Path("repositories.txt"))
+    repo_urls = [
+        url.strip() for url in open(pathlib.Path("repositories.txt"))
         if url.strip()[0] != "#"
     ]
+    random.shuffle(repo_urls)
+    NR_BENCHES = len(repo_urls)
+    print(f"Read {len(repo_urls)} repos")
+    return (clone_repo(url) for url in repo_urls
+    )
 
 
 if __name__ == '__main__':
-    #[pathlib.Path(x) for x in sys.argv[1:]]
-    print("P\tNLL\t\p")
-    for d in clone_repos():
-        print(f"Benchmarking {d}")
-        try:
-            print_experiment(run_experiments(d))
-        except RuntimeError as e:
-            print(f"error running experiments: {e}")
-            continue
+    with open("results.csv", "w") as csvfile:
+        writer = csv.writer(csvfile, delimiter=",")
+        writer.writerow(["Repo", "Polonius Runtime", "NLL Runtime", "p"])
+        prev_time = None
+        for i, d in enumerate(clone_repos(), start=1):
+            if prev_time is not None:
+                expired_time = time.time() - prev_time
+                EMA = expired_time if EMA is None else ALPHA * expired_time + (1 - ALPHA) * EMA
+                eta = datetime.timedelta(seconds=(NR_BENCHES - i) * EMA)
+            else:
+                eta = None
+            print(f"Benchmarking {d.stem}: it's {i}/{NR_BENCHES}. EMA = {EMA}s. ETA = {eta}", end="\r")
+            prev_time = time.time()
+            try:
+                writer.writerow([d.stem, *run_experiments(d)])
+                csvfile.flush()
+            except RuntimeError as e:
+                print(f"error running experiments: {e}")
+                continue
+            finally:
+                shutil.rmtree(d, ignore_errors=True)
