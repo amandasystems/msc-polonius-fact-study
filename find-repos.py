@@ -68,7 +68,7 @@ def verify_repo(url):
         EMA = results if EMA is None else ALPHA * results + (1 - ALPHA) * EMA
     except RuntimeError as e:
         print(
-            f"====\nrepo {url} died: ---\n{e}\n---\nskipping and blacklisting\n===="
+            f"====\nrepo {url} died:\n---\n{e}\n---\nskipping and blacklisting\n===="
         )
         BLACKLIST.add(url)
         with open("blacklist.txt", "a") as fp:

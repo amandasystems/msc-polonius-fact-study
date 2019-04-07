@@ -116,13 +116,14 @@ def clone_repo(url):
             shutil.rmtree(repo_name)
         except FileNotFoundError:
             pass
-        run_command([
-            "git",
-            "clone",
-            #"--recurse-submodules",
-            "--quiet",
-            url
-        ])
+        with temp_env(GIT_TERMINAL_PROMPT="0"):
+            run_command([
+                "git",
+                "clone",
+                #"--recurse-submodules",
+                "--quiet",
+                url
+            ])
     return workdir / repo_name
 
 
