@@ -27,13 +27,9 @@ NR_BENCHES = 0
 EMA = None
 ALPHA = 0.5
 
-try:
-    with open("results.csv") as fp:
-        PREVIOUS_RESULTS = list(csv.reader(fp))
-        SEEN_REPOS = set([r[0] for r in PREVIOUS_RESULTS])
-except FileNotFoundError:
-    PREVIOUS_RESULTS = None
-    SEEN_REPOS = set()
+
+PREVIOUS_RESULTS = None
+SEEN_REPOS = set()
 
 
 @contextmanager
@@ -157,6 +153,13 @@ def clone_repos():
 
 
 if __name__ == '__main__':
+    try:
+        with open("results.csv") as fp:
+            PREVIOUS_RESULTS = list(csv.reader(fp))
+            SEEN_REPOS = set([r[0] for r in PREVIOUS_RESULTS])
+    except FileNotFoundError:
+        pass
+
     with open("results.csv", "w") as csvfile:
         writer = csv.writer(csvfile, delimiter=",")
         if not PREVIOUS_RESULTS:
@@ -178,7 +181,8 @@ if __name__ == '__main__':
                 writer.writerow([d.stem, *run_experiments(d)])
                 csvfile.flush()
             except RuntimeError as e:
-                print(f"error running experiments: {e}")
+                with open(f"{d.stem}.failure", "w") as fp:
+                    fp.write(f"error running experiments: {e}")
                 continue
             finally:
                 shutil.rmtree(d, ignore_errors=True)
