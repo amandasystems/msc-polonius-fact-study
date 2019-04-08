@@ -27,6 +27,14 @@ NR_BENCHES = 0
 EMA = None
 ALPHA = 0.5
 
+try:
+    with open("results.csv") as fp:
+        PREVIOUS_RESULTS = list(csv.reader(fp))
+        SEEN_REPOS = set([r[0] for r in PREVIOUS_RESULTS])
+except FileNotFoundError:
+    PREVIOUS_RESULTS = None
+    SEEN_REPOS = set()
+
 
 @contextmanager
 def chdir(d):
@@ -107,11 +115,14 @@ def run_experiments(directory):
     return [min(polonius_stats), min(nll_stats), p]
 
 
+def repo_name_from(url):
+    return url.split("/")[-1].split(".git")[0]
+
 def clone_repo(url):
     #print(f"Cloning {url}")
     workdir = pathlib.Path("work")
+    repo_name = repo_name_from(url)
     with chdir(workdir):
-        repo_name = url.split("/")[-1].split(".git")[0]
         try:
             shutil.rmtree(repo_name)
         except FileNotFoundError:
@@ -137,19 +148,22 @@ def clone_repos():
     print("Cloning repositories...")
     repo_urls = [
         url.strip() for url in open(pathlib.Path("repositories.txt"))
-        if url.strip()[0] != "#"
+        if url.strip()[0] != "#" and not repo_name_from(url) in SEEN_REPOS
     ]
     random.shuffle(repo_urls)
     NR_BENCHES = len(repo_urls)
-    print(f"Read {len(repo_urls)} repos")
-    return (clone_repo(url) for url in repo_urls
-    )
+    print(f"Read {len(repo_urls)} repos, already have stats for {len(SEEN_REPOS)}")
+    return (clone_repo(url) for url in repo_urls)
 
 
 if __name__ == '__main__':
     with open("results.csv", "w") as csvfile:
         writer = csv.writer(csvfile, delimiter=",")
-        writer.writerow(["Repo", "Polonius Runtime", "NLL Runtime", "p"])
+        if not PREVIOUS_RESULTS:
+            writer.writerow(["Repo", "Polonius Runtime", "NLL Runtime", "p"])
+        else:
+            for row in PREVIOUS_RESULTS:
+                writer.writerow(row)
         prev_time = None
         for i, d in enumerate(clone_repos(), start=1):
             if prev_time is not None:
