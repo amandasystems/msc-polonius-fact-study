@@ -330,3 +330,14 @@ https://github.com/mehcode/arc-rs
 https://github.com/zeromq/zmq.rs.git
 https://github.com/swiboe/swiboe.git
 https://github.com/sigp/lighthouse.git
+https://github.com/carllerche/eventual.git
+https://github.com/seunlanlege/arc-reactor
+https://github.com/google/hat-backup.git
+https://github.com/dwrensha/seer.git
+https://github.com/Rahix/arduino-leonardo
+https://github.com/atsamd-rs/atsamd
+https://github.com/oracle/crashcart.git
+https://github.com/SimonSapin/rust-forest
+https://github.com/BurntSushi/advent-of-code.git
+https://github.com/falconre/falcon.git
+https://github.com/kpcyrd/sniffglue.git
