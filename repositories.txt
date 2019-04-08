@@ -87,7 +87,6 @@ https://github.com/PistonDevelopers/dyon.git
 https://github.com/PistonDevelopers/glfw-rs.git
 https://github.com/PistonDevelopers/graphics.git
 https://github.com/PistonDevelopers/hematite.git
-https://github.com/PistonDevelopers/image.git
 https://github.com/PistonDevelopers/piston.git
 https://github.com/PyO3/pyo3.git
 https://github.com/RazrFalcon/cargo-bloat.git
@@ -119,7 +118,6 @@ https://github.com/YellowInnovation/actix-nats
 https://github.com/YellowInnovation/actix-redis-client
 https://github.com/ZhangHanDong/tao-of-rust-codes.git
 https://github.com/aaron-lebo/amigo
-https://github.com/aatxe/alectro
 https://github.com/aatxe/irc.git
 https://github.com/abonander/anterofit
 https://github.com/acrisci/i3-style.git
@@ -364,7 +362,6 @@ https://github.com/joncatanio/cannoli.git
 https://github.com/jonhoo/arccstr.git
 https://github.com/jonhoo/inferno.git
 https://github.com/jonhoo/rust-evmap.git
-https://github.com/joshmarlow/ai_kit-rs.git
 https://github.com/jpastuszek/apdex
 https://github.com/jpernst/alternate-future
 https://github.com/jpernst/alto.git
@@ -1114,7 +1111,6 @@ https://github.com/huonw/alias
 https://github.com/redox-os/rusttype.git
 https://github.com/tomochikahara/rust_aliasmethod
 https://github.com/rust-lang/git2-rs.git
-https://github.com/cbourjau/alice-rs
 https://github.com/tomaka/rouille.git
 https://github.com/cbourjau/alice-rs
 https://github.com/jeaye/ncurses-rs.git
@@ -1477,7 +1473,6 @@ https://github.com/dtolnay/quote.git
 https://github.com/storyfeet/arc_map
 https://github.com/gimli-rs/gimli.git
 https://github.com/kurotetsuka/arcmutex
-https://github.com/sebglazebrook/aliases.git
 https://github.com/vorner/arc-swap
 https://github.com/projectfluent/fluent-rs.git
 https://github.com/kroogs/arcus

@@ -341,3 +341,8 @@ https://github.com/SimonSapin/rust-forest
 https://github.com/BurntSushi/advent-of-code.git
 https://github.com/falconre/falcon.git
 https://github.com/kpcyrd/sniffglue.git
+https://github.com/joshmarlow/ai_kit-rs.git
+https://github.com/cbourjau/alice-rs
+https://github.com/aatxe/alectro
+https://github.com/sebglazebrook/aliases.git
+https://github.com/PistonDevelopers/image.git
