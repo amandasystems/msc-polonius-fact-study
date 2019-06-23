@@ -1,35 +1,36 @@
 #!/usr/bin/env python3
 import copy
 import csv
+import datetime
 import os
 import pathlib
 import random
 import re
 import shutil
 import statistics
-import datetime
 import subprocess
 import sys
 import time
 from collections import defaultdict
 from contextlib import contextmanager
 
-import scipy.stats
-
 CLEAN_COMMAND = ["cargo", "+nightly", "clean"]
-CHECK_COMMAND = ["cargo", "+nightly", "check", "--message-format", "short"]
+CHECK_COMMAND = ["cargo", "+nightly", "check"]
 ALGORITHMS = [
-    "-Zpolonius -Zborrowck=mir -Ztwo-phase-borrows",
-    "-Zborrowck=mir -Ztwo-phase-borrows",
+    "-Zpolonius -Zborrowck=mir",
+    "-Zborrowck=mir",
 ]
 REPEAT_TIMES = 3
 NR_BENCHES = 0
 EMA = None
 ALPHA = 0.5
 
-
 PREVIOUS_RESULTS = None
 SEEN_REPOS = set()
+WRAPPER_PATH = os.path.abspath(pathlib.Path("./rust-shim.sh"))
+
+with open("blacklist.txt") as fp:
+    BLACKLIST = set([l.strip() for l in fp.readlines()])
 
 
 @contextmanager
@@ -85,17 +86,22 @@ def clean_dir(project=None):
 
 
 def run_experiment(option_set, directory):
-    #print(f"running experiment {option_set} on {directory}")
+    print(f"running experiment {option_set} on {directory}")
     with chdir(directory):
         clean_dir(project=directory.stem)
         start_time = time.time()
-        with temp_env(RUSTFLAGS=option_set):
+        with temp_env(RUSTFLAGS=option_set), temp_env(
+                RUSTC_WRAPPER=WRAPPER_PATH):
             _res = run_command(CHECK_COMMAND)
+            print(_res.stdout)
+            print(_res.stderr)
 
     return time.time() - start_time
 
 
 def run_experiments(directory):
+    import scipy.stats
+
     def go(option_set):
         #print(f"running with {option_set} on {directory}")
         #print("warming up...")
@@ -114,23 +120,27 @@ def run_experiments(directory):
 def repo_name_from(url):
     return url.split("/")[-1].split(".git")[0]
 
-def clone_repo(url):
-    #print(f"Cloning {url}")
+
+def clone_repo(url, keep_files=False):
+    print(f"Cloning {url}")
+
     workdir = pathlib.Path("work")
     repo_name = repo_name_from(url)
     with chdir(workdir):
-        try:
-            shutil.rmtree(repo_name)
-        except FileNotFoundError:
-            pass
-        with temp_env(GIT_TERMINAL_PROMPT="0"):
-            run_command([
-                "git",
-                "clone",
-                #"--recurse-submodules",
-                "--quiet",
-                url
-            ])
+        if not keep_files:
+            try:
+                shutil.rmtree(repo_name)
+            except FileNotFoundError:
+                pass
+        if not (pathlib.Path("./") / repo_name).exists():
+            with temp_env(GIT_TERMINAL_PROMPT="0"):
+                run_command([
+                    "git",
+                    "clone",
+                    #"--recurse-submodules",
+                    "--quiet",
+                    url
+                ])
     return workdir / repo_name
 
 
@@ -139,17 +149,43 @@ def print_experiment(results):
     print(f"{polonius}\t{nll}\t{p}")
 
 
-def clone_repos():
+def git_url_in_set(url, url_set):
+    return url in url_set or "{url}.git" in url_set or url.replace(
+        ".git", "") in url_set
+
+
+def clone_repos(repo_file, shuffle=True, keep_files=False):
     global NR_BENCHES
+    global BLACKLIST
     print("Cloning repositories...")
     repo_urls = [
-        url.strip() for url in open(pathlib.Path("repositories.txt"))
+        url.strip() for url in open(repo_file)
         if url.strip()[0] != "#" and not repo_name_from(url) in SEEN_REPOS
     ]
-    random.shuffle(repo_urls)
+    if shuffle:
+        random.shuffle(repo_urls)
     NR_BENCHES = len(repo_urls)
-    print(f"Read {len(repo_urls)} repos, already have stats for {len(SEEN_REPOS)}")
-    return (clone_repo(url) for url in repo_urls)
+    print(
+        f"Read {len(repo_urls)} repos, already have stats for {len(SEEN_REPOS)}"
+    )
+
+    for url in repo_urls:
+        if git_url_in_set(url, BLACKLIST):
+            print(f"clone_repos: {url} is blacklisted!")
+            continue
+        try:
+            yield clone_repo(url, keep_files)
+        except RuntimeError:
+            print(f"clone_repos: error cloning {url}, blacklisting it...")
+            blacklist_repo(url)
+
+
+def blacklist_repo(url):
+    global BLACKLIST
+    if not git_url_in_set(url, BLACKLIST):
+        BLACKLIST.add(url)
+        with open("blacklist.txt", "a") as fp:
+            fp.write(f"{url}\n")
 
 
 if __name__ == '__main__':
@@ -168,14 +204,18 @@ if __name__ == '__main__':
             for row in PREVIOUS_RESULTS:
                 writer.writerow(row)
         prev_time = None
-        for i, d in enumerate(clone_repos(), start=1):
+        for i, d in enumerate(
+                clone_repos(pathlib.Path("repositories.txt")), start=1):
             if prev_time is not None:
                 expired_time = time.time() - prev_time
-                EMA = expired_time if EMA is None else ALPHA * expired_time + (1 - ALPHA) * EMA
+                EMA = expired_time if EMA is None else ALPHA * expired_time + (
+                    1 - ALPHA) * EMA
                 eta = datetime.timedelta(seconds=(NR_BENCHES - i) * EMA)
             else:
                 eta = None
-            print(f"Benchmarking {d.stem}: it's {i}/{NR_BENCHES}. EMA = {EMA}s. ETA = {eta}", end="\r")
+            print(
+                f"Benchmarking {d.stem}: it's {i}/{NR_BENCHES}. EMA = {EMA}s. ETA = {eta}",
+                end="\n")
             prev_time = time.time()
             try:
                 writer.writerow([d.stem, *run_experiments(d)])
