@@ -13,6 +13,7 @@ import sys
 import time
 from collections import defaultdict
 from contextlib import contextmanager
+from pathlib import Path
 
 CLEAN_COMMAND = ["cargo", "+nightly", "clean"]
 CHECK_COMMAND = ["cargo", "+nightly", "check"]
@@ -31,6 +32,16 @@ WRAPPER_PATH = os.path.abspath(pathlib.Path("./rust-shim.sh"))
 
 with open("blacklist.txt") as fp:
     BLACKLIST = set([l.strip() for l in fp.readlines()])
+
+
+def inputs_or_workdir():
+    if len(sys.argv) == 1:
+        print("Using directory work", file=sys.stderr)
+        crate_fact_list = [p for p in Path("work").iterdir()]
+    else:
+        crate_fact_list = [Path(p) for p in sys.argv[1:]]
+
+    return [p for p in crate_fact_list if p.is_dir()]
 
 
 @contextmanager

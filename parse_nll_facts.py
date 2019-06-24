@@ -8,6 +8,8 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import networkx as nx
 
+from benchmark import inputs_or_workdir
+
 FIELD_NAMES = [
     "cfg_edge",
     "region_live_at",
@@ -70,15 +72,12 @@ def read_dirs(dirs):
     <program_name>s or <function>s.
     """
     for p in dirs:
-        p = Path(p)
-        if not p.is_dir():
-            continue
         facts_path = p / "nll-facts"
         program_name = p.stem
         if not facts_path.is_dir():
             facts_path = p
         try:
-            yield (p.stem, read_nll_facts(facts_path))
+            yield (program_name, read_nll_facts(facts_path))
         except FileNotFoundError:
             continue
 
@@ -111,8 +110,9 @@ def block_cfg_from_facts(facts):
 
 
 def main(args):
-    program_data = list(read_dirs(args[1:]))
-    dirs_to_csv(program_data, sys.stdout)
+    crate_fact_list = inputs_or_workdir()
+
+    dirs_to_csv(read_dirs(crate_fact_list), sys.stdout)
     #G = block_cfg_from_facts(program_data[0][1][0])
     #nx.draw(G, with_labels=True, font_weight='bold')
     #plt.show()

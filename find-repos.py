@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import itertools
+import os
 import shutil
 import time
 
@@ -41,7 +42,7 @@ def get_crates_io_repos():
 
 
 def get_github_repos():
-    gh = Github()
+    gh = Github(os.environ['GH_ACCESS_TOKEN'], per_page=100)
     repo_iterator = gh.search_repositories(
         sort="stars", order="desc", query="language:rust")
 
@@ -167,7 +168,7 @@ if __name__ == '__main__':
 
         seen_repo(repo_url)
 
-        if count % 15 == 0:
-            print("Sleeping...")
-            time.sleep(10)
-            count += 1
+        # if count % 15 == 0:
+        #     print("Sleeping...")
+        #     time.sleep(10)
+        #     count += 1
