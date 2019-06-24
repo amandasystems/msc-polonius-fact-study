@@ -188,6 +188,7 @@ https://git.sr.ht/~danieldk/reductive
 https://git.sr.ht/~foss/postmill
 https://git.sr.ht/~jakob/wildmidi
 https://git.sr.ht/~matthias_t/workspace
+https://git.sr.ht/~michcioperz/i3spin
 https://git.sr.ht/~nicohman/eidolon
 https://git.sr.ht/~nicohman/gogapi-rs
 https://git.sr.ht/~nicohman/raven
@@ -246,7 +247,6 @@ https://github.com/38/i3monkit
 https://github.com/38/plumber-rs
 https://github.com/3Hren/cocaine-framework-rust
 https://github.com/3Hren/msgpack-rust
-https://github.com/3Hren/msgpack-rust.git
 https://github.com/3nsoft/rust-nacl
 https://github.com/42triangles/combinedfun
 https://github.com/46bit/bind_before_connect.git
@@ -292,7 +292,6 @@ https://github.com/Aaronepower/numcount.git
 https://github.com/Aaronepower/region_buffer.git
 https://github.com/Aaronepower/unwrap_to.git
 https://github.com/Aatch/ramp
-https://github.com/Aatch/ramp.git
 https://github.com/Aatch/spirv-utils
 https://github.com/AbrarNitk/algorithmica
 https://github.com/AbrarNitk/sorted_json_keys
@@ -300,10 +299,8 @@ https://github.com/Accelbread/simple-xml-builder
 https://github.com/Accruent/jiragen
 https://github.com/AdamHarries/simple_bpm
 https://github.com/AdamNiederer/base100
-https://github.com/AdamNiederer/base100.git
 https://github.com/AdamNiederer/cargo-disassemble
 https://github.com/AdamNiederer/faster
-https://github.com/AdamNiederer/faster.git
 https://github.com/AdamNiederer/vektor
 https://github.com/Adapton/adapton.rust
 https://github.com/Adapton/fungi-lang.rust
@@ -336,7 +333,6 @@ https://github.com/AlexHuszagh/bdb
 https://github.com/AlexHuszagh/numpress
 https://github.com/AlexLeung/Visionary
 https://github.com/AlexPikalov/cdrs
-https://github.com/AlexPikalov/cdrs.git
 https://github.com/AlexPikalov/spy
 https://github.com/AlexStory/yarns
 https://github.com/AlexanderChen1989/halo
@@ -363,14 +359,12 @@ https://github.com/AltOS-Rust/volatile
 https://github.com/AltSysrq/fourleaf
 https://github.com/AltSysrq/lmdb-zero
 https://github.com/AltSysrq/proptest
-https://github.com/AltSysrq/proptest.git
 https://github.com/Amanieu/atomic-rs
 https://github.com/Amanieu/cstr_core
 https://github.com/Amanieu/hashbrown.git
 https://github.com/Amanieu/hashmap_core
 https://github.com/Amanieu/intrusive-rs
 https://github.com/Amanieu/parking_lot
-https://github.com/Amanieu/parking_lot.git
 https://github.com/Amanieu/seqlock
 https://github.com/Amanieu/thread_local-rs
 https://github.com/AmaranthineCodices/alpha-bleeder
@@ -393,7 +387,6 @@ https://github.com/AntonGepting/tmux-interface-rs
 https://github.com/Antti/lapjv-rust.git
 https://github.com/Antti/rust-amq-proto
 https://github.com/Antti/rust-amqp
-https://github.com/Antti/rust-amqp.git
 https://github.com/Aorioli/karplus
 https://github.com/Arc676/Blackjack
 https://github.com/Archytaus/beehave
@@ -415,10 +408,8 @@ https://github.com/Astro36/kodict
 https://github.com/AtheMathmo/cpuprofiler
 https://github.com/AtheMathmo/rubefunge-93
 https://github.com/AtheMathmo/rulinalg
-https://github.com/AtheMathmo/rulinalg.git
 https://github.com/AtheMathmo/rusty-data
 https://github.com/AtheMathmo/rusty-machine
-https://github.com/AtheMathmo/rusty-machine.git
 https://github.com/AtheMathmo/vision-rs
 https://github.com/AtsukiTak/amqpr
 https://github.com/AtsukiTak/amqpr-api
@@ -466,7 +457,6 @@ https://github.com/BonsaiDen/cobalt-rs.git
 https://github.com/BonsaiDen/debug_stub_derive.git
 https://github.com/BookOwl/fps_clock
 https://github.com/Boscop/diesel-geography
-https://github.com/Boscop/web-view.git
 https://github.com/BourgondAries/TileNet
 https://github.com/BourgondAries/acon-rs
 https://github.com/BourgondAries/bgjk
@@ -481,31 +471,23 @@ https://github.com/BrunoMacias/checksum-rs.git
 https://github.com/Bunogi/cargo-makedocs
 https://github.com/BuoyantIO/tacho
 https://github.com/BurntSushi/aho-corasick
-https://github.com/BurntSushi/aho-corasick.git
 https://github.com/BurntSushi/bstr
-https://github.com/BurntSushi/bstr.git
 https://github.com/BurntSushi/byteorder
-https://github.com/BurntSushi/byteorder.git
 https://github.com/BurntSushi/cargo-benchcmp
-https://github.com/BurntSushi/cargo-benchcmp.git
 https://github.com/BurntSushi/chan
 https://github.com/BurntSushi/chan-signal
-https://github.com/BurntSushi/chan.git
 https://github.com/BurntSushi/critcmp
 https://github.com/BurntSushi/encoding_rs_io
 https://github.com/BurntSushi/fst
-https://github.com/BurntSushi/fst.git
 https://github.com/BurntSushi/imdb-rename
 https://github.com/BurntSushi/mempool
 https://github.com/BurntSushi/quickcheck
-https://github.com/BurntSushi/quickcheck.git
 https://github.com/BurntSushi/regex-automata
 https://github.com/BurntSushi/ripgrep
 https://github.com/BurntSushi/rucd
 https://github.com/BurntSushi/rust-cbor
 https://github.com/BurntSushi/rust-cmail
 https://github.com/BurntSushi/rust-csv
-https://github.com/BurntSushi/rust-csv.git
 https://github.com/BurntSushi/rust-memchr
 https://github.com/BurntSushi/rust-pcre2
 https://github.com/BurntSushi/rust-snappy
@@ -517,14 +499,12 @@ https://github.com/BurntSushi/termcolor
 https://github.com/BurntSushi/ucd-generate
 https://github.com/BurntSushi/utf8-ranges
 https://github.com/BurntSushi/walkdir
-https://github.com/BurntSushi/walkdir.git
 https://github.com/BurntSushi/winapi-util
 https://github.com/BurntSushi/xsv
 https://github.com/Byron-TW/anon-csv-cli
 https://github.com/Byron/crates-index-diff-rs
 https://github.com/Byron/crates-io-cli-rs
 https://github.com/Byron/dua-cli
-https://github.com/Byron/dua-cli.git
 https://github.com/Byron/fs-utils-rs
 https://github.com/Byron/google-apis-rs.git
 https://github.com/Byron/json-tools
@@ -559,7 +539,6 @@ https://github.com/CalmBit/oxidation
 https://github.com/CanalTP/osm-transit-extractor
 https://github.com/CanalTP/transit_model
 https://github.com/Canop/broot
-https://github.com/Canop/broot.git
 https://github.com/Canop/minimad
 https://github.com/Canop/termimad
 https://github.com/CasperN/drug
@@ -640,7 +619,6 @@ https://github.com/CptFox/futures-promises
 https://github.com/CptFox/tokio-simplified
 https://github.com/CraigglesO/parse-torrent
 https://github.com/CraneStation/cranelift
-https://github.com/CraneStation/cranelift.git
 https://github.com/CraneStation/lightbeam.git
 https://github.com/CraneStation/rustc_apfloat
 https://github.com/CraneStation/target-lexicon
@@ -659,14 +637,13 @@ https://github.com/DMOJ/dmoj-rust
 https://github.com/DR-BoneZ/diesel-transaction-handles-rs
 https://github.com/DR-BoneZ/lazy-async-pool-rs
 https://github.com/DR-BoneZ/throttled-bitcoin-rpc-rs
+https://github.com/DR-BoneZ/throttled-json-rpc-rs
 https://github.com/DaGenix/rust-crypto
-https://github.com/DaGenix/rust-crypto.git
 https://github.com/Daggerbot/osmesa-rs.git
 https://github.com/Dagur/rust-kennitala
 https://github.com/Dakati/arithmetic-rs
 https://github.com/Dalek-Sec/rust-visualhash.git
 https://github.com/DanSimon/peruse
-https://github.com/DanielKeep/cargo-script.git
 https://github.com/DanielKeep/iterr
 https://github.com/DanielKeep/rust-boolinator
 https://github.com/DanielKeep/rust-build-helper
@@ -719,7 +696,6 @@ https://github.com/DenisKolodin/serial-number
 https://github.com/DenisKolodin/thread-control
 https://github.com/DenisKolodin/web_logger
 https://github.com/DenisKolodin/yew
-https://github.com/DenisKolodin/yew.git
 https://github.com/Densaugeo/hello_rusty_worlds
 https://github.com/Densaugeo/hyper-hello-world
 https://github.com/Dentosal/onitama-rs
@@ -823,10 +799,8 @@ https://github.com/E5ten/ransid
 https://github.com/EFanZh/keep-trying
 https://github.com/ELChris414/synac-rs
 https://github.com/ETCDEVTeam/sputnikvm
-https://github.com/ETCDEVTeam/sputnikvm.git
 https://github.com/EasyPost/rust-mysql-binlog
 https://github.com/EbTech/rust-algorithms
-https://github.com/EbTech/rust-algorithms.git
 https://github.com/Eh2406/quadrature
 https://github.com/EkardNT/implicit-await
 https://github.com/EkardNT/tbuck
@@ -886,7 +860,6 @@ https://github.com/FGRibreau/kubectx-rs
 https://github.com/FGRibreau/postgresql-to-amqp
 https://github.com/FGRibreau/querystring
 https://github.com/FGRibreau/spinners
-https://github.com/FGRibreau/spinners.git
 https://github.com/FSMaxB/rust-adjacent-pair-iterator
 https://github.com/FabianB1998/lua_wrapper
 https://github.com/FabioBatSilva/xpq
@@ -971,18 +944,15 @@ https://github.com/Geal/lovecraft
 https://github.com/Geal/mutguard
 https://github.com/Geal/nom
 https://github.com/Geal/nom-trace
-https://github.com/Geal/nom.git
 https://github.com/Geal/rust-syslog
 https://github.com/Geal/typedopts
 https://github.com/GildedHonour/frank_jwt
-https://github.com/GildedHonour/frank_jwt.git
 https://github.com/Gilnaa/extfmt
 https://github.com/Gilnaa/memoffset
 https://github.com/Ginurx/zmq-rs
 https://github.com/GiorgiBeriashvili/cli-timer
 https://github.com/GlenDC/github-rust
 https://github.com/GodiStudios/mathf
-https://github.com/GodotNativeTools/godot-rust.git
 https://github.com/Goncalerta/proc-quote
 https://github.com/Goncalerta/tiff-encoder
 https://github.com/Gottox/dewey
@@ -1006,11 +976,9 @@ https://github.com/GuillaumeGomez/rust-fmod
 https://github.com/GuillaumeGomez/rustdoc-stripper
 https://github.com/GuillaumeGomez/stripper-interface
 https://github.com/GuillaumeGomez/sysinfo
-https://github.com/GuillaumeGomez/sysinfo.git
 https://github.com/GuillaumeGomez/va_list-rs
 https://github.com/Guoli-Lyu/arangors
 https://github.com/Gymmasssorla/anevicon
-https://github.com/Gymmasssorla/anevicon.git
 https://github.com/Gymmasssorla/finshir
 https://github.com/Gymmasssorla/ip-api-cli
 https://github.com/Gymmasssorla/sendmmsg
@@ -1038,7 +1006,6 @@ https://github.com/HdrHistogram/HdrHistogram_rust.git
 https://github.com/HenningTimm/rust-tab-hash
 https://github.com/HeroesGrave/cereal
 https://github.com/HeroesGrave/ecs-rs
-https://github.com/HeroesGrave/ecs-rs.git
 https://github.com/HeroesGrave/fixedstep-rs
 https://github.com/HeroicKatora/automata
 https://github.com/HeroicKatora/oxide-auth.git
@@ -1071,7 +1038,6 @@ https://github.com/Idein/rpi-mailbox
 https://github.com/Idolf/takeable
 https://github.com/IgaguriMK/raw-nbt
 https://github.com/ImageOptim/gifski
-https://github.com/ImageOptim/gifski.git
 https://github.com/ImageOptim/libimagequant
 https://github.com/ImageOptim/mozjpeg-rust
 https://github.com/Immington-Industries/rust-wlc
@@ -1090,7 +1056,6 @@ https://github.com/Isan-Rivkin/lamport-signatures-rs
 https://github.com/Isan-Rivkin/nomad-api
 https://github.com/Isan-Rivkin/rsocket-rs
 https://github.com/Ivan1931/smelter
-https://github.com/IvanUkhov/ann
 https://github.com/IvanUkhov/c
 https://github.com/IvanUkhov/cargo-go
 https://github.com/IvanUkhov/cite
@@ -1140,7 +1105,6 @@ https://github.com/JeffBelgum/statistical
 https://github.com/JelteF/defaultmap
 https://github.com/JelteF/derive_from
 https://github.com/JelteF/derive_more
-https://github.com/JelteF/derive_more.git
 https://github.com/Jenyay/rust-optimization
 https://github.com/JeremyRubin/const-sort
 https://github.com/JeremyRubin/cuckoocache
@@ -1190,7 +1154,6 @@ https://github.com/JunSuzukiJapan/char_stream
 https://github.com/JunSuzukiJapan/circle_buffer
 https://github.com/JunSuzukiJapan/json_pretty
 https://github.com/JunSuzukiJapan/macro-lisp
-https://github.com/JunSuzukiJapan/macro-lisp.git
 https://github.com/JunSuzukiJapan/rust_quicksort
 https://github.com/KDE/rust-qt-binding-generator.git
 https://github.com/KISS-UI/kiss-ui.git
@@ -1214,7 +1177,6 @@ https://github.com/Keats/jsonwebtoken.git
 https://github.com/Keats/rust-bcrypt
 https://github.com/Keats/rust-jwt
 https://github.com/Keats/tera
-https://github.com/Keats/tera.git
 https://github.com/KeenS/WebAssembler-rs
 https://github.com/KeenS/actix-web-multipart-file
 https://github.com/KeenS/cargo-pack
@@ -1332,7 +1294,6 @@ https://github.com/Larusso/cli_core
 https://github.com/Larusso/dirs-rs
 https://github.com/Latrasis/petrovich-rs
 https://github.com/LaurentMazare/tch-rs
-https://github.com/LaurentMazare/tch-rs.git
 https://github.com/LegNeato/asciicast-rs
 https://github.com/LegNeato/aws-lambda-events
 https://github.com/Leo1003/rust-osshkeys
@@ -1399,7 +1360,6 @@ https://github.com/LukasKalbertodt/term-painter
 https://github.com/LukasKalbertodt/xswag-base
 https://github.com/Lukazoid/lz_interval_tree_clock
 https://github.com/Luminarys/synapse
-https://github.com/Luminarys/synapse.git
 https://github.com/Luro02/XTSN
 https://github.com/Luro02/keyguard.git
 https://github.com/Luro02/safecracker.git
@@ -1420,10 +1380,10 @@ https://github.com/MSxDOS/ntapi
 https://github.com/MWatch/mwatch-sdk-core
 https://github.com/Maaarcocr/closestmatch-rs.git
 https://github.com/Machtan/cargo-linebreak
+https://github.com/MaciekTalaska/dpg
 https://github.com/MaciekTalaska/tinyppm
 https://github.com/MaiaVictor/Symmetric-Interaction-Calculus.git
 https://github.com/MaikKlein/ash
-https://github.com/MaikKlein/ash.git
 https://github.com/MaikKlein/cargo-workspace
 https://github.com/MaikKlein/enumflags
 https://github.com/MaikKlein/pyro
@@ -1438,7 +1398,6 @@ https://github.com/Manishearth/array-init
 https://github.com/Manishearth/pathdiff
 https://github.com/Manishearth/rust-adorn
 https://github.com/Manishearth/rust-gc
-https://github.com/Manishearth/rust-gc.git
 https://github.com/Manishearth/triomphe
 https://github.com/MarkJr94/argparser-rs
 https://github.com/MarkMcCaskey/gameboy-rom-parser
@@ -1447,7 +1406,6 @@ https://github.com/Marthog/rust-stm
 https://github.com/Martin1887/oxigen
 https://github.com/Marwes/combine
 https://github.com/Marwes/combine-language
-https://github.com/Marwes/combine.git
 https://github.com/Marwes/little-skeptic
 https://github.com/Marwes/nanbox
 https://github.com/Marwes/nombine
@@ -1469,6 +1427,7 @@ https://github.com/Matthew-Maclean/safe-builder-derive
 https://github.com/Matthias247/futures-intrusive
 https://github.com/MattsSe/crossref-rs
 https://github.com/MattsSe/sublercli-rs
+https://github.com/MaulingMonkey/bugsalot
 https://github.com/Maxgy/kingslayer
 https://github.com/McFreely/katana
 https://github.com/Mendess2526/scryfall-rs
@@ -1517,9 +1476,7 @@ https://github.com/Mingun/serde-gff
 https://github.com/Mingun/serde-pod
 https://github.com/Minizinger/linux_raw_input_rs
 https://github.com/Miserlou/Loop
-https://github.com/Miserlou/Loop.git
 https://github.com/MislankaNova/iron-archivist
-https://github.com/MitMaro/git-interactive-rebase-tool.git
 https://github.com/MitchellBerry/BCrypter
 https://github.com/MitchellBerry/Factom-Client
 https://github.com/MitchellBerry/streamlined-ntru-prime
@@ -1535,7 +1492,6 @@ https://github.com/MrJohz/figtree
 https://github.com/MrKiven/list
 https://github.com/Ms2ger/group-by
 https://github.com/Munksgaard/session-types
-https://github.com/Munksgaard/session-types.git
 https://github.com/Myrannas/binary-tuples
 https://github.com/Narigo/keepass-diff
 https://github.com/NattapongSiri/permutator
@@ -1599,10 +1555,8 @@ https://github.com/ObliqueMotion/greedy
 https://github.com/ObliqueMotion/nifty
 https://github.com/ObliqueMotion/totems-rs
 https://github.com/Ogeon/palette
-https://github.com/Ogeon/palette.git
 https://github.com/Ogeon/rust-wiringpi
 https://github.com/Ogeon/rustful
-https://github.com/Ogeon/rustful.git
 https://github.com/OneSignal/rust-service
 https://github.com/OneSignal/serde-redis
 https://github.com/OneSignal/zk-4lw
@@ -1645,7 +1599,6 @@ https://github.com/Pctg-x8/appinstance
 https://github.com/Pctg-x8/univstring
 https://github.com/Peltoche/ical-rs
 https://github.com/Peltoche/lsd
-https://github.com/Peltoche/lsd.git
 https://github.com/PerfectEngineering/pjson_parser
 https://github.com/PeterReid/chacha
 https://github.com/PeterReid/checked_int_cast
@@ -1698,7 +1651,6 @@ https://github.com/PistonDevelopers/hematite.git
 https://github.com/PistonDevelopers/hematite_nbt
 https://github.com/PistonDevelopers/hematite_server
 https://github.com/PistonDevelopers/image-png.git
-https://github.com/PistonDevelopers/image.git
 https://github.com/PistonDevelopers/image_buffer.git
 https://github.com/PistonDevelopers/inflate.git
 https://github.com/PistonDevelopers/music.git
@@ -1801,15 +1753,12 @@ https://github.com/Rantanen/intercom
 https://github.com/Razaekel/noise-rs.git
 https://github.com/Razican/bittrex-rs
 https://github.com/RazrFalcon/cargo-bloat
-https://github.com/RazrFalcon/cargo-bloat.git
 https://github.com/RazrFalcon/color-thief-rs
 https://github.com/RazrFalcon/rctree
 https://github.com/RazrFalcon/resvg
-https://github.com/RazrFalcon/resvg.git
 https://github.com/RazrFalcon/roxmltree
 https://github.com/RazrFalcon/simplecss
 https://github.com/RazrFalcon/svgcleaner
-https://github.com/RazrFalcon/svgcleaner.git
 https://github.com/RazrFalcon/svgdom
 https://github.com/RazrFalcon/svgparser
 https://github.com/RazrFalcon/svgtypes
@@ -1888,7 +1837,6 @@ https://github.com/RustAudio/dsp-chain.git
 https://github.com/RustAudio/envelope.git
 https://github.com/RustAudio/instrument.git
 https://github.com/RustAudio/lewton
-https://github.com/RustAudio/lewton.git
 https://github.com/RustAudio/musical_keyboard.git
 https://github.com/RustAudio/ogg
 https://github.com/RustAudio/panning.git
@@ -1909,7 +1857,6 @@ https://github.com/RustCrypto/RSA
 https://github.com/RustCrypto/asm-hashes
 https://github.com/RustCrypto/block-ciphers
 https://github.com/RustCrypto/hashes
-https://github.com/RustCrypto/hashes.git
 https://github.com/RustCrypto/password-hashing
 https://github.com/RustCrypto/signature-algorithms
 https://github.com/RustCrypto/sponges
@@ -1937,6 +1884,7 @@ https://github.com/SDBlumire/n_array
 https://github.com/SDBlumire/string_generator
 https://github.com/SLMT/telnet-rs
 https://github.com/SOF3/bi_channel.rs
+https://github.com/SOF3/ctrlc_fnonce
 https://github.com/SOF3/cube-engine.git
 https://github.com/SSheldon/malloc_buf
 https://github.com/SSheldon/rust-objc.git
@@ -1975,7 +1923,6 @@ https://github.com/SidOfc/2048-rust
 https://github.com/SiegeEngine/siege-color
 https://github.com/SiegeEngineers/genie-rs
 https://github.com/SiegeLord/RustGnuplot
-https://github.com/SiegeLord/RustGnuplot.git
 https://github.com/SilentByte/nameof.git
 https://github.com/Silur/ECVRF.git
 https://github.com/SilverWingedSeraph/mlem
@@ -2052,7 +1999,6 @@ https://github.com/Stebalien/snowflake
 https://github.com/Stebalien/stash-rs
 https://github.com/Stebalien/str_stack
 https://github.com/Stebalien/tempfile
-https://github.com/Stebalien/tempfile.git
 https://github.com/Stebalien/term
 https://github.com/Stebalien/tool-rs
 https://github.com/Stebalien/xattr
@@ -2083,9 +2029,7 @@ https://github.com/Taywee/nestools
 https://github.com/TeXitoi/osmpbfreader-rs
 https://github.com/TeXitoi/par-map
 https://github.com/TeXitoi/rust-mdo
-https://github.com/TeXitoi/rust-mdo.git
 https://github.com/TeXitoi/structopt
-https://github.com/TeXitoi/structopt.git
 https://github.com/TeaEntityLab/fpRust
 https://github.com/Team-Hycon/cryptonight-rs
 https://github.com/Teascade/glerminal
@@ -2113,6 +2057,7 @@ https://github.com/Ten0/rust-shell_command
 https://github.com/Terah-/rust-bytebuffer
 https://github.com/Terah-/rust-oscillator
 https://github.com/TerryOShea/octosay
+https://github.com/That3Percent/js-intern
 https://github.com/That3Percent/second-stack
 https://github.com/That3Percent/soa-vec
 https://github.com/TheAlgorithms/Rust.git
@@ -2128,7 +2073,6 @@ https://github.com/TheUnitedStatesOfAmerica/yn.rs.git
 https://github.com/TheWaWaR/bucket-limiter-rs
 https://github.com/TheWaWaR/easy-kill
 https://github.com/TheWaWaR/simple-http-server
-https://github.com/TheWaWaR/simple-http-server.git
 https://github.com/TheWaWaR/wechat-sdk
 https://github.com/ThetaSinner/rust-base-encoding
 https://github.com/ThinkAlexandria/BoringAuth.git
@@ -2157,7 +2101,6 @@ https://github.com/TimelyDataflow/abomonation.git
 https://github.com/TimelyDataflow/differential-dataflow.git
 https://github.com/TimelyDataflow/timely-dataflow.git
 https://github.com/TimonPost/crossterm
-https://github.com/TimonPost/crossterm.git
 https://github.com/TimurShaykhiev/gameboard
 https://github.com/TobiP64/vec_arith
 https://github.com/TobiP64/vkgen
@@ -2196,11 +2139,9 @@ https://github.com/Twinklebear/tobj
 https://github.com/TyOverby/astar
 https://github.com/TyOverby/bchannel
 https://github.com/TyOverby/bincode
-https://github.com/TyOverby/bincode.git
 https://github.com/TyOverby/chipmunk-sys
 https://github.com/TyOverby/consecutive-vecmap
 https://github.com/TyOverby/flame
-https://github.com/TyOverby/flame.git
 https://github.com/TyOverby/irc-message
 https://github.com/TyOverby/latin
 https://github.com/TyOverby/many2many
@@ -2331,7 +2272,6 @@ https://github.com/ZeroCostGoods/procure
 https://github.com/ZerothLaw/oaidl-safe
 https://github.com/ZerothLaw/prattle-rs
 https://github.com/ZhangHanDong/tao-of-rust-codes
-https://github.com/ZhangHanDong/tao-of-rust-codes.git
 https://github.com/ZhouHansen/atomic-batcher
 https://github.com/Zintinio/bitsets
 https://github.com/Zoomulator/rust-sorted
@@ -2342,15 +2282,12 @@ https://github.com/a-maier/lhef
 https://github.com/a-maier/logbar
 https://github.com/a-maier/series-rust
 https://github.com/a8m/pb
-https://github.com/a8m/pb.git
 https://github.com/aDotInTheVoid/jamml
 https://github.com/aahancoc/tree_magic
 https://github.com/aaneto/color_counter.rs
 https://github.com/aaron-lebo/amigo
 https://github.com/aaronm04/rp
-https://github.com/aatxe/alectro
 https://github.com/aatxe/irc
-https://github.com/aatxe/irc.git
 https://github.com/aatxe/markov
 https://github.com/aatxe/tokio-mockstream
 https://github.com/ababo/dtb
@@ -2454,7 +2391,6 @@ https://github.com/aepsil0n/acacia
 https://github.com/aepsil0n/benzene
 https://github.com/aepsil0n/carboxyl
 https://github.com/aepsil0n/carboxyl-cli
-https://github.com/aepsil0n/carboxyl.git
 https://github.com/aepsil0n/carboxyl_time
 https://github.com/aepsil0n/carboxyl_window
 https://github.com/aergonaut/owners-rs
@@ -2468,7 +2404,6 @@ https://github.com/afnanenayet/oars.git
 https://github.com/afnanenayet/pcg-rs
 https://github.com/afonso360/nom-lua
 https://github.com/afshinm/juggernaut
-https://github.com/afshinm/juggernaut.git
 https://github.com/afshinm/morq
 https://github.com/afshinm/tf-idf
 https://github.com/agashlin/comedy-rs
@@ -2496,7 +2431,6 @@ https://github.com/ajmwagar/bliss
 https://github.com/ajmwagar/lor-axe
 https://github.com/ajmwagar/primeval-rs
 https://github.com/ajmwagar/stego
-https://github.com/ajmwagar/stego.git
 https://github.com/ajmwagar/ufo.git
 https://github.com/ajroetker/beautician
 https://github.com/ajungren/crc32_digest
@@ -2536,7 +2470,6 @@ https://github.com/alesgenova/pitch-detection
 https://github.com/alesgenova/ray-tracer
 https://github.com/alex-shapiro/char_fns
 https://github.com/alex-shapiro/ditto
-https://github.com/alex-shapiro/ditto.git
 https://github.com/alex/rust-asn1
 https://github.com/alex179ohm/nsq-client-rs
 https://github.com/alexander-irbis/incrust
@@ -2551,14 +2484,11 @@ https://github.com/alexcrichton/cargo-edit-locally
 https://github.com/alexcrichton/cargo-fancy
 https://github.com/alexcrichton/cargo-local-registry
 https://github.com/alexcrichton/cargo-vendor
-https://github.com/alexcrichton/cargo-vendor.git
 https://github.com/alexcrichton/cc-rs
-https://github.com/alexcrichton/cc-rs.git
 https://github.com/alexcrichton/cfg-if
 https://github.com/alexcrichton/cmake-rs
 https://github.com/alexcrichton/cookie-rs
 https://github.com/alexcrichton/curl-rust
-https://github.com/alexcrichton/curl-rust.git
 https://github.com/alexcrichton/debug-cell
 https://github.com/alexcrichton/dlmalloc-rs
 https://github.com/alexcrichton/filetime
@@ -2585,14 +2515,11 @@ https://github.com/alexcrichton/splay-rs
 https://github.com/alexcrichton/ssh2-rs
 https://github.com/alexcrichton/stacker
 https://github.com/alexcrichton/tar-rs
-https://github.com/alexcrichton/tar-rs.git
 https://github.com/alexcrichton/tokio-openssl
 https://github.com/alexcrichton/tokio-process
 https://github.com/alexcrichton/toml-rs
-https://github.com/alexcrichton/toml-rs.git
 https://github.com/alexcrichton/wait-timeout
 https://github.com/alexcrichton/wasm-gc
-https://github.com/alexcrichton/wasm-gc.git
 https://github.com/alexcrichton/wbg-rand
 https://github.com/alexeyzab/article-date-extractor
 https://github.com/alexfedoseev/conform
@@ -2655,9 +2582,7 @@ https://github.com/ambuc/quadtree
 https://github.com/ameobea/rust-stackdriver-logging-utils
 https://github.com/amethyst/laminar
 https://github.com/amethyst/laminar-ffi
-https://github.com/amethyst/laminar.git
 https://github.com/amethyst/rendy
-https://github.com/amethyst/rendy.git
 https://github.com/amilajack/database_exporter
 https://github.com/amiraeva/atomic_bitfield.git
 https://github.com/ammaraskar/rust-dwarf-x86
@@ -2733,8 +2658,8 @@ https://github.com/andygrove/libsweep-rs
 https://github.com/andygrove/rust-navigation
 https://github.com/andygrove/rust-qik
 https://github.com/andygrove/sqlparser-rs
-https://github.com/andygrove/sqlparser-rs.git
 https://github.com/andylokandy/arraydeque
+https://github.com/andylokandy/byte
 https://github.com/andylokandy/simsearch-rs
 https://github.com/andylokandy/smallbox
 https://github.com/anekos/if-let-return
@@ -2746,13 +2671,11 @@ https://github.com/anguslees/rust-jsonnet.git
 https://github.com/anima-engine/anima
 https://github.com/anima-engine/anima-engine
 https://github.com/anima-engine/mrusty
-https://github.com/anima-engine/mrusty.git
 https://github.com/animalsiknow/in_addr
 https://github.com/animalsiknow/tokio-redis-pool
 https://github.com/animalsiknow/tokio-resource-pool
 https://github.com/anler/getrusage
 https://github.com/anordal/shellharden
-https://github.com/anordal/shellharden.git
 https://github.com/anowell/interpolate
 https://github.com/anowell/nonblock-rs
 https://github.com/anowell/promptly
@@ -2792,7 +2715,6 @@ https://github.com/antoyo/huffman-rs
 https://github.com/antoyo/mg-settings
 https://github.com/antoyo/password-store-rs
 https://github.com/antoyo/tql
-https://github.com/antoyo/tql.git
 https://github.com/antoyo/uncbv
 https://github.com/anuragsoni/quick_sort
 https://github.com/anvie/dotext
@@ -2900,7 +2822,6 @@ https://github.com/arranf/HugoToJSON
 https://github.com/arranf/deck_codes
 https://github.com/arranf/strip-markdown
 https://github.com/arrayfire/arrayfire-rust
-https://github.com/arrayfire/arrayfire-rust.git
 https://github.com/artemshein/klickenhaus
 https://github.com/artemshein/obj-pool
 https://github.com/artemshein/sherr
@@ -2985,15 +2906,11 @@ https://github.com/aswaving/dedup_iter
 https://github.com/aswaving/yenc
 https://github.com/atakurt/iyzipay-rust
 https://github.com/atanunq/viu
-https://github.com/atanunq/viu.git
 https://github.com/athiwatc/next_episode
 https://github.com/athre0z/color-backtrace
-https://github.com/athre0z/color-backtrace.git
 https://github.com/aticu/size_format
 https://github.com/atomashpolskiy/rustface
-https://github.com/atomashpolskiy/rustface.git
 https://github.com/atroche/rust-headless-chrome
-https://github.com/atroche/rust-headless-chrome.git
 https://github.com/atsushi130/Cryptor
 https://github.com/atsushi130/EnigmaMachine
 https://github.com/atsushi130/http-status-code-searcher
@@ -3010,7 +2927,6 @@ https://github.com/autozimu/LanguageClient-neovim.git
 https://github.com/autozimu/colorizex
 https://github.com/autozimu/gdb_mi
 https://github.com/autumnai/collenchyma
-https://github.com/autumnai/collenchyma.git
 https://github.com/avacariu/rust-changecase
 https://github.com/avacariu/rust-oath
 https://github.com/avadacatavra/unsafe-unicorn
@@ -3022,7 +2938,6 @@ https://github.com/avr-rust/arduino
 https://github.com/avr-rust/avr-mcu
 https://github.com/avr-rust/avrd
 https://github.com/avr-rust/ruduino
-https://github.com/avr-rust/ruduino.git
 https://github.com/avrong/scrftch
 https://github.com/aweinstock314/prefetch
 https://github.com/aweinstock314/rust-clipboard
@@ -3033,7 +2948,6 @@ https://github.com/awelkie/cobs.rs
 https://github.com/awelkie/xmodem.rs
 https://github.com/awestroke/js-source-mapper
 https://github.com/awidegreen/rass
-https://github.com/awslabs/aws-lambda-rust-runtime.git
 https://github.com/awstanley/fricgan
 https://github.com/axelf4/lis
 https://github.com/axelf4/unicode-linebreak
@@ -3149,7 +3063,6 @@ https://github.com/bemeurer/sieve
 https://github.com/benashford/lwactors
 https://github.com/benashford/redis-async-rs
 https://github.com/benashford/rs-es
-https://github.com/benashford/rs-es.git
 https://github.com/benashford/rs-transducers
 https://github.com/benashford/rust-lazysort
 https://github.com/beneills/quantum.git
@@ -3176,10 +3089,8 @@ https://github.com/bgermann/offwall
 https://github.com/bgourlie/asm6502
 https://github.com/bhamrick/short-paths
 https://github.com/bheisler/RustaCUDA
-https://github.com/bheisler/RustaCUDA.git
 https://github.com/bheisler/TinyTemplate
 https://github.com/bheisler/criterion.rs
-https://github.com/bheisler/criterion.rs.git
 https://github.com/bheklilr/rust-stackedconfig
 https://github.com/bholley/atomic_refcell
 https://github.com/bholley/malloc_size_of_derive
@@ -3209,9 +3120,9 @@ https://github.com/birkenfeld/mlzlog-rs
 https://github.com/birkenfeld/mlzutil
 https://github.com/birkenfeld/ngc
 https://github.com/birkenfeld/serde-pickle
+https://github.com/bitconch/bvm-filter
 https://github.com/bitdivision/multibloom
 https://github.com/bitflags/bitflags
-https://github.com/bitflags/bitflags.git
 https://github.com/bitshifter/glam-rs
 https://github.com/bitshifter/sortrs
 https://github.com/bitsparrow/bitsparrow-derive
@@ -3227,12 +3138,10 @@ https://github.com/bjz/fn_ops
 https://github.com/bkchr/proc-macro-crate
 https://github.com/bkoropoff/rust-jlens.git
 https://github.com/blabaere/scaproust
-https://github.com/blabaere/scaproust.git
 https://github.com/blackbeam/mysql_async
 https://github.com/blackbeam/rust-crc16
 https://github.com/blackbeam/rust-marc
 https://github.com/blackbeam/rust-mysql-simple
-https://github.com/blackbeam/rust-mysql-simple.git
 https://github.com/blackbeam/rust-rabbit
 https://github.com/blackbeam/rust_mysql_common
 https://github.com/blackgear/rustdoc_seeker
@@ -3261,11 +3170,9 @@ https://github.com/bltavares/try_print
 https://github.com/blue-yonder/vikos
 https://github.com/bluejekyll/enum-as-inner
 https://github.com/bluejekyll/trust-dns
-https://github.com/bluejekyll/trust-dns.git
 https://github.com/blueluna/netlink-rs
 https://github.com/blueluna/nl80211-rs
 https://github.com/bluss/arrayvec
-https://github.com/bluss/arrayvec.git
 https://github.com/bluss/asprim
 https://github.com/bluss/bencher
 https://github.com/bluss/debugit
@@ -3276,7 +3183,6 @@ https://github.com/bluss/fixedbitset
 https://github.com/bluss/galil-seiferas
 https://github.com/bluss/indexing
 https://github.com/bluss/indexmap
-https://github.com/bluss/indexmap.git
 https://github.com/bluss/itertools-num
 https://github.com/bluss/itertools-wild
 https://github.com/bluss/ixlist
@@ -3287,11 +3193,9 @@ https://github.com/bluss/odds
 https://github.com/bluss/ordermap
 https://github.com/bluss/permutohedron
 https://github.com/bluss/petgraph
-https://github.com/bluss/petgraph.git
 https://github.com/bluss/rawpointer
 https://github.com/bluss/rawslice
 https://github.com/bluss/rust-itertools
-https://github.com/bluss/rust-itertools.git
 https://github.com/bluss/rust-ndarray
 https://github.com/bluss/scopeguard
 https://github.com/bluss/simplesvg
@@ -3309,11 +3213,11 @@ https://github.com/bobbo/rustfm-scrobble
 https://github.com/bobbo/wrapped-vec
 https://github.com/bobbobbio/http_io
 https://github.com/bobcats/iterm2mintty-rs
+https://github.com/bobotu/kaosu-packer
 https://github.com/bobrik/kasa_exporter
 https://github.com/bobsomers/dentist
 https://github.com/bodil/higher
 https://github.com/bodil/im-rs
-https://github.com/bodil/im-rs.git
 https://github.com/bodil/meowhash-rs
 https://github.com/bodil/sized-chunks
 https://github.com/bodil/sized-vec
@@ -3343,7 +3247,6 @@ https://github.com/bookchin/hashcash-rs
 https://github.com/boomshroom/linked_array
 https://github.com/boopathi/graphql-id
 https://github.com/bootandy/dust
-https://github.com/bootandy/dust.git
 https://github.com/booyaa/bottymcbottyface
 https://github.com/booyaa/cargo-cake
 https://github.com/booyaa/geezy
@@ -3391,7 +3294,6 @@ https://github.com/brandonson/genfsm-rs
 https://github.com/brandonson/revord-rs
 https://github.com/brandur/cmark2jira
 https://github.com/brandur/redis-cell
-https://github.com/brandur/redis-cell.git
 https://github.com/braun-robotics/rust-dw1000
 https://github.com/braun-robotics/rust-embedded-timeout-macros
 https://github.com/braun-robotics/rust-ieee802.15.4
@@ -3433,6 +3335,7 @@ https://github.com/brocode/fblog
 https://github.com/brocode/fw
 https://github.com/brocode/goat
 https://github.com/brookst/vacuum
+https://github.com/broucz/minirpc
 https://github.com/brown121407/thank
 https://github.com/brson/basic-http-server
 https://github.com/brson/home
@@ -3440,7 +3343,6 @@ https://github.com/brson/load-maker
 https://github.com/brson/og_fmt
 https://github.com/brson/result_iter
 https://github.com/brson/rust-sdl
-https://github.com/brson/rust-sdl.git
 https://github.com/brson/stdx.git
 https://github.com/bruceadams/yj
 https://github.com/brucechapman/rust_testing_logger
@@ -3470,7 +3372,6 @@ https://github.com/bstrie/countess
 https://github.com/bt/rust_urlencoding
 https://github.com/btmorex/objpool
 https://github.com/budziq/rust-skeptic
-https://github.com/budziq/rust-skeptic.git
 https://github.com/bugaevc/fizzbuzz
 https://github.com/bugaevc/pipe-channel
 https://github.com/bugagashenkj/fs-crypto
@@ -3518,7 +3419,6 @@ https://github.com/caitlingao/leetcode_rust
 https://github.com/calder/rust-goldenfile
 https://github.com/calebmer/accelerate.git
 https://github.com/calebwin/emu
-https://github.com/calebwin/emu.git
 https://github.com/callum-oakley/json5-rs
 https://github.com/callum-oakley/json5-to-json
 https://github.com/callym/triforce_rs
@@ -3544,34 +3444,27 @@ https://github.com/canndrew/unicode-brackets
 https://github.com/canndrew/unwrap
 https://github.com/canselcik/libremarkable
 https://github.com/cantino/mcfly
-https://github.com/cantino/mcfly.git
 https://github.com/capnproto/capnproto-rust
-https://github.com/capnproto/capnproto-rust.git
 https://github.com/capstone-rust/capstone-rs
 https://github.com/carbidegames/tungsten
 https://github.com/cardoe/stderrlog-rs
 https://github.com/cargonauts-rs/cargonauts
-https://github.com/cargonauts-rs/cargonauts.git
 https://github.com/carllerche/buffoon
 https://github.com/carllerche/bytes
-https://github.com/carllerche/bytes.git
 https://github.com/carllerche/codegen
 https://github.com/carllerche/futures-mpsc
 https://github.com/carllerche/h2.git
 https://github.com/carllerche/iovec
 https://github.com/carllerche/mio
 https://github.com/carllerche/mio-more
-https://github.com/carllerche/mio.git
 https://github.com/carllerche/pool
 https://github.com/carllerche/slab
-https://github.com/carllerche/slab.git
 https://github.com/carllerche/string
 https://github.com/carllerche/take
 https://github.com/carllerche/tokio-mock-task
 https://github.com/carllerche/tokio-serde
 https://github.com/carllerche/tokio-serde-json
 https://github.com/carllerche/tower-web
-https://github.com/carllerche/tower-web.git
 https://github.com/carllerche/two-lock-queue
 https://github.com/carllerche/utp
 https://github.com/carlosdp/plaster
@@ -3601,7 +3494,6 @@ https://github.com/cauebs/swayfocus
 https://github.com/cbarrick/char-circle
 https://github.com/cberner/raptorq
 https://github.com/cbiffle/visit-diff
-https://github.com/cbourjau/alice-rs
 https://github.com/cbourjau/cargo-with
 https://github.com/cbreeden/fxhash
 https://github.com/cbreeden/static-map
@@ -3632,7 +3524,6 @@ https://github.com/cesarb/constant_time_eq
 https://github.com/cesarb/filestatrec
 https://github.com/cesbo/error-rules
 https://github.com/cessen/ropey
-https://github.com/cessen/ropey.git
 https://github.com/cetra3/dhash
 https://github.com/cetra3/lorikeet
 https://github.com/cetra3/mpart-async
@@ -3646,7 +3537,6 @@ https://github.com/cfsamson/print-perf
 https://github.com/cgaebel/enumiter
 https://github.com/cgaebel/sexp
 https://github.com/cgag/loc
-https://github.com/cgag/loc.git
 https://github.com/chain-rule/recommender
 https://github.com/chaintope/openassets-rust
 https://github.com/chaixb/hostess
@@ -3657,6 +3547,7 @@ https://github.com/chalharu/rust-compression
 https://github.com/chalharu/rust-nearly-eq
 https://github.com/chancancode/rust-delegate
 https://github.com/changm/gamma-lut-rs
+https://github.com/chankyin/indent-stack.git
 https://github.com/charles-r-earp/adtensor
 https://github.com/charlesvdv/nom-bibtex
 https://github.com/charlieegan3/graph_match
@@ -3691,7 +3582,6 @@ https://github.com/chinatsu/avirus
 https://github.com/chinedufn/blender-exporter
 https://github.com/chinedufn/landon
 https://github.com/chinedufn/percy
-https://github.com/chinedufn/percy.git
 https://github.com/chinedufn/psd
 https://github.com/chinmaydd/sandpile
 https://github.com/chip8-rust/chip8-vm.git
@@ -3740,11 +3630,9 @@ https://github.com/christian-blades-cb/proquint-rs
 https://github.com/christophebiocca/skipping-search
 https://github.com/chritchens/elgamal-curve25519
 https://github.com/chronotope/chrono
-https://github.com/chronotope/chrono.git
 https://github.com/chuckSMASH/ringo.git
 https://github.com/chucklefish/hlist-macro
 https://github.com/chyh1990/yaml-rust
-https://github.com/chyh1990/yaml-rust.git
 https://github.com/cigna/tap-rust
 https://github.com/cirla/gdpr_consent
 https://github.com/cjbassi/i3-workspace-groups
@@ -3760,7 +3648,6 @@ https://github.com/cksac/dataloader-rs
 https://github.com/cksac/dummy-rs
 https://github.com/cksac/fake-rs
 https://github.com/clap-rs/clap
-https://github.com/clap-rs/clap.git
 https://github.com/clarcharr/nibble
 https://github.com/clearloop/sonata
 https://github.com/clearloop/spacejam
@@ -3771,15 +3658,13 @@ https://github.com/clearlycloudy/mazth
 https://github.com/clearlycloudy/processig
 https://github.com/clearlycloudy/treez
 https://github.com/clearlycloudy/zpatial
+https://github.com/clintonmead/is_type
 https://github.com/clog-tool/clog-cli
-https://github.com/clog-tool/clog-cli.git
 https://github.com/clog-tool/clog-lib
 https://github.com/cloudflare/boringtun
-https://github.com/cloudflare/boringtun.git
 https://github.com/cloudflare/daemonize
 https://github.com/cloudflare/serde-wasm-bindgen
 https://github.com/cloudflare/wirefilter
-https://github.com/cloudflare/wirefilter.git
 https://github.com/cloudflare/wrangler.git
 https://github.com/clpo13/rscat
 https://github.com/clucompany/Enclose.git
@@ -3833,9 +3718,7 @@ https://github.com/coldpants/mipush-rs
 https://github.com/cole14/rust-elf
 https://github.com/cole14/rust-readelf
 https://github.com/colin-kiegel/rust-derive-builder
-https://github.com/colin-kiegel/rust-derive-builder.git
 https://github.com/colin-kiegel/rust-pretty-assertions
-https://github.com/colin-kiegel/rust-pretty-assertions.git
 https://github.com/coll/nya
 https://github.com/combust/popcorn
 https://github.com/comex/rust-shlex
@@ -3967,7 +3850,6 @@ https://github.com/cronokirby/ludus
 https://github.com/crossbeam-rs/crossbeam
 https://github.com/crossbeam-rs/crossbeam-channel.git
 https://github.com/crossbeam-rs/crossbeam-skiplist
-https://github.com/crossbeam-rs/crossbeam.git
 https://github.com/crumblingstatue/rgen3
 https://github.com/crumblingstatue/rgmk
 https://github.com/crumblingstatue/rust-imgur.git
@@ -4005,7 +3887,6 @@ https://github.com/cstorey/weft
 https://github.com/cswindle/hyper-dns
 https://github.com/cswinter/LocustDB.git
 https://github.com/ct-austin/ifmt
-https://github.com/ct-austin/ifmt.git
 https://github.com/ctaggart/mex-sys
 https://github.com/ctatchley/espeak-sys
 https://github.com/ctrlcctrlv/justify
@@ -4015,7 +3896,6 @@ https://github.com/ctsrc/hypermud
 https://github.com/ctz/ct-logs
 https://github.com/ctz/hyper-rustls
 https://github.com/ctz/rustls
-https://github.com/ctz/rustls.git
 https://github.com/ctz/sct.rs
 https://github.com/ctz/webpki-roots
 https://github.com/cuebyte/file-crypto
@@ -4037,7 +3917,6 @@ https://github.com/cyborgsphinx/rebar
 https://github.com/cyderize/rust-iocp.git
 https://github.com/cykooz/libheif-rs
 https://github.com/cykooz/libheif-sys
-https://github.com/cyndis/qmlrs.git
 https://github.com/cyndis/unicode_hfwidth
 https://github.com/cyphar/initrs
 https://github.com/cyplo/clipco
@@ -4056,14 +3935,12 @@ https://github.com/d-e-s-o/rline.git
 https://github.com/d-e-s-o/ssh-gpg-agent.git
 https://github.com/d-e-s-o/test-env-log.git
 https://github.com/d-e-s-o/uid.git
-https://github.com/d-unseductable/ruru.git
 https://github.com/d3lio/bitmask
 https://github.com/d3lio/lexpar
 https://github.com/d3zd3z/rsure
 https://github.com/daa84/build-version
 https://github.com/daa84/neovim-lib
 https://github.com/daboross/fern
-https://github.com/daboross/fern.git
 https://github.com/daboross/mindjuice-rs
 https://github.com/daboross/rust-screeps-api
 https://github.com/daboross/screeps-in-rust-via-wasm
@@ -4079,18 +3956,14 @@ https://github.com/dalance/fts-rs
 https://github.com/dalance/pipecolor
 https://github.com/dalance/proc-reader
 https://github.com/dalance/procs
-https://github.com/dalance/procs.git
 https://github.com/dalance/prosafe_exporter
 https://github.com/dalance/ptags
 https://github.com/dalance/sdc-parser
 https://github.com/dalance/structopt
 https://github.com/dalance/structopt-toml
 https://github.com/dalek-cryptography/bulletproofs
-https://github.com/dalek-cryptography/bulletproofs.git
 https://github.com/dalek-cryptography/curve25519-dalek
-https://github.com/dalek-cryptography/curve25519-dalek.git
 https://github.com/dalek-cryptography/ed25519-dalek
-https://github.com/dalek-cryptography/ed25519-dalek.git
 https://github.com/dalek-cryptography/merlin
 https://github.com/dalek-cryptography/subtle
 https://github.com/dalek-cryptography/x25519-dalek
@@ -4106,14 +3979,11 @@ https://github.com/dan-t/cpp-typecheck
 https://github.com/dan-t/rust-confsolve
 https://github.com/dan-t/rusty-release
 https://github.com/dan-t/rusty-tags
-https://github.com/dan-t/rusty-tags.git
 https://github.com/danburkert/crdt.git
 https://github.com/danburkert/fs2-rs
 https://github.com/danburkert/memmap-rs
-https://github.com/danburkert/memmap-rs.git
 https://github.com/danburkert/procinfo-rs
 https://github.com/danburkert/prost
-https://github.com/danburkert/prost.git
 https://github.com/danclive/bsonrs
 https://github.com/dancojocaru2000/sponge_string_rs
 https://github.com/dangeloj/rust-collections
@@ -4131,6 +4001,7 @@ https://github.com/danieldk/rtrie
 https://github.com/danieldk/rust2vec
 https://github.com/danieldk/seqalign
 https://github.com/danieldk/stdinout
+https://github.com/danieldulaney/appendlist
 https://github.com/danieldulaney/windows-permissions-rs
 https://github.com/danielgallagher0/bluenrg
 https://github.com/danielgallagher0/bluetooth-hci
@@ -4188,7 +4059,6 @@ https://github.com/dashpipe/12factor-rs
 https://github.com/dashpipe/dashpipe-core
 https://github.com/dat2/ecmascript
 https://github.com/data-exp-lab/rust-yt-tools
-https://github.com/databricks/click.git
 https://github.com/datashape/nps
 https://github.com/dathinab/checked-command
 https://github.com/datrs/bitfield-rle
@@ -4254,7 +4124,6 @@ https://github.com/dbrgn/rusty-santa
 https://github.com/dbrgn/sgp30-rs
 https://github.com/dbrgn/skytraxx-airspace-parser
 https://github.com/dbrgn/tealdeer
-https://github.com/dbrgn/tealdeer.git
 https://github.com/dbrgn/threema-gateway-rs
 https://github.com/dbrgn/xkcdpass-rs
 https://github.com/dcampbell24/libgo
@@ -4366,7 +4235,6 @@ https://github.com/dhardy/terr
 https://github.com/dherman/cslice
 https://github.com/dherman/envoy
 https://github.com/dherman/esprit
-https://github.com/dherman/esprit.git
 https://github.com/dherman/guid
 https://github.com/dherman/tristate
 https://github.com/dherman/verbatim
@@ -4412,11 +4280,9 @@ https://github.com/diwic/splitmut-rs
 https://github.com/diwic/thin_main_loop
 https://github.com/djc/appdirs-rs
 https://github.com/djc/askama
-https://github.com/djc/askama.git
 https://github.com/djc/edit-chunks
 https://github.com/djc/mbox-reader
 https://github.com/djc/quinn
-https://github.com/djc/quinn.git
 https://github.com/djc/tokio-imap
 https://github.com/djg/adept2-rs
 https://github.com/djmcgill/eight-segment
@@ -4453,7 +4319,6 @@ https://github.com/dobasy/camellia-rs
 https://github.com/dobkeratops/lininterp
 https://github.com/docbrown/xbdm-rs
 https://github.com/docopt/docopt.rs
-https://github.com/docopt/docopt.rs.git
 https://github.com/dominikwerder/philox
 https://github.com/dommynik/strom
 https://github.com/domodwyer/benchpmc
@@ -4474,7 +4339,6 @@ https://github.com/dovahcrow/bitmex-rs
 https://github.com/dovahcrow/deribit-rs
 https://github.com/dowlandaiello/rusti
 https://github.com/dpc/cbuf-rs
-https://github.com/dpc/crev.git
 https://github.com/dpc/dotr
 https://github.com/dpc/hex2d-dpcext-rs
 https://github.com/dpc/hex2d-rs
@@ -4519,7 +4383,6 @@ https://github.com/dropbox/rust-alloc-no-stdlib
 https://github.com/dropbox/rust-brotli
 https://github.com/dropbox/rust-brotli-decompressor
 https://github.com/dropbox/rust-brotli-no-stdlib
-https://github.com/dropbox/rust-brotli.git
 https://github.com/dropbox/rust-subprocess-communicate
 https://github.com/droundy/arrayref
 https://github.com/droundy/bigbro
@@ -4566,7 +4429,6 @@ https://github.com/dthul/matfile
 https://github.com/dtolnay/argv
 https://github.com/dtolnay/automod
 https://github.com/dtolnay/cargo-expand
-https://github.com/dtolnay/cargo-expand.git
 https://github.com/dtolnay/cargo-llvm-lines
 https://github.com/dtolnay/cargo-tally
 https://github.com/dtolnay/dtoa
@@ -4594,15 +4456,12 @@ https://github.com/dtolnay/precise
 https://github.com/dtolnay/proc-macro-hack
 https://github.com/dtolnay/proc-macro-workshop.git
 https://github.com/dtolnay/quote
-https://github.com/dtolnay/quote.git
 https://github.com/dtolnay/readonly
 https://github.com/dtolnay/reduce
 https://github.com/dtolnay/ref-cast
 https://github.com/dtolnay/reflect
-https://github.com/dtolnay/reflect.git
 https://github.com/dtolnay/remain
 https://github.com/dtolnay/rust-quiz
-https://github.com/dtolnay/rust-quiz.git
 https://github.com/dtolnay/ryu
 https://github.com/dtolnay/select-rustc
 https://github.com/dtolnay/seq-macro
@@ -4610,13 +4469,10 @@ https://github.com/dtolnay/serde-ignored
 https://github.com/dtolnay/serde-repr
 https://github.com/dtolnay/serde-stacker
 https://github.com/dtolnay/serde-yaml
-https://github.com/dtolnay/serde-yaml.git
 https://github.com/dtolnay/syn
-https://github.com/dtolnay/syn.git
 https://github.com/dtolnay/threadbound
 https://github.com/dtolnay/trybuild
 https://github.com/dtolnay/tt-call
-https://github.com/dtolnay/typetag.git
 https://github.com/dtynn/humanize-rs
 https://github.com/dtynn/serde-humanize-rs
 https://github.com/dtynn/sigar-rs
@@ -4661,7 +4517,6 @@ https://github.com/dwrensha/z3-rs.git
 https://github.com/dwyerk/timeharsh
 https://github.com/dyedquartz/mangadex-scraper
 https://github.com/dylanede/cassowary-rs
-https://github.com/dylanede/cassowary-rs.git
 https://github.com/dylanede/glsl-to-spirv-macros
 https://github.com/dylanede/ovr-sys
 https://github.com/dylanede/rusttype
@@ -4739,7 +4594,6 @@ https://github.com/edarc/max7301
 https://github.com/edarc/ssd1322
 https://github.com/eddyb/sobek
 https://github.com/edef1c/libfringe
-https://github.com/edef1c/libfringe.git
 https://github.com/edef1c/safe_shl
 https://github.com/editicalu/nordselect
 https://github.com/edmccard/dlx-rs
@@ -4771,7 +4625,6 @@ https://github.com/ekse/unicorn-rs
 https://github.com/elast0ny/mem_file
 https://github.com/elast0ny/shared_memory-rs
 https://github.com/elastic-rs/elastic
-https://github.com/elastic-rs/elastic.git
 https://github.com/elaye/morp
 https://github.com/elba/semver_constraints
 https://github.com/eldesh/dockworker
@@ -4856,10 +4709,8 @@ https://github.com/emkw/rust-p0f_api
 https://github.com/emlun/gpg-expire-warner
 https://github.com/emoon/anidb-rs
 https://github.com/emoon/dynamic_reload
-https://github.com/emoon/dynamic_reload.git
 https://github.com/emoon/remotery-rs
 https://github.com/emoon/rust_minifb
-https://github.com/emoon/rust_minifb.git
 https://github.com/emosenkis/arduino-esp-rs
 https://github.com/emosenkis/chip-gpio-rs
 https://github.com/emosenkis/esp8266-hal
@@ -4904,7 +4755,6 @@ https://github.com/epsilonz/bourbaki.rs
 https://github.com/epsilonz/tailrec.rs
 https://github.com/epsimatt/mlog
 https://github.com/eqrion/cbindgen
-https://github.com/eqrion/cbindgen.git
 https://github.com/equal-l2/forismatic-rs
 https://github.com/equescalculi/matrixgraph
 https://github.com/eqv/gdb_probe.rs
@@ -4914,6 +4764,7 @@ https://github.com/eqv/recursive_disassembler
 https://github.com/ereichert/elp
 https://github.com/ericchang00/icecream-rs
 https://github.com/ericfindlay/sml
+https://github.com/erichdongubler/map1-rs
 https://github.com/erichdongubler/new-rust-project
 https://github.com/erichdongubler/uploads-im-client-rs
 https://github.com/ericho/storyboard-client
@@ -4988,7 +4839,6 @@ https://github.com/exonum/bitcoinrpc
 https://github.com/exonum/btc-transaction-utils
 https://github.com/exonum/exonum_rocksdb.git
 https://github.com/exonum/exonum_sodiumoxide
-https://github.com/exonum/exonum_sodiumoxide.git
 https://github.com/exonum/jsonrpc
 https://github.com/exoticorn/exoquant-rs
 https://github.com/exoticorn/pngeq
@@ -5006,7 +4856,6 @@ https://github.com/fabienjuif/gitmoji-changelog-rust
 https://github.com/fabienjuif/release-me
 https://github.com/facebookincubator/Rust-SMT-LIB-API.git
 https://github.com/facebookincubator/fastmod
-https://github.com/facebookincubator/fastmod.git
 https://github.com/facebookincubator/rust-partial-io
 https://github.com/faern/clonablechild
 https://github.com/fairingrey/rustpixiv
@@ -5030,17 +4879,14 @@ https://github.com/faulesocke/sync-threadpool
 https://github.com/fbernier/base62
 https://github.com/fcsonline/cargo-permissions
 https://github.com/fcsonline/drill
-https://github.com/fcsonline/drill.git
 https://github.com/fcsonline/tmux-thumbs
 https://github.com/fdehau/deck
 https://github.com/fdehau/tmpl
 https://github.com/fdehau/tui-rs
-https://github.com/fdehau/tui-rs.git
 https://github.com/feadoor/primesieve.git
 https://github.com/feb29/compacts
 https://github.com/feb29/karabiner
 https://github.com/febeling/edit-distance
-https://github.com/fede1024/rust-rdkafka.git
 https://github.com/fede1024/rust-scheduled-executor
 https://github.com/feliix42/covfefe
 https://github.com/felipenoris/bdays
@@ -5127,11 +4973,9 @@ https://github.com/fitzgen/bacon-rajan-cc
 https://github.com/fitzgen/bumpalo
 https://github.com/fitzgen/derive_is_enum_variant
 https://github.com/fitzgen/dodrio
-https://github.com/fitzgen/dodrio.git
 https://github.com/fitzgen/dwprod
 https://github.com/fitzgen/fart
 https://github.com/fitzgen/generational-arena
-https://github.com/fitzgen/generational-arena.git
 https://github.com/fitzgen/histo
 https://github.com/fitzgen/id-arena
 https://github.com/fitzgen/inlinable_string
@@ -5145,7 +4989,6 @@ https://github.com/fitzgen/rent_to_own
 https://github.com/fitzgen/scrapmetal
 https://github.com/fitzgen/source-map-mappings
 https://github.com/fitzgen/state_machine_future
-https://github.com/fitzgen/state_machine_future.git
 https://github.com/fitzgen/tokio-timeit-middleware
 https://github.com/fitzgen/wasm-nm
 https://github.com/fizyk20/atm-refraction.git
@@ -5243,7 +5086,6 @@ https://github.com/freesig/shade_runner
 https://github.com/freestrings/jsonpath
 https://github.com/freestrings/rtag
 https://github.com/frehberg/rtps-gen
-https://github.com/frehberg/rtps-gen.git
 https://github.com/frehberg/rust-crashtag
 https://github.com/frehberg/rust-releasetag
 https://github.com/frehberg/seq-rs.git
@@ -5251,7 +5093,6 @@ https://github.com/frehberg/spa-rs
 https://github.com/frehberg/test-generator.git
 https://github.com/frehberg/wasm-sign
 https://github.com/frewsxcv/alert-after
-https://github.com/frewsxcv/alert-after.git
 https://github.com/frewsxcv/hexcat
 https://github.com/frewsxcv/rcat
 https://github.com/frewsxcv/rust-chunked-transfer
@@ -5281,7 +5122,6 @@ https://github.com/frugalos/cannyls
 https://github.com/frugalos/cannyls_rpc
 https://github.com/frugalos/ecpool
 https://github.com/frugalos/frugalos
-https://github.com/frugalos/frugalos.git
 https://github.com/frugalos/liberasurecode
 https://github.com/frugalos/libfrugalos
 https://github.com/frugalos/raftlog
@@ -5291,7 +5131,6 @@ https://github.com/fschutt/clipboard2
 https://github.com/fschutt/fastblur
 https://github.com/fschutt/polylabel-mini
 https://github.com/fschutt/printpdf
-https://github.com/fschutt/printpdf.git
 https://github.com/fschutt/proj5
 https://github.com/fschutt/simd-runtime-check-x64
 https://github.com/fschutt/street_index
@@ -5334,7 +5173,6 @@ https://github.com/g-s-k/zero_days.git
 https://github.com/g1eny0ung/nerd-fonts.rs
 https://github.com/g2xpf/glsl-linalg
 https://github.com/gabdube/native-windows-gui
-https://github.com/gabdube/native-windows-gui.git
 https://github.com/gabime/pretty_toa
 https://github.com/gadomski/las-rs
 https://github.com/gadomski/peakbag.git
@@ -5385,7 +5223,6 @@ https://github.com/genuinebyte/confindent
 https://github.com/geofft/redhook
 https://github.com/georust/gdal
 https://github.com/georust/geo
-https://github.com/georust/geo.git
 https://github.com/georust/geohash.rs
 https://github.com/georust/geojson
 https://github.com/georust/geos
@@ -5405,7 +5242,6 @@ https://github.com/getsentry/rust-debugid
 https://github.com/getsentry/rust-sentry-types
 https://github.com/getsentry/sentry-cli.git
 https://github.com/getsentry/sentry-rust
-https://github.com/getsentry/sentry-rust.git
 https://github.com/getsentry/symbolic
 https://github.com/getzola/zola.git
 https://github.com/gfreezy/bitcask-rs
@@ -5435,10 +5271,8 @@ https://github.com/gilescope/trait_tests
 https://github.com/gilnaa/globwalk
 https://github.com/gimli-rs/addr2line
 https://github.com/gimli-rs/cpp_demangle
-https://github.com/gimli-rs/cpp_demangle.git
 https://github.com/gimli-rs/findshlibs
 https://github.com/gimli-rs/gimli
-https://github.com/gimli-rs/gimli.git
 https://github.com/gimli-rs/leb128
 https://github.com/gimli-rs/object
 https://github.com/gin66/piano_keyboard
@@ -5467,11 +5301,9 @@ https://github.com/glennpratt/oci-runtime-spec-rs
 https://github.com/glennw/thread_profiler
 https://github.com/gliderkite/wuf
 https://github.com/glium/glium
-https://github.com/glium/glium.git
 https://github.com/gltf-rs/gltf
 https://github.com/gltf-rs/mikktspace
 https://github.com/gluon-lang/gluon
-https://github.com/gluon-lang/gluon.git
 https://github.com/gluon-lang/gluon_language-server
 https://github.com/gluon-lang/languageserver-types
 https://github.com/gluon-lang/lsp-types
@@ -5487,7 +5319,6 @@ https://github.com/gnunicorn/rust-multicodec
 https://github.com/gnzlbg/bitintr
 https://github.com/gnzlbg/bitwise
 https://github.com/gnzlbg/cargo-asm
-https://github.com/gnzlbg/cargo-asm.git
 https://github.com/gnzlbg/ctest
 https://github.com/gnzlbg/is_sorted
 https://github.com/gnzlbg/match_cfg
@@ -5502,7 +5333,6 @@ https://github.com/gobwas/influent.rs
 https://github.com/goertzenator/cargo-erlangapp
 https://github.com/goffrie/lalr
 https://github.com/goffrie/plex
-https://github.com/goffrie/plex.git
 https://github.com/goffrie/redfa
 https://github.com/golddranks/binary_macros
 https://github.com/golddranks/multi_mut
@@ -5513,25 +5343,20 @@ https://github.com/golemparts/rppal
 https://github.com/gonapps/libfastdl-rust
 https://github.com/goodell/radix-calc
 https://github.com/google/fancy-regex
-https://github.com/google/fancy-regex.git
 https://github.com/google/font-rs
 https://github.com/google/starlark-rust
 https://github.com/google/tarpc
-https://github.com/google/tarpc.git
 https://github.com/google/tensorflow-rust
 https://github.com/gopiandcode/dependent-view
 https://github.com/goriunov/peta
 https://github.com/gorup/tobytcp
-https://github.com/gotham-rs/gotham.git
 https://github.com/goto-bus-stop/node-resolve
 https://github.com/gperinazzo/dict-derive
 https://github.com/grantslatton/ball-tree
 https://github.com/grantslatton/quasirandom
 https://github.com/graphprotocol/graph-node.git
 https://github.com/graphql-rust/graphql-client
-https://github.com/graphql-rust/graphql-client.git
 https://github.com/graphql-rust/juniper
-https://github.com/graphql-rust/juniper.git
 https://github.com/grd/stat_rust
 https://github.com/greaka/rest-client
 https://github.com/gregelenbaas/diesel-citext
@@ -5549,14 +5374,12 @@ https://github.com/greyblake/hellcheck
 https://github.com/greyblake/jsonpath-rs
 https://github.com/greyblake/ta-rs
 https://github.com/greyblake/whatlang-rs
-https://github.com/greyblake/whatlang-rs.git
 https://github.com/griff/1password.rs
 https://github.com/grpc-rs/libgrpc
 https://github.com/grtlr/srtm.git
 https://github.com/gsfraley/dotrust
 https://github.com/gsingh93/gdl-parser
 https://github.com/gsingh93/trace
-https://github.com/gsingh93/trace.git
 https://github.com/gsquire/compress
 https://github.com/gsquire/concur
 https://github.com/gsquire/cot
@@ -5595,7 +5418,6 @@ https://github.com/gwihlidal/smush-rs
 https://github.com/gwihlidal/vk-sync-rs
 https://github.com/gwilczynski/milk_money
 https://github.com/gwleclerc/rs-jsonpath
-https://github.com/gyscos/Cursive.git
 https://github.com/gyu-don/options_results
 https://github.com/gyu-don/rust-textstream
 https://github.com/gz/autoperf
@@ -5622,7 +5444,6 @@ https://github.com/hansihe/opensimplex.rs
 https://github.com/hanskorg/google-authenticator-rust.git
 https://github.com/hanskorg/snowflake-rust.git
 https://github.com/hanskorg/yar-client-rust.git
-https://github.com/harababurel/gcsf.git
 https://github.com/haraldh/chainerror
 https://github.com/haraldh/rust_uds_windows
 https://github.com/haraldmaida/lamcal
@@ -5758,7 +5579,6 @@ https://github.com/hoodie/icalendar-rs
 https://github.com/hopey-dishwasher/termpix.git
 https://github.com/houqp/leptess
 https://github.com/housleyjk/ws-rs
-https://github.com/housleyjk/ws-rs.git
 https://github.com/houssemDevs/frounding-rs
 https://github.com/hoverbear/digitalocean
 https://github.com/howtocards/backend
@@ -5815,13 +5635,10 @@ https://github.com/hwiechers/chess_pgn_parser
 https://github.com/hxtk/Rust-Scanner
 https://github.com/hyarsan/ut-dialog
 https://github.com/hyperium/h2
-https://github.com/hyperium/h2.git
 https://github.com/hyperium/headers
 https://github.com/hyperium/http-body
-https://github.com/hyperium/http.git
 https://github.com/hyperium/hyper
 https://github.com/hyperium/hyper-tls
-https://github.com/hyperium/hyper.git
 https://github.com/hyperium/mime
 https://github.com/hyperledger/ursa
 https://github.com/hypp/modfile
@@ -5846,6 +5663,7 @@ https://github.com/iboss-ptk/ficon
 https://github.com/ibrokemypie/fedisend
 https://github.com/ibrokemypie/makeppkg
 https://github.com/ibrokemypie/numtostr
+https://github.com/ibutra/bmp388
 https://github.com/icasdri/rfc1751-rs
 https://github.com/icebergdefender/rust-clamav
 https://github.com/icedrift/tusk.git
@@ -5910,7 +5728,6 @@ https://github.com/ilianaw/rust-crowbar
 https://github.com/ilianaw/safeword
 https://github.com/ilianaw/tokio-jsoncodec
 https://github.com/iliekturtles/uom
-https://github.com/iliekturtles/uom.git
 https://github.com/illdefined/endian.git
 https://github.com/illicitonion/cargo-ensure-installed
 https://github.com/illicitonion/cargo-ensure-prefix
@@ -5951,6 +5768,7 @@ https://github.com/infincia/bip39-rs
 https://github.com/infincia/parking_lot_mpsc
 https://github.com/infinite-Joy/smart-open
 https://github.com/informationsea/bgzip-rs
+https://github.com/ing-systems/queue-file
 https://github.com/ingalls/geojson-rewind-rs
 https://github.com/ingalls/tilecover-rs
 https://github.com/ingots/ingots
@@ -6008,12 +5826,10 @@ https://github.com/iredelmeier/resufancy
 https://github.com/iredelmeier/serde-helpers
 https://github.com/iron/body-parser
 https://github.com/iron/iron
-https://github.com/iron/iron.git
 https://github.com/iron/mount
 https://github.com/iron/params
 https://github.com/iron/persistent
 https://github.com/iron/router
-https://github.com/iron/router.git
 https://github.com/iron/static
 https://github.com/iron/staticfile
 https://github.com/iron/urlencoded
@@ -6043,7 +5859,6 @@ https://github.com/ivanceras/machine-ip
 https://github.com/ivanceras/r2d2-sqlite3
 https://github.com/ivanceras/rustorm
 https://github.com/ivanceras/sauron
-https://github.com/ivanceras/sauron.git
 https://github.com/ivanceras/url_path
 https://github.com/ivxvm/netstat-rs
 https://github.com/ivxvm/proclist-rs
@@ -6064,7 +5879,6 @@ https://github.com/jabedude/procmaps
 https://github.com/jabl/hostlist
 https://github.com/jackgerrits/merand48-rs
 https://github.com/jackm321/RustNN
-https://github.com/jackm321/RustNN.git
 https://github.com/jackm321/Rust_Classifier
 https://github.com/jackmott/rust-simd-noise
 https://github.com/jackmott/simdeez
@@ -6076,7 +5890,6 @@ https://github.com/jacobbudin/pinto
 https://github.com/jacobmischka/aqi-nacor-schema
 https://github.com/jaehl/index-set
 https://github.com/jaemk/cached
-https://github.com/jaemk/cached.git
 https://github.com/jaemk/migrant_lib
 https://github.com/jaemk/self_update
 https://github.com/jaemk/wrap
@@ -6118,7 +5931,6 @@ https://github.com/japaric/as-slice
 https://github.com/japaric/bare-metal
 https://github.com/japaric/cargo-binutils
 https://github.com/japaric/cargo-call-stack
-https://github.com/japaric/cargo-call-stack.git
 https://github.com/japaric/cargo-project
 https://github.com/japaric/cortex-m-rt
 https://github.com/japaric/cortex-m-rt-ld
@@ -6128,7 +5940,6 @@ https://github.com/japaric/embedded-hal
 https://github.com/japaric/fpa
 https://github.com/japaric/hash32
 https://github.com/japaric/heapless
-https://github.com/japaric/heapless.git
 https://github.com/japaric/linux-embedded-hal
 https://github.com/japaric/lm3s6965
 https://github.com/japaric/lsm303dlhc
@@ -6158,7 +5969,6 @@ https://github.com/japaric/ufmt
 https://github.com/japaric/vcell
 https://github.com/japaric/volatile-register
 https://github.com/japaric/xargo
-https://github.com/japaric/xargo.git
 https://github.com/jarcane/rouler
 https://github.com/jaredvann/vec3D-rs
 https://github.com/jarlopez/bitfields-rs
@@ -6176,7 +5986,6 @@ https://github.com/jasonwhite/github-types
 https://github.com/jasonwhite/holyhashmap
 https://github.com/jasonwhite/rudolfs
 https://github.com/jasonwilliams/boa
-https://github.com/jasonwilliams/boa.git
 https://github.com/jayden-chan/extra-utils.git
 https://github.com/jayjamesjay/http_req
 https://github.com/jaynagpaul/ferry
@@ -6222,7 +6031,6 @@ https://github.com/jeandudey/ip-combinator-rs
 https://github.com/jeandudey/linux-personality
 https://github.com/jeandudey/rust-bitcoin-amount
 https://github.com/jeandudey/rust-bitcoin-rpc
-https://github.com/jeaye/ncurses-rs.git
 https://github.com/jebrosen/rocket_oauth2
 https://github.com/jechas01/jec-rs
 https://github.com/jechase/easy_ffi
@@ -6276,7 +6084,6 @@ https://github.com/jeremydavis519/rusty-asm
 https://github.com/jeremyletang/colorize
 https://github.com/jeremyletang/rust-portaudio.git
 https://github.com/jeremyletang/rust-sfml
-https://github.com/jeremyletang/rust-sfml.git
 https://github.com/jeremyrubin/slim
 https://github.com/jeremyrubin/timeout
 https://github.com/jeremysalwen/rust-permutations
@@ -6303,7 +6110,6 @@ https://github.com/jethrogb/rust-reduce
 https://github.com/jgall/forecast-rs-async
 https://github.com/jgallagher/amiquip
 https://github.com/jgallagher/rusqlite
-https://github.com/jgallagher/rusqlite.git
 https://github.com/jgallagher/thread_isolated
 https://github.com/jgraef/authy-rs
 https://github.com/jgriebler/mycon
@@ -6315,7 +6121,6 @@ https://github.com/jhbabon/scout
 https://github.com/jhbabon/slate
 https://github.com/jhelwig/unicorn-hat-hd-rs
 https://github.com/jhspetersson/fselect
-https://github.com/jhspetersson/fselect.git
 https://github.com/jianingy/hack_log
 https://github.com/jibi/rust-unicornd-client
 https://github.com/jice-nospam/doryen-fov
@@ -6352,6 +6157,7 @@ https://github.com/jkcclemens/paste.git
 https://github.com/jkcclemens/quoted_strings
 https://github.com/jkcclemens/timestamp
 https://github.com/jkcclemens/yulid
+https://github.com/jkristell/infrared
 https://github.com/jkristell/segment-display
 https://github.com/jkristell/tpa2016d2
 https://github.com/jld/nss-certdata-parser
@@ -6408,7 +6214,6 @@ https://github.com/jneem/refinery
 https://github.com/jneem/teddy
 https://github.com/jnferner/wonderbox
 https://github.com/jni-rs/jni-rs
-https://github.com/jni-rs/jni-rs.git
 https://github.com/jnicklas/build_compile
 https://github.com/jnqnfe/pulse-binding-rust
 https://github.com/joaosa/hello-rust
@@ -6516,7 +6321,6 @@ https://github.com/jorenvo/recaman
 https://github.com/joshleeb/ownrs
 https://github.com/joshleeb/recaman
 https://github.com/joshleeb/varianteq
-https://github.com/joshmarlow/ai_kit-rs.git
 https://github.com/joshmarlow/behold-rs
 https://github.com/joshrule/term-rewriting-rs
 https://github.com/joshtriplett/colorparse
@@ -6643,6 +6447,7 @@ https://github.com/kamalmarhubi/rust-perf-events
 https://github.com/kamarkiewicz/parsip
 https://github.com/kamek-pf/stackdriver-logger
 https://github.com/kanru/libtool-rs
+https://github.com/kanru/xfetch-rs
 https://github.com/kardeiz/awmp
 https://github.com/kardeiz/dbi
 https://github.com/kardeiz/erst
@@ -6756,7 +6561,6 @@ https://github.com/kevinmehall/codemap
 https://github.com/kevinmehall/codemap-diagnostic
 https://github.com/kevinmehall/external_set
 https://github.com/kevinmehall/rust-peg
-https://github.com/kevinmehall/rust-peg.git
 https://github.com/kevinmehall/rust-usb
 https://github.com/kevinmehall/rust-vcd
 https://github.com/kevinswiber/picohttpparser-sys
@@ -6778,7 +6582,6 @@ https://github.com/killercup/hsl-rs.git
 https://github.com/killercup/is_anagram
 https://github.com/killercup/macromusic
 https://github.com/killercup/quicli
-https://github.com/killercup/quicli.git
 https://github.com/killercup/roff-rs
 https://github.com/killercup/rust-sortStringToSql
 https://github.com/killercup/static-filez
@@ -6806,7 +6609,6 @@ https://github.com/kirillkh/rs_teardown_tree.git
 https://github.com/kisasexypantera94/khalzam-rs
 https://github.com/kisasexypantera94/mpg123-rs
 https://github.com/kivikakk/comrak
-https://github.com/kivikakk/comrak.git
 https://github.com/kiwiyou/craftping
 https://github.com/kjetilkjeka/dynamixel.rs
 https://github.com/kjetilkjeka/embedded-types.rs
@@ -6818,7 +6620,6 @@ https://github.com/kjgorman/basiccms.rs
 https://github.com/kjgorman/editdistancewf
 https://github.com/kjgorman/hll.rs
 https://github.com/kkawakam/rustyline
-https://github.com/kkawakam/rustyline.git
 https://github.com/kkayal/bitlab
 https://github.com/kkayal/shorten
 https://github.com/kkpoon/seq_logger
@@ -6837,7 +6638,6 @@ https://github.com/klingtnet/rci
 https://github.com/klingtnet/rsoundio
 https://github.com/kmcallister/sat
 https://github.com/kmcallister/syscall.rs
-https://github.com/kmcallister/syscall.rs.git
 https://github.com/kmeisthax/rapidtar
 https://github.com/knarz/rcurl
 https://github.com/kngwyu/error-chain-mini
@@ -6885,7 +6685,6 @@ https://github.com/kosta/atomic-counter
 https://github.com/kotovalexarian/protoloop.git
 https://github.com/koute/cargo-shim
 https://github.com/koute/cargo-web
-https://github.com/koute/cargo-web.git
 https://github.com/koute/hooky
 https://github.com/koute/libretro-backend
 https://github.com/koute/libretro-sys
@@ -6893,7 +6692,6 @@ https://github.com/koute/memory-pool
 https://github.com/koute/sarek
 https://github.com/koute/speedy
 https://github.com/koute/stdweb
-https://github.com/koute/stdweb.git
 https://github.com/kpcyrd/boxxy-rs
 https://github.com/kpcyrd/burritun
 https://github.com/kpcyrd/cargo-debstatus
@@ -6916,7 +6714,6 @@ https://github.com/krdln/command-macros
 https://github.com/krdln/fomat-macros
 https://github.com/krdln/whiteread
 https://github.com/kriomant/mockers
-https://github.com/kriomant/mockers.git
 https://github.com/kriomant/ogrep-rs.git
 https://github.com/kriomant/panic-context.git
 https://github.com/krisprice/ipnet
@@ -6969,7 +6766,6 @@ https://github.com/kuviman/glitchcat
 https://github.com/kvakvs/ErlangRT.git
 https://github.com/kvark/binary-space-partition
 https://github.com/kvark/copyless
-https://github.com/kvark/copyless.git
 https://github.com/kvark/froggy
 https://github.com/kvark/mint
 https://github.com/kvark/obj
@@ -7007,7 +6803,6 @@ https://github.com/lakelezz/hey_listen.git
 https://github.com/lakelezz/white_rabbit.git
 https://github.com/lakinwecker/pgn-lexer
 https://github.com/lalrpop/lalrpop
-https://github.com/lalrpop/lalrpop.git
 https://github.com/lambdasqd/enum_str-rs
 https://github.com/lambdastackio/docker-rs
 https://github.com/lambdastackio/grpc-rust
@@ -7102,7 +6897,6 @@ https://github.com/letheed/takuzu
 https://github.com/lettenj61/curl-rust-easybuilder
 https://github.com/lettenj61/rucky
 https://github.com/lettre/lettre
-https://github.com/lettre/lettre.git
 https://github.com/leucoide/stalker
 https://github.com/leudz/beach_map
 https://github.com/leudz/co_sort
@@ -7115,7 +6909,6 @@ https://github.com/lfairy/duck
 https://github.com/lfairy/if_chain
 https://github.com/lfairy/ip-macro
 https://github.com/lfairy/maud
-https://github.com/lfairy/maud.git
 https://github.com/lfairy/option-filter
 https://github.com/lfairy/ps
 https://github.com/lfairy/rust-errno
@@ -7137,11 +6930,9 @@ https://github.com/libOctavo/static-buffer.git
 https://github.com/libheartbeats/heartbeats-simple-rust
 https://github.com/libheartbeats/heartbeats-simple-sys
 https://github.com/libp2p/rust-libp2p
-https://github.com/libp2p/rust-libp2p.git
 https://github.com/libpasta/libpasta
 https://github.com/libpasta/serde_mcf
 https://github.com/libpnet/libpnet
-https://github.com/libpnet/libpnet.git
 https://github.com/libpnet/rust-netmap
 https://github.com/librespot-org/librespot
 https://github.com/libstorage/libstoragemgmt-rust
@@ -7152,7 +6943,6 @@ https://github.com/lifthrasiir/hexf
 https://github.com/lifthrasiir/num-cmp
 https://github.com/lifthrasiir/rust-basehangul
 https://github.com/lifthrasiir/rust-encoding
-https://github.com/lifthrasiir/rust-encoding.git
 https://github.com/lifthrasiir/rust-natord
 https://github.com/lights0123/embedded-ffi
 https://github.com/lights0123/embedded-freetype-sys
@@ -7178,7 +6968,6 @@ https://github.com/linkosmos/tld
 https://github.com/linyows/glip
 https://github.com/lipanski/httpal
 https://github.com/lipanski/mockito
-https://github.com/lipanski/mockito.git
 https://github.com/lipk/hunspell-rust
 https://github.com/lipk/rust-gdb
 https://github.com/liptk/liptk-rs
@@ -7189,7 +6978,6 @@ https://github.com/lise-henry/caribon
 https://github.com/lise-henry/crowbook-intl
 https://github.com/lise-henry/crowbook-intl-runtime
 https://github.com/lise-henry/crowbook-text-processing
-https://github.com/lise-henry/crowbook.git
 https://github.com/lise-henry/genderly
 https://github.com/lise-henry/rust-ispell
 https://github.com/lispyclouds/mpw-rs.git
@@ -7216,9 +7004,7 @@ https://github.com/ljedrz/lambda_calculus
 https://github.com/llogiq/bytecount
 https://github.com/llogiq/compact_arena
 https://github.com/llogiq/flamer
-https://github.com/llogiq/flamer.git
 https://github.com/llogiq/mutagen
-https://github.com/llogiq/mutagen.git
 https://github.com/llogiq/optional
 https://github.com/llogiq/overflower
 https://github.com/llogiq/partition
@@ -7228,7 +7014,6 @@ https://github.com/llogiq/smallvectune
 https://github.com/llogiq/ternary
 https://github.com/lloydmeta/chase-rs
 https://github.com/lloydmeta/frunk
-https://github.com/lloydmeta/frunk.git
 https://github.com/lloydmeta/nqueens-rs
 https://github.com/lluchs/eventsource
 https://github.com/lnenad/cmd-parser-rs
@@ -7242,7 +7027,6 @@ https://github.com/local-group/rust-wechatpay
 https://github.com/loganek/hawktracer-converter
 https://github.com/loganintech/gitpub
 https://github.com/loggerhead/shadowsocks-rust
-https://github.com/loggerhead/shadowsocks-rust.git
 https://github.com/lolzballs/i2cdev-bno055
 https://github.com/lonesword/matchertools
 https://github.com/lonesword/rustynews
@@ -7257,7 +7041,6 @@ https://github.com/loony-bean/stopwords-rs
 https://github.com/loony-bean/textplots-rs
 https://github.com/loovjo/ytesrev
 https://github.com/lord/backtalk
-https://github.com/lord/backtalk.git
 https://github.com/lord/gql
 https://github.com/lord/webbing
 https://github.com/lordarthas/codice_fiscale
@@ -7271,7 +7054,6 @@ https://github.com/lostutils/groupby
 https://github.com/lotabout/fuzzy-matcher
 https://github.com/lotabout/rargs
 https://github.com/lotabout/skim
-https://github.com/lotabout/skim.git
 https://github.com/lotabout/tuikit
 https://github.com/lovasoa/custom_error
 https://github.com/lovasoa/json_in_type
@@ -7333,7 +7115,6 @@ https://github.com/lukaramu/tiamat
 https://github.com/lukaslueg/built
 https://github.com/lukaslueg/hyperminhash
 https://github.com/lukaslueg/macro_railroad
-https://github.com/lukaslueg/macro_railroad.git
 https://github.com/lukaslueg/railroad
 https://github.com/lukaslueg/railroad_dsl
 https://github.com/lukaslueg/volkswagen
@@ -7363,7 +7144,6 @@ https://github.com/lumol-org/soa-derive
 https://github.com/lunaryorn/gethostname.rs.git
 https://github.com/lunaryorn/git-gone
 https://github.com/lunaryorn/mdcat
-https://github.com/lunaryorn/mdcat.git
 https://github.com/lunaryorn/term-background.rs
 https://github.com/lunaryorn/xkpwgen.rs
 https://github.com/lunemec/rust-birkana
@@ -7409,12 +7189,10 @@ https://github.com/m-r-r/stdio_logger.git
 https://github.com/m0ppers/simple-selectors
 https://github.com/m1m3-50/shiny_cli_utils.git
 https://github.com/m4b/bingrep
-https://github.com/m4b/bingrep.git
 https://github.com/m4b/capstone-rs
 https://github.com/m4b/cargo-sym
 https://github.com/m4b/faerie
 https://github.com/m4b/goblin
-https://github.com/m4b/goblin.git
 https://github.com/m4b/lazy_transducer
 https://github.com/m4b/metagoblin
 https://github.com/m4b/raml
@@ -7423,9 +7201,7 @@ https://github.com/m4b/scroll_derive
 https://github.com/macabu/preshrng.git
 https://github.com/maciejhirsz/DEC64
 https://github.com/maciejhirsz/json-rust
-https://github.com/maciejhirsz/json-rust.git
 https://github.com/maciejhirsz/logos
-https://github.com/maciejhirsz/logos.git
 https://github.com/maciejhirsz/pixelate
 https://github.com/maciejhirsz/ramhorns
 https://github.com/maciejhirsz/substrate-bip39
@@ -7433,11 +7209,9 @@ https://github.com/maciejhirsz/tiny-bip39
 https://github.com/maciejhirsz/tiny-hderive
 https://github.com/maciejhirsz/tiny-secp256k1
 https://github.com/maciejkula/rustlearn
-https://github.com/maciejkula/rustlearn.git
 https://github.com/macisamuele/json-trait-rs
 https://github.com/macisamuele/loader-rs
 https://github.com/mackwic/colored
-https://github.com/mackwic/colored.git
 https://github.com/mackwic/rspec
 https://github.com/mackwic/to_string
 https://github.com/macoss/pjlink
@@ -7518,7 +7292,6 @@ https://github.com/magiclen/xcompress
 https://github.com/magmast/xfce4_natural_scroll
 https://github.com/magnet/aspect-rs
 https://github.com/magnet/metered-rs
-https://github.com/magnet/metered-rs.git
 https://github.com/magnet/socrates-rs
 https://github.com/magnet/synattra
 https://github.com/magnusmanske/semanticscholar
@@ -7574,7 +7347,6 @@ https://github.com/manuels/taikai
 https://github.com/manute/rawsql
 https://github.com/mapbox/Hecate
 https://github.com/maplant/mgf
-https://github.com/maps4print/azul.git
 https://github.com/marad/hyper-router
 https://github.com/marad/kv-crud-core
 https://github.com/marad/kv-crud-memory
@@ -7586,6 +7358,7 @@ https://github.com/marcelbuesing/dbcc.git
 https://github.com/marcelbuesing/rust-gpsd
 https://github.com/marcelbuesing/tokio-socketcan-bcm.git
 https://github.com/marcellBan/rgb2yuv420-rs
+https://github.com/marcesquerra/cases
 https://github.com/marcianx/bitvec-rs
 https://github.com/marcianx/downcast-rs
 https://github.com/marcio-diaz/spanish-numbers
@@ -7656,14 +7429,12 @@ https://github.com/matter-labs/sapling-crypto
 https://github.com/mattforni/args
 https://github.com/mattforni/touch
 https://github.com/mattgathu/cute
-https://github.com/mattgathu/cute.git
 https://github.com/mattgathu/duma
 https://github.com/mattgathu/minreq
 https://github.com/mattgathu/slugify
 https://github.com/matthewwoodruff/sdoc
 https://github.com/matthiasbeyer/amt
 https://github.com/matthiasbeyer/filters
-https://github.com/matthiasbeyer/imag.git
 https://github.com/matthiasbeyer/is-match
 https://github.com/matthiasbeyer/kairos
 https://github.com/matthiasbeyer/repolocli
@@ -7748,9 +7519,7 @@ https://github.com/mcasper/dogstatsd-rs
 https://github.com/mcasper/git-clean
 https://github.com/mcginty/mio-utun
 https://github.com/mcginty/shoop
-https://github.com/mcginty/shoop.git
 https://github.com/mcginty/snow
-https://github.com/mcginty/snow.git
 https://github.com/mcginty/tokio-utun
 https://github.com/mcgoo/vcpkg-rs
 https://github.com/mciantyre/python-config-rs
@@ -7821,17 +7590,14 @@ https://github.com/mehcode/actix-diesel
 https://github.com/mehcode/actix-web-async-await
 https://github.com/mehcode/axal
 https://github.com/mehcode/config-rs
-https://github.com/mehcode/config-rs.git
 https://github.com/mehcode/guerrilla
 https://github.com/mehcode/oauth1-rs
 https://github.com/mehcode/salt
 https://github.com/mehcode/shio-rs
-https://github.com/mehcode/shio-rs.git
 https://github.com/mehcode/tokio-diesel
 https://github.com/mehrati/cargo-env
 https://github.com/mehrati/ccwd
 https://github.com/meilisearch/MeiliES
-https://github.com/meilisearch/MeiliES.git
 https://github.com/melak47/treesize-rs
 https://github.com/melodyaheath/blake2
 https://github.com/memchk/jungle-rs
@@ -7921,7 +7687,6 @@ https://github.com/michiel/jsonapi-rust.git
 https://github.com/micouy/ising_lib
 https://github.com/micouy/plotka
 https://github.com/microsoft/avml
-https://github.com/microsoft/avml.git
 https://github.com/miedzinski/prefix-tree.rs
 https://github.com/miek/sht3x-rs
 https://github.com/miek/shtc1-rs
@@ -8001,18 +7766,14 @@ https://github.com/mitchmindtree/sled-search.git
 https://github.com/mitchmindtree/sled-web.git
 https://github.com/mitchmindtree/utils-rs.git
 https://github.com/mitnk/cicada
-https://github.com/mitnk/cicada.git
 https://github.com/mitrid-labs/mitrid-core
 https://github.com/mitsuhiko/better-panic
 https://github.com/mitsuhiko/clicolors-control
 https://github.com/mitsuhiko/elementtree-rust
 https://github.com/mitsuhiko/error-chain-compat
 https://github.com/mitsuhiko/indicatif
-https://github.com/mitsuhiko/indicatif.git
 https://github.com/mitsuhiko/insta
-https://github.com/mitsuhiko/insta.git
 https://github.com/mitsuhiko/redis-rs
-https://github.com/mitsuhiko/redis-rs.git
 https://github.com/mitsuhiko/rust-execution-context
 https://github.com/mitsuhiko/rust-fragile
 https://github.com/mitsuhiko/rust-sha1
@@ -8038,7 +7799,6 @@ https://github.com/mkpankov/bread.git
 https://github.com/mkroman/rss-watch
 https://github.com/mlalic/hpack-rs
 https://github.com/mlalic/solicit
-https://github.com/mlalic/solicit.git
 https://github.com/mleprince/rust-edf
 https://github.com/mleprince/rust-local-edf-reader
 https://github.com/mlevesquedion/next_prime
@@ -8049,11 +7809,8 @@ https://github.com/mmastrac/rust-libc-print
 https://github.com/mmitteregger/gherkin-rust
 https://github.com/mmrath/pure_decimal
 https://github.com/mmstick/cargo-deb
-https://github.com/mmstick/cargo-deb.git
 https://github.com/mmstick/fontfinder
-https://github.com/mmstick/fontfinder.git
 https://github.com/mmstick/parallel
-https://github.com/mmstick/parallel.git
 https://github.com/mmstick/permutate
 https://github.com/mneumann/acyclic-network-rs
 https://github.com/mneumann/asexp-rs
@@ -8088,7 +7845,6 @@ https://github.com/mohtar/rust-fastcgi
 https://github.com/monero-rs/base58-monero-rs
 https://github.com/monero-rs/monero-rs
 https://github.com/mongodb-labs/mongo-rust-driver-prototype
-https://github.com/mongodb-labs/mongo-rust-driver-prototype.git
 https://github.com/monocasa/rs64-periph
 https://github.com/monocasa/rs64-rom
 https://github.com/monocasa/rs64-rt
@@ -8118,13 +7874,11 @@ https://github.com/mozilla/janus-plugin-rs
 https://github.com/mozilla/mentat.git
 https://github.com/mozilla/moz-cheddar
 https://github.com/mozilla/mp4parse-rust
-https://github.com/mozilla/mp4parse-rust.git
 https://github.com/mozilla/mp4parse_fallible
 https://github.com/mozilla/rkv
 https://github.com/mozilla/rust-ece
 https://github.com/mozilla/rust-parsepatch
 https://github.com/mozilla/sccache
-https://github.com/mozilla/sccache.git
 https://github.com/mpaltun/asciifolding
 https://github.com/mpapierski/compressed_log
 https://github.com/mpdrescher/run-info
@@ -8135,7 +7889,6 @@ https://github.com/mrandri19/rust-editorconfig
 https://github.com/mrbus/subset
 https://github.com/mrcosta/ranbumfy
 https://github.com/mre/cargo-inspect
-https://github.com/mre/cargo-inspect.git
 https://github.com/mre/envy
 https://github.com/mre/prettyprint
 https://github.com/mrhooray/crc-rs.git
@@ -8168,7 +7921,6 @@ https://github.com/mthh/contour-rs
 https://github.com/mthom/prolog_parser
 https://github.com/mthom/rusty-wam
 https://github.com/mthom/scryer-prolog
-https://github.com/mthom/scryer-prolog.git
 https://github.com/mtio/ripemd128
 https://github.com/mtkennerly/stelsalto
 https://github.com/mtorromeo/gearman-worker-rs.git
@@ -8224,7 +7976,6 @@ https://github.com/mycorrhiza/varmint-rs
 https://github.com/myelin-ai/engine
 https://github.com/myelin-ai/geometry
 https://github.com/myelin-ai/mockiato
-https://github.com/myelin-ai/mockiato.git
 https://github.com/myelin-ai/slablit
 https://github.com/myelin-ai/unordered-pair
 https://github.com/myfreeweb/colorhash256
@@ -8248,7 +7999,6 @@ https://github.com/mystor/enum_extract
 https://github.com/mystor/literalext
 https://github.com/mystor/radium
 https://github.com/mystor/rust-cpp
-https://github.com/mystor/rust-cpp.git
 https://github.com/mystor/synstructure
 https://github.com/mzabaluev/digest-hash-rs
 https://github.com/mzabaluev/mrkl
@@ -8270,7 +8020,6 @@ https://github.com/nabijaczleweli/BearLibTerminal.rs
 https://github.com/nabijaczleweli/bidir-map-rs
 https://github.com/nabijaczleweli/blake-rs
 https://github.com/nabijaczleweli/cargo-update
-https://github.com/nabijaczleweli/cargo-update.git
 https://github.com/nabijaczleweli/checksums
 https://github.com/nabijaczleweli/codepage-437
 https://github.com/nabijaczleweli/gen-epub-book.rs
@@ -8293,7 +8042,6 @@ https://github.com/nagisa/msi-rgb.git
 https://github.com/nagisa/psm
 https://github.com/nagisa/rust_arbitrary
 https://github.com/nagisa/rust_libloading
-https://github.com/nagisa/rust_libloading.git
 https://github.com/nagisa/rust_rdrand
 https://github.com/nagisa/target_build_utils.rs
 https://github.com/nagisa/tokio-periodic
@@ -8321,7 +8069,6 @@ https://github.com/natemara/bmp280
 https://github.com/natemara/rust-list-builder
 https://github.com/nathan-osman/rust-sunrise
 https://github.com/nathan/pax
-https://github.com/nathan/pax.git
 https://github.com/nathan7/libfringe
 https://github.com/nathan7/libvalgrind_request
 https://github.com/nathanielsimard/mock-it
@@ -8372,7 +8119,6 @@ https://github.com/nelsonjchen/speedtest-rs
 https://github.com/neobirth/purezen
 https://github.com/neoeinstein/new_type_derive
 https://github.com/neoeinstein/stats_alloc
-https://github.com/neon-bindings/neon.git
 https://github.com/neon64/chrome-native-messaging
 https://github.com/neon64/spirv
 https://github.com/neon64/ubiquity
@@ -8416,7 +8162,6 @@ https://github.com/netvl/gmp-sys
 https://github.com/netvl/immeta
 https://github.com/netvl/shellexpand
 https://github.com/netvl/xml-rs
-https://github.com/netvl/xml-rs.git
 https://github.com/newpavlov/durations-rs
 https://github.com/newpavlov/parstream
 https://github.com/nexes/algo
@@ -8436,7 +8181,6 @@ https://github.com/niamster/woodpecker
 https://github.com/niax/rust-email
 https://github.com/nical/guillotiere
 https://github.com/nical/lyon
-https://github.com/nical/lyon.git
 https://github.com/nical/sid
 https://github.com/nicholas-miklaucic/scarlet
 https://github.com/nicholasbishop/autoshutdown
@@ -8455,7 +8199,6 @@ https://github.com/nickbrowne/nsvg
 https://github.com/nickdonnelly/from_int
 https://github.com/nickel-org/cookies
 https://github.com/nickel-org/nickel.rs
-https://github.com/nickel-org/nickel.rs.git
 https://github.com/nickel-org/rust-mustache
 https://github.com/nickelc/dbl-rs
 https://github.com/nickelc/hpk
@@ -8505,7 +8248,6 @@ https://github.com/nitsky/term-parser
 https://github.com/nivekuil/rculock
 https://github.com/nivekuil/rip
 https://github.com/nix-rust/nix
-https://github.com/nix-rust/nix.git
 https://github.com/nixpulvis/lalrpop-lambda
 https://github.com/njaard/idcurl
 https://github.com/njaard/lz4util
@@ -8525,6 +8267,7 @@ https://github.com/nlnetlabs/domain
 https://github.com/nlopes/libhoney-rust.git
 https://github.com/nlsnightmare/rails
 https://github.com/nmrshll/oauth2-noserver-rs
+https://github.com/no111u3/tmc5160
 https://github.com/noahp/diffelf
 https://github.com/noahp/http-status-print.git
 https://github.com/noahrinehart/cmos
@@ -8591,7 +8334,6 @@ https://github.com/npmccallum/voncount
 https://github.com/npryce/reservoir-rs
 https://github.com/nrc/darkly
 https://github.com/nrc/derive-new
-https://github.com/nrc/derive-new.git
 https://github.com/nrc/proc-macro-rules
 https://github.com/nrc/rls-blacklist
 https://github.com/nrc/rustc-version
@@ -8663,12 +8405,10 @@ https://github.com/nzsc-org/nzscq
 https://github.com/o0Ignition0o/crawl-rs
 https://github.com/o2sh/add-one
 https://github.com/o2sh/onefetch
-https://github.com/o2sh/onefetch.git
 https://github.com/oakes/neovim-rs
 https://github.com/oasislabs/owasm-abi
 https://github.com/oasislabs/owasm-ethereum
 https://github.com/oasislabs/owasm-std
-https://github.com/oasislabs/owasm-std.git
 https://github.com/oasislabs/owasm-utils
 https://github.com/oasislabs/wasi-types
 https://github.com/oberien/rust-aes-stream
@@ -8687,7 +8427,6 @@ https://github.com/oconnor663/blake2_c.rs
 https://github.com/oconnor663/blake2_simd
 https://github.com/oconnor663/copy_in_place
 https://github.com/oconnor663/duct.rs
-https://github.com/oconnor663/duct.rs.git
 https://github.com/oconnor663/os_pipe.rs
 https://github.com/oconnor663/shared_child.rs
 https://github.com/octplane/rust-linenoise
@@ -8745,7 +8484,6 @@ https://github.com/onecodex/taxonomy
 https://github.com/onelson/jq-src
 https://github.com/onelson/omn-sprites-rs
 https://github.com/onur/acme-client
-https://github.com/onur/acme-client.git
 https://github.com/onur/cargo-license
 https://github.com/onur/docs.rs
 https://github.com/onur/ssl-expiration
@@ -8771,9 +8509,7 @@ https://github.com/orenbenkiki/loggy
 https://github.com/orhanbalci/rust-easing.git
 https://github.com/orium/archery
 https://github.com/orium/rpds
-https://github.com/orium/rpds.git
 https://github.com/orlp/slotmap
-https://github.com/orlp/slotmap.git
 https://github.com/orottier/rust-warc
 https://github.com/orottier/text-index
 https://github.com/orottier/webpage-rs
@@ -8793,7 +8529,6 @@ https://github.com/outersky/simple_excel_writer
 https://github.com/overdrivenpotato/global
 https://github.com/overdrivenpotato/once_nonstatic
 https://github.com/overdrivenpotato/rust-vst2
-https://github.com/overdrivenpotato/rust-vst2.git
 https://github.com/overdrop/liboverdrop-rs
 https://github.com/overvenus/hanger
 https://github.com/ovh/rust-log4rs-gelf
@@ -8808,7 +8543,6 @@ https://github.com/oxy-secure/transportation
 https://github.com/oyvindln/deflate-rs
 https://github.com/oyvindln/gzip-header
 https://github.com/p-e-w/hegemon
-https://github.com/p-e-w/hegemon.git
 https://github.com/p-jackson/entities
 https://github.com/p-jackson/how-do-i-escape
 https://github.com/pLesur/OptionalStruct
@@ -8831,10 +8565,8 @@ https://github.com/padenot/audio-clock
 https://github.com/padenot/euclidian-rythm
 https://github.com/padenot/monome-rs
 https://github.com/paholg/dimensioned
-https://github.com/paholg/dimensioned.git
 https://github.com/paholg/peano
 https://github.com/paholg/typenum
-https://github.com/paholg/typenum.git
 https://github.com/paileyq/minimap
 https://github.com/pajowu/signal-backup-decode
 https://github.com/palango/progressive
@@ -8884,7 +8616,6 @@ https://github.com/paritytech/ethcore-logger
 https://github.com/paritytech/exit-future
 https://github.com/paritytech/finality-grandpa
 https://github.com/paritytech/jsonrpc
-https://github.com/paritytech/jsonrpc.git
 https://github.com/paritytech/lunarity
 https://github.com/paritytech/nohash-hasher
 https://github.com/paritytech/parity
@@ -8893,7 +8624,6 @@ https://github.com/paritytech/parity-common
 https://github.com/paritytech/parity-daemonize
 https://github.com/paritytech/parity-ethereum
 https://github.com/paritytech/parity-wasm
-https://github.com/paritytech/parity-wasm.git
 https://github.com/paritytech/pwasm-abi
 https://github.com/paritytech/pwasm-ethereum
 https://github.com/paritytech/pwasm-std
@@ -8906,7 +8636,6 @@ https://github.com/paritytech/soketto
 https://github.com/paritytech/trie
 https://github.com/paritytech/unsigned-varint
 https://github.com/paritytech/wasmi
-https://github.com/paritytech/wasmi.git
 https://github.com/paritytech/wordlist
 https://github.com/paritytech/ws-rs
 https://github.com/paritytech/yamux
@@ -8915,7 +8644,6 @@ https://github.com/parsing-tech/org-rs
 https://github.com/partim/netdb
 https://github.com/parumu/esc-seq
 https://github.com/passcod/cargo-watch
-https://github.com/passcod/cargo-watch.git
 https://github.com/passcod/catflap
 https://github.com/passcod/certainly
 https://github.com/passcod/notify.git
@@ -8942,7 +8670,6 @@ https://github.com/paullgdc/hyper-trust-dns-connector
 https://github.com/paulocsanz/arraystring
 https://github.com/paulocsanz/voluntary-servitude
 https://github.com/paupino/rust-decimal
-https://github.com/paupino/rust-decimal.git
 https://github.com/pavchip/textile-rs
 https://github.com/payper-src/suzume
 https://github.com/pbielak/docker-cmd
@@ -9028,7 +8755,6 @@ https://github.com/phaazon/cargo-sync-readme
 https://github.com/phaazon/cheddar
 https://github.com/phaazon/glsl
 https://github.com/phaazon/html-entities
-https://github.com/phaazon/luminance-rs.git
 https://github.com/phaazon/proc-macro-faithful-display
 https://github.com/phaazon/splines
 https://github.com/phaazon/try-guard
@@ -9084,7 +8810,6 @@ https://github.com/pholactery/eventsourcing
 https://github.com/phoracek/kubewatch
 https://github.com/photex/hedge
 https://github.com/phsym/prettytable-rs
-https://github.com/phsym/prettytable-rs.git
 https://github.com/phsym/rust-sctp
 https://github.com/phsym/sctp-sys
 https://github.com/phsym/shrust
@@ -9108,9 +8833,7 @@ https://github.com/pietgeursen/private-box-rs
 https://github.com/pietroalbini/fisher
 https://github.com/pietrovismara/rson
 https://github.com/pikelet-lang/pikelet
-https://github.com/pikelet-lang/pikelet.git
 https://github.com/pikkr/pikkr
-https://github.com/pikkr/pikkr.git
 https://github.com/pimeys/a2.git
 https://github.com/pimeys/hyper-alpn.git
 https://github.com/pimeys/rust-web-push
@@ -9118,9 +8841,7 @@ https://github.com/pinecrew/linal
 https://github.com/pinecrew/tini
 https://github.com/pingcap/fail-rs
 https://github.com/pingcap/raft-rs
-https://github.com/pingcap/raft-rs.git
 https://github.com/pingcap/rust-prometheus
-https://github.com/pingcap/rust-prometheus.git
 https://github.com/pingw33n/ogg_vorbis_ref
 https://github.com/pingw33n/rust-futures-mpmc
 https://github.com/piot/git-backup
@@ -9170,6 +8891,7 @@ https://github.com/plasma-umass/ilvm
 https://github.com/plasmapower/intersections
 https://github.com/playXE/const-if
 https://github.com/playXE/hmap
+https://github.com/playXE/mimalloc-rs
 https://github.com/plazma-tool/rocket_client
 https://github.com/plazma-tool/rocket_sync
 https://github.com/plopgrizzly/adi
@@ -9199,7 +8921,6 @@ https://github.com/pnkfelix/tango
 https://github.com/pnnl/external_sort
 https://github.com/pnnl/file_tree
 https://github.com/poanetwork/hbbft
-https://github.com/poanetwork/hbbft.git
 https://github.com/poanetwork/hex_fmt
 https://github.com/poanetwork/rand04_compat
 https://github.com/poanetwork/threshold_crypto
@@ -9214,7 +8935,6 @@ https://github.com/polachok/atpco-types
 https://github.com/polachok/bpfjit
 https://github.com/polachok/derive-diff
 https://github.com/polachok/fahrenheit
-https://github.com/polachok/fahrenheit.git
 https://github.com/polachok/iata-types
 https://github.com/polachok/libvirt-rpc
 https://github.com/polachok/mio-afpacket
@@ -9286,7 +9006,6 @@ https://github.com/programble/xn--ls8h
 https://github.com/project-fifo/aud
 https://github.com/projectfluent/fluent-locale-rs
 https://github.com/projectfluent/fluent-rs
-https://github.com/projectfluent/fluent-rs.git
 https://github.com/proman21/futures-mutex
 https://github.com/protectwise/net-parser-rs
 https://github.com/prove-rs/z3.rs.git
@@ -9346,7 +9065,6 @@ https://github.com/pyo3/pyo3
 https://github.com/pyo3/pyo3-built.git
 https://github.com/pyo3/pyo3-pack
 https://github.com/pyros2097/rust-embed
-https://github.com/pyros2097/rust-embed.git
 https://github.com/pzmarzly/portforwarder-rs
 https://github.com/pzmarzly/x11-input-mirror
 https://github.com/pzol/iso_country
@@ -9356,7 +9074,6 @@ https://github.com/qard/gqlog
 https://github.com/qdwang/glr-parser-rs
 https://github.com/qfire/extdot
 https://github.com/qmonnet/rbpf
-https://github.com/qmonnet/rbpf.git
 https://github.com/qmx/cargo-docserver
 https://github.com/qmx/cpubars
 https://github.com/qmx/wk
@@ -9412,7 +9129,6 @@ https://github.com/quodlibetor/diesel-derive-newtype
 https://github.com/quodlibetor/uuid-b64
 https://github.com/qzed/serde_tagged
 https://github.com/r-darwish/topgrade
-https://github.com/r-darwish/topgrade.git
 https://github.com/r-util/r-efi
 https://github.com/r-util/r-efi-string
 https://github.com/r-util/r-fairdist
@@ -9463,7 +9179,6 @@ https://github.com/ranweiler/dent
 https://github.com/ranweiler/stamp
 https://github.com/raphlinus/font-rs.git
 https://github.com/raphlinus/pulldown-cmark
-https://github.com/raphlinus/pulldown-cmark.git
 https://github.com/rapiditynetworks/bingmaps-rs
 https://github.com/rapiditynetworks/stripe-rs
 https://github.com/rappet/rust-pixelflut
@@ -9472,7 +9187,6 @@ https://github.com/rasserudenisu/nipponium
 https://github.com/rasviitanen/rustysignal
 https://github.com/rasviitanen/svgmacro
 https://github.com/ratel-rust/ratel-core
-https://github.com/ratel-rust/ratel-core.git
 https://github.com/ratel-rust/toolshed
 https://github.com/ratpoison-io/coaster
 https://github.com/ravenscroftj/apiai.rs
@@ -9492,7 +9206,6 @@ https://github.com/rbspy/rbspy-testdata
 https://github.com/rbspy/rbspy.git
 https://github.com/rcarson3/rust_data_reader
 https://github.com/rcoh/angle-grinder
-https://github.com/rcoh/angle-grinder.git
 https://github.com/rcolinray/trex
 https://github.com/rcore-os/buddy_system_allocator
 https://github.com/realtable/surreal
@@ -9536,7 +9249,6 @@ https://github.com/reem/rust-unreachable.git
 https://github.com/reem/rust-variance.git
 https://github.com/reem/rust-void.git
 https://github.com/regexident/cargo-modules
-https://github.com/regexident/cargo-modules.git
 https://github.com/regexident/median
 https://github.com/regexident/rust-seal
 https://github.com/regexident/sorting_networks
@@ -9572,13 +9284,11 @@ https://github.com/rep-nop/mac_address
 https://github.com/rep-nop/procopt
 https://github.com/rep-nop/testgen
 https://github.com/repi/shadertoy-browser
-https://github.com/repi/shadertoy-browser.git
 https://github.com/republicprotocol/zksnark-rs
 https://github.com/reset/wonder
 https://github.com/retep007/javascript-lexer
 https://github.com/retep998/bunny-rs
 https://github.com/retep998/winapi-rs
-https://github.com/retep998/winapi-rs.git
 https://github.com/retep998/wio-rs
 https://github.com/return/branca
 https://github.com/reujab/enquote
@@ -9620,12 +9330,10 @@ https://github.com/richo/tus
 https://github.com/richox/orz.git
 https://github.com/rickyes/xo
 https://github.com/rickyhan/tectonicdb
-https://github.com/rickyhan/tectonicdb.git
 https://github.com/ricochet1k/termrect
 https://github.com/riker-rs/riker
 https://github.com/riker-rs/riker-cqrs
 https://github.com/riker-rs/riker-patterns
-https://github.com/riker-rs/riker.git
 https://github.com/ringostarr80/rust-color-processing
 https://github.com/rinthel/word_replace.git
 https://github.com/riscv-rust/e310x
@@ -9698,7 +9406,6 @@ https://github.com/roman901/vtf-rs
 https://github.com/romankl/jade-rust
 https://github.com/romankoblov/prettydiff
 https://github.com/ron-rs/ron
-https://github.com/ron-rs/ron.git
 https://github.com/ronjakoi/voikko-rs
 https://github.com/roosta/i3wsr
 https://github.com/ropes-rs/rapt
@@ -9774,7 +9481,6 @@ https://github.com/rushmorem/derive-error
 https://github.com/rushmorem/publicsuffix
 https://github.com/rushmorem/uuid1
 https://github.com/rusoto/rusoto
-https://github.com/rusoto/rusoto.git
 https://github.com/russellmcc/gba-make-cartridge
 https://github.com/russelltg/dtree
 https://github.com/russmack/bencoderus
@@ -9784,10 +9490,8 @@ https://github.com/rust-alt/fluent-impl
 https://github.com/rust-ammonia/ammonia
 https://github.com/rust-analyzer/ra_vfs
 https://github.com/rust-analyzer/rust-analyzer
-https://github.com/rust-analyzer/rust-analyzer.git
 https://github.com/rust-analyzer/teraron
 https://github.com/rust-av/rust-av
-https://github.com/rust-av/rust-av.git
 https://github.com/rust-av/speexdsp-rs
 https://github.com/rust-bakery/cookie-factory
 https://github.com/rust-bakery/machine
@@ -9796,17 +9500,14 @@ https://github.com/rust-bakery/nom-methods
 https://github.com/rust-bakery/nom-peg
 https://github.com/rust-bakery/nom-whitespace
 https://github.com/rust-bio/rust-bio
-https://github.com/rust-bio/rust-bio.git
 https://github.com/rust-bitcoin/hammersbald
 https://github.com/rust-bitcoin/rust-bech32
 https://github.com/rust-bitcoin/rust-bech32-bitcoin
 https://github.com/rust-bitcoin/rust-bitcoin
 https://github.com/rust-bitcoin/rust-bitcoin-chain
-https://github.com/rust-bitcoin/rust-bitcoin.git
 https://github.com/rust-bitcoin/rust-bitcoincore-rpc
 https://github.com/rust-bitcoin/rust-lightning
 https://github.com/rust-bitcoin/rust-lightning-invoice
-https://github.com/rust-bitcoin/rust-lightning.git
 https://github.com/rust-bitcoin/rust-secp256k1
 https://github.com/rust-bpf/bcc-sys
 https://github.com/rust-bpf/rust-bcc
@@ -9844,13 +9545,10 @@ https://github.com/rust-crates/ergo_sys
 https://github.com/rust-crdt/rust-crdt.git
 https://github.com/rust-cxx/imgui-cxx.git
 https://github.com/rust-db/barrel
-https://github.com/rust-db/barrel.git
 https://github.com/rust-dsp/rust-vst
-https://github.com/rust-dsp/rust-vst.git
 https://github.com/rust-embedded/cortex-a
 https://github.com/rust-embedded/cortex-m
 https://github.com/rust-embedded/cortex-m-rt
-https://github.com/rust-embedded/cortex-m.git
 https://github.com/rust-embedded/embedded-hal.git
 https://github.com/rust-embedded/fixedvec-rs
 https://github.com/rust-embedded/panic-itm
@@ -9861,13 +9559,11 @@ https://github.com/rust-embedded/riscv-rt
 https://github.com/rust-embedded/rust-i2cdev
 https://github.com/rust-embedded/rust-spidev
 https://github.com/rust-embedded/rust-sysfs-gpio
-https://github.com/rust-embedded/rust-sysfs-gpio.git
 https://github.com/rust-embedded/svd2rust.git
 https://github.com/rust-fcp/rust-fcp-cryptoauth
 https://github.com/rust-fcp/rust-fcp-switching
 https://github.com/rust-fcp/rust-simple-bencode
 https://github.com/rust-fuzz/cargo-fuzz
-https://github.com/rust-fuzz/cargo-fuzz.git
 https://github.com/rust-fuzz/honggfuzz-rs
 https://github.com/rust-kms/libdrm-rs
 https://github.com/rust-lang-deprecated/rustc-serialize.git
@@ -9876,13 +9572,9 @@ https://github.com/rust-lang-nursery/cli-wg.git
 https://github.com/rust-lang-nursery/compiler-builtins
 https://github.com/rust-lang-nursery/datafrog
 https://github.com/rust-lang-nursery/error-chain
-https://github.com/rust-lang-nursery/error-chain.git
-https://github.com/rust-lang-nursery/failure.git
 https://github.com/rust-lang-nursery/futures-rs
 https://github.com/rust-lang-nursery/lazy-static.rs
-https://github.com/rust-lang-nursery/lazy-static.rs.git
 https://github.com/rust-lang-nursery/libm
-https://github.com/rust-lang-nursery/libm.git
 https://github.com/rust-lang-nursery/log.git
 https://github.com/rust-lang-nursery/mdBook
 https://github.com/rust-lang-nursery/net2-rs
@@ -9891,37 +9583,29 @@ https://github.com/rust-lang-nursery/polonius
 https://github.com/rust-lang-nursery/rls
 https://github.com/rust-lang-nursery/rustc-hash
 https://github.com/rust-lang-nursery/rustfix
-https://github.com/rust-lang-nursery/rustfix.git
 https://github.com/rust-lang-nursery/rustfmt
 https://github.com/rust-lang-nursery/rustup.rs
 https://github.com/rust-lang-nursery/stdsimd
 https://github.com/rust-lang-nursery/unix-socket
 https://github.com/rust-lang/bitflags
-https://github.com/rust-lang/book.git
 https://github.com/rust-lang/chalk.git
-https://github.com/rust-lang/crates.io.git
 https://github.com/rust-lang/datafrog.git
 https://github.com/rust-lang/docs.rs.git
 https://github.com/rust-lang/getopts
 https://github.com/rust-lang/git2-rs
-https://github.com/rust-lang/git2-rs.git
 https://github.com/rust-lang/glob
 https://github.com/rust-lang/hashbrown
-https://github.com/rust-lang/hashbrown.git
 https://github.com/rust-lang/libc
-https://github.com/rust-lang/libc.git
 https://github.com/rust-lang/libtest
 https://github.com/rust-lang/log
 https://github.com/rust-lang/measureme
 https://github.com/rust-lang/polonius.git
 https://github.com/rust-lang/rand
 https://github.com/rust-lang/regex
-https://github.com/rust-lang/regex.git
 https://github.com/rust-lang/rls
 https://github.com/rust-lang/rustc-rayon
 https://github.com/rust-lang/rustc-serialize
 https://github.com/rust-lang/rustfmt
-https://github.com/rust-lang/rustfmt.git
 https://github.com/rust-lang/rustup.rs.git
 https://github.com/rust-lang/tempdir
 https://github.com/rust-lang/time
@@ -9931,7 +9615,6 @@ https://github.com/rust-locale/translate-storage
 https://github.com/rust-nairobi/africastalking-rust
 https://github.com/rust-native-ui/libui-rs.git
 https://github.com/rust-ndarray/ndarray
-https://github.com/rust-ndarray/ndarray.git
 https://github.com/rust-net-web/accept-encoding
 https://github.com/rust-net-web/http-service
 https://github.com/rust-net-web/memdb
@@ -9946,18 +9629,16 @@ https://github.com/rust-num/num-integer
 https://github.com/rust-num/num-iter
 https://github.com/rust-num/num-rational
 https://github.com/rust-num/num-traits
-https://github.com/rust-num/num.git
 https://github.com/rust-numpy/rust-numpy
-https://github.com/rust-numpy/rust-numpy.git
 https://github.com/rust-openvr/rust-openvr
 https://github.com/rust-osdev/acpi
 https://github.com/rust-osdev/bootimage
 https://github.com/rust-osdev/cargo-xbuild
 https://github.com/rust-osdev/uart_16550
 https://github.com/rust-osdev/x86_64
+https://github.com/rust-playground/bumblebee
 https://github.com/rust-random/getrandom
 https://github.com/rust-random/rand
-https://github.com/rust-random/rand.git
 https://github.com/rust-random/small-rngs
 https://github.com/rust-rethinkdb/ql2
 https://github.com/rust-rpg/rpg-rs
@@ -9968,14 +9649,13 @@ https://github.com/rust-spandex/spandex
 https://github.com/rust-syndication/atom
 https://github.com/rust-syndication/rss
 https://github.com/rust-threadpool/rust-threadpool
-https://github.com/rust-threadpool/rust-threadpool.git
 https://github.com/rust-tokyo/tokyo-rs
 https://github.com/rust-transit/gtfs-structure
 https://github.com/rust-vmm/kvm-bindings
 https://github.com/rust-vmm/kvm-ioctls
 https://github.com/rust-vmm/kvm_wrapper
 https://github.com/rust-vmm/linux-loader
-https://github.com/rust-windowing/glutin.git
+https://github.com/rust-windowing/glutin
 https://github.com/rust-windowing/winit.git
 https://github.com/rustache/rustache.git
 https://github.com/rustamatics/rumo
@@ -9984,14 +9664,11 @@ https://github.com/rustasync/async-compression
 https://github.com/rustasync/async-datagram
 https://github.com/rustasync/async-ready
 https://github.com/rustasync/runtime
-https://github.com/rustasync/runtime.git
 https://github.com/rustasync/tide
-https://github.com/rustasync/tide.git
 https://github.com/rustation/cargo-test-junit
 https://github.com/rustation/pre-commit
 https://github.com/rustation/test-to-vec
 https://github.com/rustcc/coroutine-rs
-https://github.com/rustcc/coroutine-rs.git
 https://github.com/rustch/corkscrew-rs
 https://github.com/rustcod/gltile
 https://github.com/rustcod/looper
@@ -10019,7 +9696,6 @@ https://github.com/rustka/iplocate
 https://github.com/rustless/jsonway
 https://github.com/rustless/queryst
 https://github.com/rustless/rustless
-https://github.com/rustless/rustless.git
 https://github.com/rustlibrary/kus
 https://github.com/rustodon/rustodon.git
 https://github.com/rustonaut/common_macros
@@ -10028,20 +9704,14 @@ https://github.com/rustr/rustr
 https://github.com/rustsec/advisory-db
 https://github.com/rustsim/alga
 https://github.com/rustsim/nalgebra
-https://github.com/rustsim/nalgebra.git
 https://github.com/rustsim/ncollide
-https://github.com/rustsim/ncollide.git
 https://github.com/rustsim/nphysics
-https://github.com/rustsim/nphysics.git
 https://github.com/rustwasm/binary-install
 https://github.com/rustwasm/console_error_panic_hook
 https://github.com/rustwasm/gloo
-https://github.com/rustwasm/gloo.git
 https://github.com/rustwasm/twiggy
-https://github.com/rustwasm/twiggy.git
 https://github.com/rustwasm/walrus
 https://github.com/rustwasm/wasm-bindgen
-https://github.com/rustwasm/wasm-bindgen.git
 https://github.com/rustwasm/wasm-pack.git
 https://github.com/rustwasm/wasm-snip
 https://github.com/rustwasm/wasm-tracing-allocator
@@ -10076,7 +9746,6 @@ https://github.com/ruud-v-a/transducers
 https://github.com/ruuda/claxon
 https://github.com/ruuda/filebuffer
 https://github.com/ruuda/hound
-https://github.com/ruuda/hound.git
 https://github.com/ruuda/thread-id
 https://github.com/rvlzzr/raw-syscall-base
 https://github.com/ryankurte/cargo-debug
@@ -10153,7 +9822,6 @@ https://github.com/saleemrashid/kard-rs
 https://github.com/saleemrashid/ocr_latin_vocabulary-rs
 https://github.com/saligrama/concache.git
 https://github.com/salsa-rs/salsa
-https://github.com/salsa-rs/salsa.git
 https://github.com/saltyrtc/saltyrtc-client-rs
 https://github.com/samcrow/arinc_429.rs
 https://github.com/samcrow/hfs_paths
@@ -10175,14 +9843,12 @@ https://github.com/samscott89/serde_qs
 https://github.com/samsieber/rubber-duck
 https://github.com/samueldple/date_time
 https://github.com/samueltardieu/pathfinding
-https://github.com/samueltardieu/pathfinding.git
 https://github.com/sandeep-datta/diagnostics.git
 https://github.com/sandeep-datta/type_of.git
 https://github.com/sankha93/numrs
 https://github.com/sanpii/todo-txt
 https://github.com/santifa/latexcompile.git
 https://github.com/sappworks/sapper
-https://github.com/sappworks/sapper.git
 https://github.com/sappworks/sapper_body
 https://github.com/sappworks/sapper_logger
 https://github.com/sappworks/sapper_query
@@ -10195,14 +9861,11 @@ https://github.com/sarum90/qjsonrs
 https://github.com/sarum90/swear
 https://github.com/saschagrunert/fastcmp
 https://github.com/saschagrunert/git-journal
-https://github.com/saschagrunert/git-journal.git
 https://github.com/saschagrunert/indextree
-https://github.com/saschagrunert/indextree.git
 https://github.com/saschagrunert/mowl
 https://github.com/saschagrunert/path
 https://github.com/saschagrunert/rain
 https://github.com/saschagrunert/webapp.rs
-https://github.com/saschagrunert/webapp.rs.git
 https://github.com/sashaweiss/itree
 https://github.com/sashaweiss/syncterm
 https://github.com/satsuta/bh1750
@@ -10245,7 +9908,6 @@ https://github.com/sci4me/bfkit
 https://github.com/sci4me/rbc
 https://github.com/scipr-lab/zexe.git
 https://github.com/sciter-sdk/rust-sciter
-https://github.com/sciter-sdk/rust-sciter.git
 https://github.com/scoobadog/libmath-rs
 https://github.com/scoobadog/libstat-rs
 https://github.com/scooter-dangle/derive-rs
@@ -10287,13 +9949,10 @@ https://github.com/seankerr/rust-khronos
 https://github.com/seankerr/rust-videocore
 https://github.com/seanmonstar/futures-fs
 https://github.com/seanmonstar/httparse
-https://github.com/seanmonstar/httparse.git
 https://github.com/seanmonstar/l20n.rs
 https://github.com/seanmonstar/num_cpus
-https://github.com/seanmonstar/num_cpus.git
 https://github.com/seanmonstar/relay
 https://github.com/seanmonstar/reqwest
-https://github.com/seanmonstar/reqwest.git
 https://github.com/seanmonstar/spmc
 https://github.com/seanmonstar/tick
 https://github.com/seanmonstar/try-lock
@@ -10301,7 +9960,6 @@ https://github.com/seanmonstar/unicase
 https://github.com/seanmonstar/vecio
 https://github.com/seanmonstar/want
 https://github.com/seanmonstar/warp
-https://github.com/seanmonstar/warp.git
 https://github.com/seasalim/dimsum
 https://github.com/seasalim/retrobasic
 https://github.com/sebastianpfluegelmeier/pcm-flow
@@ -10309,7 +9967,6 @@ https://github.com/sebastianpfluegelmeier/processors
 https://github.com/sebastianv89/double-ratchet
 https://github.com/sebcrozet/instant
 https://github.com/sebcrozet/kiss3d
-https://github.com/sebcrozet/kiss3d.git
 https://github.com/sebcrozet/ncollide
 https://github.com/sebcrozet/nphysics
 https://github.com/sebglazebrook/countdown
@@ -10358,9 +10015,7 @@ https://github.com/serde-rs/bench
 https://github.com/serde-rs/bytes
 https://github.com/serde-rs/example-format
 https://github.com/serde-rs/json
-https://github.com/serde-rs/json.git
 https://github.com/serde-rs/serde
-https://github.com/serde-rs/serde.git
 https://github.com/serejkaaa512/simple-chart.git
 https://github.com/serejkus/env_file
 https://github.com/serenity-rs/serenity.git
@@ -10385,24 +10040,19 @@ https://github.com/servo/bincode.git
 https://github.com/servo/cocoa-rs.git
 https://github.com/servo/content-blocker
 https://github.com/servo/euclid
-https://github.com/servo/euclid.git
 https://github.com/servo/futf
 https://github.com/servo/gaol
-https://github.com/servo/gaol.git
 https://github.com/servo/gecko-atom
 https://github.com/servo/gleam
 https://github.com/servo/glutin
 https://github.com/servo/heapsize
 https://github.com/servo/html5ever
-https://github.com/servo/html5ever.git
 https://github.com/servo/ipc-channel
-https://github.com/servo/ipc-channel.git
 https://github.com/servo/libexpat
 https://github.com/servo/libfreetype2
 https://github.com/servo/mozangle
 https://github.com/servo/plane-split
 https://github.com/servo/rust-cssparser
-https://github.com/servo/rust-cssparser.git
 https://github.com/servo/rust-egl
 https://github.com/servo/rust-fnv
 https://github.com/servo/rust-freetype
@@ -10411,10 +10061,8 @@ https://github.com/servo/rust-harfbuzz
 https://github.com/servo/rust-offscreen-rendering-context
 https://github.com/servo/rust-quicksort
 https://github.com/servo/rust-smallvec
-https://github.com/servo/rust-smallvec.git
 https://github.com/servo/rust-stb-image
 https://github.com/servo/rust-url
-https://github.com/servo/rust-url.git
 https://github.com/servo/rust-webvr
 https://github.com/servo/smallbitvec
 https://github.com/servo/string-cache
@@ -10425,7 +10073,6 @@ https://github.com/servo/unicode-script
 https://github.com/sethm/dmd_core
 https://github.com/sezaru/futures-error-chain
 https://github.com/sfackler/cargo-tree
-https://github.com/sfackler/cargo-tree.git
 https://github.com/sfackler/exponential-decay-histogram
 https://github.com/sfackler/fallible-streaming-iterator
 https://github.com/sfackler/foreign-types
@@ -10436,10 +10083,8 @@ https://github.com/sfackler/hyper-timeout-connector
 https://github.com/sfackler/log4rs
 https://github.com/sfackler/log4rs-rolling-file
 https://github.com/sfackler/log4rs-routing-appender
-https://github.com/sfackler/log4rs.git
 https://github.com/sfackler/r2d2
 https://github.com/sfackler/r2d2-postgres
-https://github.com/sfackler/r2d2.git
 https://github.com/sfackler/rust-antidote
 https://github.com/sfackler/rust-debug-builders
 https://github.com/sfackler/rust-fallible-iterator
@@ -10448,18 +10093,14 @@ https://github.com/sfackler/rust-jni-sys
 https://github.com/sfackler/rust-log-mdc
 https://github.com/sfackler/rust-log-panics
 https://github.com/sfackler/rust-native-tls
-https://github.com/sfackler/rust-native-tls.git
 https://github.com/sfackler/rust-openssl
-https://github.com/sfackler/rust-openssl.git
 https://github.com/sfackler/rust-phf
-https://github.com/sfackler/rust-phf.git
 https://github.com/sfackler/rust-postgres
 https://github.com/sfackler/rust-postgres-array
 https://github.com/sfackler/rust-postgres-binary-copy
 https://github.com/sfackler/rust-postgres-derive
 https://github.com/sfackler/rust-postgres-large-object
 https://github.com/sfackler/rust-postgres-range
-https://github.com/sfackler/rust-postgres.git
 https://github.com/sfackler/rust-socks
 https://github.com/sfackler/rust-stringprep
 https://github.com/sfackler/rust-time2
@@ -10497,21 +10138,16 @@ https://github.com/share-secrets-safely/cli
 https://github.com/sharebrained/rust-chibios
 https://github.com/sharebrained/rust-lcd-ili9341
 https://github.com/sharkdp/bat
-https://github.com/sharkdp/bat.git
 https://github.com/sharkdp/content_inspector
 https://github.com/sharkdp/dircolors-hd
 https://github.com/sharkdp/diskus
-https://github.com/sharkdp/diskus.git
 https://github.com/sharkdp/dup
 https://github.com/sharkdp/fd
-https://github.com/sharkdp/fd.git
 https://github.com/sharkdp/hexyl
-https://github.com/sharkdp/hexyl.git
 https://github.com/sharkdp/hyperfine
 https://github.com/sharkdp/lscolors
 https://github.com/sharkdp/lucid
 https://github.com/sharkdp/vivid
-https://github.com/sharkdp/vivid.git
 https://github.com/shawnscode/crayon
 https://github.com/sheganinans/urweb-rs
 https://github.com/shekohex/sigma.git
@@ -10521,7 +10157,6 @@ https://github.com/shepmaster/fuzzy-pickles
 https://github.com/shepmaster/jetscii
 https://github.com/shepmaster/peresil
 https://github.com/shepmaster/snafu
-https://github.com/shepmaster/snafu.git
 https://github.com/shepmaster/strata
 https://github.com/shepmaster/sxd-document
 https://github.com/shepmaster/sxd-xpath
@@ -10555,7 +10190,6 @@ https://github.com/shssoichiro/diesel-derives-extra
 https://github.com/shssoichiro/eureka-rs
 https://github.com/shssoichiro/iron-valid
 https://github.com/shssoichiro/oxipng
-https://github.com/shssoichiro/oxipng.git
 https://github.com/shssoichiro/zxcvbn-rs
 https://github.com/shuhei/colortty
 https://github.com/shybyte/risp
@@ -10701,7 +10335,6 @@ https://github.com/slava-sh/rust-bundler
 https://github.com/slide-rs/hibitset
 https://github.com/slide-rs/shred
 https://github.com/slide-rs/specs
-https://github.com/slide-rs/specs.git
 https://github.com/slide-rs/system-graph
 https://github.com/slmjkdbtl/cargo-app
 https://github.com/slmjkdbtl/custom_default
@@ -10722,7 +10355,6 @@ https://github.com/slog-rs/perf
 https://github.com/slog-rs/scope
 https://github.com/slog-rs/serde
 https://github.com/slog-rs/slog
-https://github.com/slog-rs/slog.git
 https://github.com/slog-rs/stdlog
 https://github.com/slog-rs/stream
 https://github.com/slog-rs/syslog
@@ -10752,7 +10384,6 @@ https://github.com/sn99/brainhug
 https://github.com/snapview/input_buffer
 https://github.com/snapview/tokio-tungstenite
 https://github.com/snapview/tungstenite-rs
-https://github.com/snapview/tungstenite-rs.git
 https://github.com/snd/apodize.git
 https://github.com/snd/hertz.git
 https://github.com/snd/mel.git
@@ -10762,7 +10393,6 @@ https://github.com/sndrtj/fastq-count
 https://github.com/snipsco/dinghy
 https://github.com/snipsco/ripb
 https://github.com/snipsco/tract
-https://github.com/snipsco/tract.git
 https://github.com/snorr/ioat
 https://github.com/snorrwe/doodle-rs
 https://github.com/snorrwe/screeps-profiler
@@ -10784,11 +10414,9 @@ https://github.com/snuk182/mcq.git
 https://github.com/snuk182/nuklear-backend-gfx.git
 https://github.com/snuk182/nuklear-backend-glium.git
 https://github.com/snuk182/nuklear-rust
-https://github.com/snuk182/nuklear-rust.git
 https://github.com/snuk182/scintilla-sys-rs
 https://github.com/so-glad/xpm.git
 https://github.com/soc/directories-rs
-https://github.com/soc/directories-rs.git
 https://github.com/soc/dirs-rs
 https://github.com/soc/dirs-sys-rs
 https://github.com/socialgorithm/ultimate-ttt-rust.git
@@ -10811,12 +10439,10 @@ https://github.com/softprops/dynomite
 https://github.com/softprops/emoji-clock
 https://github.com/softprops/envy
 https://github.com/softprops/envy-store
-https://github.com/softprops/envy.git
 https://github.com/softprops/flats
 https://github.com/softprops/git-codeowners
 https://github.com/softprops/goji
 https://github.com/softprops/hubcaps
-https://github.com/softprops/hubcaps.git
 https://github.com/softprops/hyperlocal
 https://github.com/softprops/jamal
 https://github.com/softprops/jed
@@ -10829,7 +10455,6 @@ https://github.com/softprops/recap
 https://github.com/softprops/screenprints
 https://github.com/softprops/scuttlebutt
 https://github.com/softprops/shiplift
-https://github.com/softprops/shiplift.git
 https://github.com/softprops/sysly
 https://github.com/softprops/tee
 https://github.com/softprops/termsize
@@ -10871,9 +10496,7 @@ https://github.com/sozu-proxy/amq-protocol
 https://github.com/sozu-proxy/circular
 https://github.com/sozu-proxy/lapin
 https://github.com/sozu-proxy/lapin-futures-tls
-https://github.com/sozu-proxy/lapin.git
 https://github.com/sozu-proxy/sozu
-https://github.com/sozu-proxy/sozu.git
 https://github.com/sp3d/tilde-expand-rs
 https://github.com/space-wizards/bsdiff-rs
 https://github.com/spaceapi-community/spaceapi-rs
@@ -10887,7 +10510,6 @@ https://github.com/spacejam/model
 https://github.com/spacejam/rsdb
 https://github.com/spacejam/rust-crdt
 https://github.com/spacejam/sled
-https://github.com/spacejam/sled.git
 https://github.com/spacekookie/colortemp
 https://github.com/spacekookie/lrs
 https://github.com/spacekookie/thunder
@@ -10910,7 +10532,6 @@ https://github.com/sphinx-cryptography/epoch
 https://github.com/sphinxc0re/config_fairy
 https://github.com/sphinxc0re/ducci
 https://github.com/sphinxc0re/stellar-rs
-https://github.com/spicavigo/kafka-rust.git
 https://github.com/spielrs/malaga-http_utils
 https://github.com/spietika/restson-rust
 https://github.com/spinda/arc-io-error
@@ -11003,6 +10624,7 @@ https://github.com/starkat99/cargo-when.git
 https://github.com/starkat99/half-rs
 https://github.com/starship/starship
 https://github.com/stateright/stateright
+https://github.com/statiolake/proconio-rs
 https://github.com/statiolake/to-absolute-rs
 https://github.com/stbuehler/rust-alookup
 https://github.com/stbuehler/rust-bitstring
@@ -11035,7 +10657,6 @@ https://github.com/stepchowfun/bake
 https://github.com/stepchowfun/docuum
 https://github.com/stepchowfun/tagref
 https://github.com/stepchowfun/toast
-https://github.com/stepchowfun/toast.git
 https://github.com/stephanbuys/elastic-queries
 https://github.com/stephaneyfx/enum-iterator.git
 https://github.com/stephaneyfx/futuristic.git
@@ -11079,7 +10700,6 @@ https://github.com/steveklabnik/indexlist
 https://github.com/steveklabnik/ref_slice
 https://github.com/steveklabnik/semver
 https://github.com/steveklabnik/semver-parser
-https://github.com/steveklabnik/semver.git
 https://github.com/steveklabnik/simple-server
 https://github.com/stevenroose/hal
 https://github.com/stevenroose/hal-elements
@@ -11153,11 +10773,11 @@ https://github.com/sunjay/turtle
 https://github.com/sunng87/athtool
 https://github.com/sunng87/handlebars-iron
 https://github.com/sunng87/handlebars-rust
-https://github.com/sunng87/handlebars-rust.git
 https://github.com/sunng87/iron-json-response
 https://github.com/sunng87/slacker-rust
 https://github.com/sunng87/tojson_macros
 https://github.com/sunng87/zhelezo
+https://github.com/sunny-g/serde_token
 https://github.com/sunrise-choir/async-ringbuffer
 https://github.com/sunrise-choir/shs_async
 https://github.com/sunrise-choir/shs_core
@@ -11180,7 +10800,6 @@ https://github.com/suyash/geopattern
 https://github.com/sval-rs/sval
 https://github.com/svartalf/actix-web-httpauth.git
 https://github.com/svartalf/rust-battery
-https://github.com/svartalf/rust-battery.git
 https://github.com/svartalf/rust-battop
 https://github.com/svartalf/rust-flake.git
 https://github.com/svartalf/rust-icmp
@@ -11194,7 +10813,6 @@ https://github.com/svenstaro/dummyhttp
 https://github.com/svenstaro/fints-institute-db
 https://github.com/svenstaro/genact
 https://github.com/svenstaro/miniserve
-https://github.com/svenstaro/miniserve.git
 https://github.com/svenstaro/mt940-rs
 https://github.com/svenstaro/proby
 https://github.com/svmk/rust-chrono-utils
@@ -11229,7 +10847,6 @@ https://github.com/swizard0/unix-daemonize.git
 https://github.com/synek317/rapid
 https://github.com/synek317/rpm-timer
 https://github.com/synek317/shellfn
-https://github.com/synek317/shellfn.git
 https://github.com/synek317/test-case-derive
 https://github.com/synlestidae/ethereum-tx-sign
 https://github.com/syscoin/rust-bech32-syscoin
@@ -11250,16 +10867,13 @@ https://github.com/t-rex-tileserver/t-rex.git
 https://github.com/tac-am/amxml
 https://github.com/tacoda/grrs
 https://github.com/tafia/calamine
-https://github.com/tafia/calamine.git
 https://github.com/tafia/hyper-proxy
 https://github.com/tafia/nested
 https://github.com/tafia/pcf8591-rs
 https://github.com/tafia/protobuf-parser
 https://github.com/tafia/quick-csv
 https://github.com/tafia/quick-protobuf
-https://github.com/tafia/quick-protobuf.git
 https://github.com/tafia/quick-xml
-https://github.com/tafia/quick-xml.git
 https://github.com/tafia/xl2txt
 https://github.com/taiki-e/alloc-shim
 https://github.com/taiki-e/auto_enums
@@ -11293,7 +10907,6 @@ https://github.com/tantivy-search/murmurhash32
 https://github.com/tantivy-search/owned-read
 https://github.com/tantivy-search/tantivy
 https://github.com/tantivy-search/tantivy-cli
-https://github.com/tantivy-search/tantivy.git
 https://github.com/tapeinosyne/atlatl
 https://github.com/tarcieri/placer
 https://github.com/tarka/xcp
@@ -11330,14 +10943,12 @@ https://github.com/tejom/From-repr-enum-derive
 https://github.com/tekacs/rust-this
 https://github.com/tekjar/mqtt311
 https://github.com/telegram-rs/telegram-bot
-https://github.com/telegram-rs/telegram-bot.git
 https://github.com/temporenc/temporenc-rust
 https://github.com/tendermint/amino_rs
 https://github.com/tendermint/rust-abci
 https://github.com/tendermint/rust-tsp
 https://github.com/tene/tokio-serde-msgpack
 https://github.com/tensorflow/rust
-https://github.com/tensorflow/rust.git
 https://github.com/teovoinea/rocket_prometheus_logger
 https://github.com/teovoinea/steganography
 https://github.com/terahxluna/bifrost
@@ -11378,7 +10989,6 @@ https://github.com/theban/db
 https://github.com/theban/interval-tree
 https://github.com/theban/memrange
 https://github.com/thecasualcoder/tztail
-https://github.com/thecasualcoder/tztail.git
 https://github.com/thedodd/dockerfile
 https://github.com/thedodd/wither
 https://github.com/theduke/apns2-rust
@@ -11386,7 +10996,6 @@ https://github.com/theduke/crates_io_api
 https://github.com/thefarwind/blorb-rs.git
 https://github.com/thehydroimpulse/ackr
 https://github.com/thehydroimpulse/nanomsg.rs
-https://github.com/thehydroimpulse/nanomsg.rs.git
 https://github.com/thehydroimpulse/postgres-extension.rs.git
 https://github.com/thejpster/embedded-sdmmc-rs
 https://github.com/thejpster/embedded_serial
@@ -11472,7 +11081,6 @@ https://github.com/tiehuis/quartic
 https://github.com/tiffany352/rink-rs
 https://github.com/tikotzky/faker-rs
 https://github.com/tildeio/helix
-https://github.com/tildeio/helix.git
 https://github.com/tilpner/includedir
 https://github.com/timClicks/cool_faces
 https://github.com/timglabisch/rust_cp437.git
@@ -11490,7 +11098,6 @@ https://github.com/tinaun/kansas
 https://github.com/tinaun/serde_scan
 https://github.com/tinco/cache_line_size
 https://github.com/tiny-http/tiny-http
-https://github.com/tiny-http/tiny-http.git
 https://github.com/tirr-c/hyeong-rs.git
 https://github.com/tismith/exitfailure
 https://github.com/tiziano88/mote-rs
@@ -11505,6 +11112,7 @@ https://github.com/tmerr/i3ipc-rs
 https://github.com/tmmcguire/hashers
 https://github.com/tmoers/hexplay
 https://github.com/tmontaigu/dbase-rs
+https://github.com/tmontaigu/laz-rs
 https://github.com/tmontaigu/shapefile-rs
 https://github.com/tmorgansl/openvpn-management
 https://github.com/tmt96/rs-object-space
@@ -11519,28 +11127,23 @@ https://github.com/tokio-rs/mio.git
 https://github.com/tokio-rs/tokio
 https://github.com/tokio-rs/tokio-curl
 https://github.com/tokio-rs/tokio-minihttp.git
-https://github.com/tokio-rs/tokio-proto.git
 https://github.com/tokio-rs/tokio-service
 https://github.com/tokio-rs/tokio-timer
-https://github.com/tokio-rs/tokio.git
 https://github.com/tomaka/cpal
 https://github.com/tomaka/glium_text
 https://github.com/tomaka/glutin
-https://github.com/tomaka/glutin.git
 https://github.com/tomaka/hlua
 https://github.com/tomaka/immi
 https://github.com/tomaka/ogg-sys
 https://github.com/tomaka/pocket-resources
 https://github.com/tomaka/rodio
 https://github.com/tomaka/rouille
-https://github.com/tomaka/rouille.git
 https://github.com/tomaka/rust-hl-lua
 https://github.com/tomaka/rust-ids-container
 https://github.com/tomaka/shared_library
 https://github.com/tomaka/vorbis-rs
 https://github.com/tomaka/wasm-timer
 https://github.com/tomaka/winit
-https://github.com/tomaka/winit.git
 https://github.com/tomaon/ei
 https://github.com/tomarrell/rust-elias-fano
 https://github.com/tomarrell/tre
@@ -11553,7 +11156,6 @@ https://github.com/tomshen/rust-syndication
 https://github.com/tomusdrw/ethsign
 https://github.com/tomusdrw/resty
 https://github.com/tomusdrw/rust-web3
-https://github.com/tomusdrw/rust-web3.git
 https://github.com/tonsser/hashtag-rs
 https://github.com/topecongiro/libmcs
 https://github.com/toperkin/termtables
@@ -11582,13 +11184,10 @@ https://github.com/tov/thousands-rs
 https://github.com/tov/weak-table-rs
 https://github.com/tower-rs/tower
 https://github.com/tower-rs/tower-grpc
-https://github.com/tower-rs/tower-grpc.git
 https://github.com/tower-rs/tower-http
 https://github.com/tower-rs/tower-hyper
-https://github.com/tower-rs/tower.git
 https://github.com/tox-rs/tox
 https://github.com/tox-rs/tox-node
-https://github.com/tox-rs/tox.git
 https://github.com/toxicwolf/sonar
 https://github.com/tqoitc/regtest
 https://github.com/tragle/blarf
@@ -11624,7 +11223,6 @@ https://github.com/tripokey/rt
 https://github.com/tripokey/tml
 https://github.com/trishume/linuxtrack-sys
 https://github.com/trishume/syntect
-https://github.com/trishume/syntect.git
 https://github.com/tritone11/ether-keystore
 https://github.com/tritone11/rust-keycloak
 https://github.com/trizinix/afm-rs
@@ -11679,7 +11277,6 @@ https://github.com/twistedfall/libstrophe
 https://github.com/twistedfall/libstrophe-sys-bindgen
 https://github.com/twistedfall/serde_rusqlite
 https://github.com/twitter/rpc-perf
-https://github.com/twitter/rpc-perf.git
 https://github.com/twmb/futures-bufio
 https://github.com/twmb/rsfs
 https://github.com/twmb/slice-copy
@@ -11792,11 +11389,9 @@ https://github.com/utkarshkukreti/markup.rs
 https://github.com/utkarshkukreti/munch.rs
 https://github.com/utkarshkukreti/purescript-corefn.rs
 https://github.com/utkarshkukreti/select.rs
-https://github.com/utkarshkukreti/select.rs.git
 https://github.com/utkarshkukreti/speculate.rs
 https://github.com/uuhan/cat-rs
 https://github.com/uuid-rs/uuid
-https://github.com/uuid-rs/uuid.git
 https://github.com/uutils/platform-info
 https://github.com/uutils/uucore
 https://github.com/uuttff8/r2ch
@@ -11880,7 +11475,6 @@ https://github.com/vi/tokio-copy-with-buffer
 https://github.com/vi/tokio-stdin-stdout
 https://github.com/vi/turnhammer
 https://github.com/vi/websocat
-https://github.com/vi/websocat.git
 https://github.com/vickenty/lang-c
 https://github.com/vietanhto/dummy_xml
 https://github.com/vifino/rust-mem
@@ -11898,11 +11492,9 @@ https://github.com/viperscape/rust-promise
 https://github.com/viraptor/coinaddress
 https://github.com/viraptor/prctl-rs.git
 https://github.com/vishaltelangre/ff
-https://github.com/vishaltelangre/ff.git
 https://github.com/vishpat/psmond
 https://github.com/vishpat/stl
 https://github.com/vislyhq/stretch
-https://github.com/vislyhq/stretch.git
 https://github.com/visualjeff/e164-phones-countries.git
 https://github.com/visualjeff/haversine.git
 https://github.com/visualjeff/primapalooza.git
@@ -11949,7 +11541,6 @@ https://github.com/vmchale/hask-replace
 https://github.com/vmchale/project-init
 https://github.com/vmchale/rustache.git
 https://github.com/vmchale/tin-summer
-https://github.com/vmchale/tin-summer.git
 https://github.com/vn971/rm_rf
 https://github.com/vn971/timeplot
 https://github.com/voelklmichael/rust_tcp_ipc
@@ -11992,7 +11583,6 @@ https://github.com/vthriller/hdd-rs
 https://github.com/vthriller/promql
 https://github.com/vthriller/rust-buf-ref-reader
 https://github.com/vulkano-rs/vulkano
-https://github.com/vulkano-rs/vulkano.git
 https://github.com/w3f/schnorrkel
 https://github.com/wafflespeanut/paperclip
 https://github.com/wafoundation/wasmer
@@ -12013,7 +11603,6 @@ https://github.com/wasplang/wasp.git
 https://github.com/wassasin/dsmr5
 https://github.com/watawuwu/cargo-launcher
 https://github.com/watchexec/watchexec
-https://github.com/watchexec/watchexec.git
 https://github.com/wateryan/greeks
 https://github.com/wathiede/pbrt
 https://github.com/watson/trace-context
@@ -12044,7 +11633,6 @@ https://github.com/webbrandon/build
 https://github.com/webdesus/fs_extra
 https://github.com/webframework-rs/webframework
 https://github.com/websockets-rs/rust-websocket
-https://github.com/websockets-rs/rust-websocket.git
 https://github.com/weclaw1/slab_allocator
 https://github.com/wedaly/devlog
 https://github.com/weld-project/code_builder
@@ -12106,9 +11694,9 @@ https://github.com/withoutboats/cargo-add
 https://github.com/withoutboats/display_derive
 https://github.com/withoutboats/failure_derive
 https://github.com/withoutboats/heck
+https://github.com/withoutboats/kudzu
 https://github.com/withoutboats/license-exprs
 https://github.com/withoutboats/romio
-https://github.com/withoutboats/romio.git
 https://github.com/withoutboats/shifgrethor.git
 https://github.com/withoutboats/smart
 https://github.com/witnet/protobuf-convert
@@ -12257,6 +11845,7 @@ https://github.com/yronbitsaw/movine
 https://github.com/ysmiraak/protocoll
 https://github.com/ystreet/titleformat-rs
 https://github.com/ytausky/gbas
+https://github.com/yuanbohan/rs-figlet
 https://github.com/yuduanchen/rust-jsonnet.git
 https://github.com/yuikns/r-rs.git
 https://github.com/yuikns/r.git
@@ -12300,7 +11889,6 @@ https://github.com/zadlg/thumbsdbkit.git
 https://github.com/zankich/rust-firmata
 https://github.com/zaphar/abortable_parser
 https://github.com/zaproxy/zap-api-rust
-https://github.com/zargony/rust-fuse.git
 https://github.com/zarthus/opentdb-rs
 https://github.com/zbraniecki/annotate-snippets-rs
 https://github.com/zbrox/licenz
@@ -12334,7 +11922,6 @@ https://github.com/zhangkaizhao/remove_empty_subdirs
 https://github.com/zhangkaizhao/repos
 https://github.com/zheludkovm/RustyTarantool
 https://github.com/zhihu/rucene
-https://github.com/zhihu/rucene.git
 https://github.com/zhouyuexie/color-convert
 https://github.com/zigguratvertigo/smallpt-rs
 https://github.com/zimbatm/mdsh
@@ -12413,6 +12000,7 @@ https://gitlab.com/Douman/custom_default
 https://gitlab.com/Douman/cute-dnd-dice
 https://gitlab.com/Douman/http-fs
 https://gitlab.com/Douman/mmap-storage
+https://gitlab.com/Douman/simple_games
 https://gitlab.com/Douman/tokio-global
 https://gitlab.com/Douman/yukikaze
 https://gitlab.com/Dreae/luajit-rs
@@ -12446,6 +12034,7 @@ https://gitlab.com/MggMuggins/damm
 https://gitlab.com/Michael-F-Bryan/anpp
 https://gitlab.com/Moongoodboy.K/bounded-vec-deque
 https://gitlab.com/Moongoodboy.K/saltpig
+https://gitlab.com/Nicolas-Ferre/test4a
 https://gitlab.com/Noughmad/ptree
 https://gitlab.com/Noughmad/reser
 https://gitlab.com/Noughmad/serde-xml-any
@@ -12563,6 +12152,7 @@ https://gitlab.com/dominotree/rs-ipfix
 https://gitlab.com/dsferruzza/sentry-process
 https://gitlab.com/dsferruzza/sorry-im-off-today
 https://gitlab.com/duelinmarkers/steel-cent
+https://gitlab.com/dvshapkin/vfsys
 https://gitlab.com/eclark/rs-sudoku
 https://gitlab.com/efronlicht/csplit
 https://gitlab.com/efronlicht/dd
