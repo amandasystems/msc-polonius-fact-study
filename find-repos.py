@@ -7,16 +7,31 @@ import time
 import requests
 from github import Github
 
-from benchmark import ALGORITHMS, blacklist_repo, clone_repo, run_experiment
+from benchmark import (ALGORITHMS, blacklist_repo, clone_repo, git_url_in_set,
+                       run_experiment)
 
-with open("blacklist.txt") as fp:
-    BLACKLIST = set([l.strip() for l in fp.readlines()])
 
-with open("repositories.txt") as fp:
-    WHITELIST = set([l.strip() for l in fp.readlines()])
+def populate_serialised_url_set(filename, sets_to_exclude=None):
+    url_set = set()
+    exclude = [url_set] if not sets_to_exclude else [url_set, *sets_to_exclude]
+    with open(filename) as fp:
+        for url in fp:
+            url = url.strip()
+            if not url:
+                continue
+            if not any([git_url_in_set(url, s) for s in exclude]):
+                url_set.add(url)
+            else:
+                print(f"Excluding duplicate url {url}")
+    return url_set
 
-with open("repositories.seen.txt") as fp:
-    SEEN = set([l.strip() for l in fp.readlines()])
+
+BLACKLIST = populate_serialised_url_set("blacklist.txt")
+WHITELIST = populate_serialised_url_set(
+    "repositories.txt", sets_to_exclude=[BLACKLIST])
+
+SEEN = populate_serialised_url_set(
+    "repositories.seen.txt", sets_to_exclude=[WHITELIST, BLACKLIST])
 
 EMA = None
 ALPHA = 0.5
