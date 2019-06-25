@@ -11,12 +11,16 @@ import networkx as nx
 from benchmark import inputs_or_workdir
 
 FIELD_NAMES = [
+    "borrow_region",
     "cfg_edge",
-    "region_live_at",
+    "invalidates",
+    "killed",
+    "outlives",
     "universal_region",
     "var_defined",
     "var_drop_used",
     "var_drops_region",
+    "var_initialized_on_exit",
     "var_used",
     "var_uses_region",
 ]
