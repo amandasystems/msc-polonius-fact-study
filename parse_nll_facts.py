@@ -10,7 +10,7 @@ import networkx as nx
 
 from benchmark import inputs_or_workdir
 
-FIELD_NAMES = [
+FACT_NAMES = [
     "borrow_region",
     "cfg_edge",
     "invalidates",
@@ -25,7 +25,7 @@ FIELD_NAMES = [
     "var_uses_region",
 ]
 
-FnFacts = namedtuple("FnFacts", ['name', *FIELD_NAMES])
+FnFacts = namedtuple("FnFacts", ['name', *FACT_NAMES])
 Point = namedtuple("Point", ['level', 'block', 'offset'])
 
 
@@ -48,7 +48,7 @@ def read_fn_nll_facts(fn_path):
             "name": fn_path.stem,
             **{
                 field: list(read_tuples(fn_path / f"{field}.facts"))
-                for field in FIELD_NAMES
+                for field in FACT_NAMES
             }
         })
 
@@ -86,12 +86,60 @@ def read_dirs(dirs):
             continue
 
 
+def unique_loans(fn_facts):
+    loans = set([l for (_r, l, _p) in fn_facts.borrow_region])
+    loans |= set([l for (l, _p) in fn_facts.killed])
+    loans |= set([l for (_p, l) in fn_facts.invalidates])
+    return len(loans)
+
+
+def unique_variables(fn_facts):
+    variables = set([v for (v, _p) in fn_facts.var_used])
+    variables |= set([v for (v, _p) in fn_facts.var_defined])
+    variables |= set([v for (v, _p) in fn_facts.var_drop_used])
+    variables |= set([v for (v, _r) in fn_facts.var_uses_region])
+    variables |= set([v for (v, _r) in fn_facts.var_drops_region])
+    return len(variables)
+
+
+def unique_regions(fn_facts):
+    regions = set([r for (r, _l, _p) in fn_facts.borrow_region])
+    regions |= set([r for (_v, r) in fn_facts.var_uses_region])
+    regions |= set([r for (_v, r) in fn_facts.var_drops_region])
+    regions |= set([r1 for (r1, _r2, p) in fn_facts.outlives])
+    regions |= set([r2 for (_r1, r2, p) in fn_facts.outlives])
+    return len(regions)
+
+
 def dirs_to_csv(dirs, out_fp):
     writer = csv.writer(out_fp)
-    writer.writerow(["program", "function", *FIELD_NAMES])
+    writer.writerow([
+        "program",
+        "function",
+        *FACT_NAMES,
+        "loans",
+        "variables",
+        "regions",
+        "cfg nodes",
+        "cfg density",
+        "cfg transitivity",
+        "cfg number of attracting components",
+    ])
+
     for program_name, facts in dirs:
         for fn_facts in facts:
-            writer.writerow([program_name, *facts_to_row(fn_facts)])
+            cfg = block_cfg_from_facts(fn_facts)
+            writer.writerow([
+                program_name,
+                *facts_to_row(fn_facts),
+                unique_loans(fn_facts),
+                unique_variables(fn_facts),
+                unique_regions(fn_facts),
+                cfg.number_of_nodes(),
+                nx.density(cfg),
+                nx.transitivity(cfg),
+                nx.number_attracting_components(cfg),
+            ])
 
 
 def parse_point(p):
