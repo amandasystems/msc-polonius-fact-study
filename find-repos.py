@@ -26,9 +26,9 @@ def populate_serialised_url_set(filename, sets_to_exclude=None):
     return url_set
 
 
-BLACKLIST = populate_serialised_url_set("blacklist.txt")
-WHITELIST = populate_serialised_url_set(
-    "repositories.txt", sets_to_exclude=[BLACKLIST])
+WHITELIST = populate_serialised_url_set("repositories.txt")
+BLACKLIST = populate_serialised_url_set(
+    "blacklist.txt", sets_to_exclude=[WHITELIST])
 
 SEEN = populate_serialised_url_set(
     "repositories.seen.txt", sets_to_exclude=[WHITELIST, BLACKLIST])

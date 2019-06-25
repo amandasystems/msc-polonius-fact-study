@@ -25,7 +25,10 @@ def benchmark_crate_fn(p, algorithm):
     """
     benchmark_timer = timeit.Timer(
         lambda: run_command([*POLONIUS_COMMAND, "-a", algorithm, "--", str(p)]))
-    return min(benchmark_timer.repeat(NR_REPEATS, number=1))
+    try:
+        return min(benchmark_timer.repeat(NR_REPEATS, number=1))
+    except RuntimeError:
+        return None
 
 
 def benchmark_crate_fns(facts_path):
