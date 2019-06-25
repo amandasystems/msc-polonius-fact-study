@@ -43,6 +43,7 @@ def read_tuples(path):
 
 def read_fn_nll_facts(fn_path):
     assert isinstance(fn_path, Path), "must be a Path"
+    #print(f"reading {fn_path}", file=sys.stderr)
     return FnFacts(
         **{
             "name": fn_path.stem,
@@ -55,15 +56,24 @@ def read_fn_nll_facts(fn_path):
 
 def read_nll_facts(facts_path):
     assert isinstance(facts_path, Path), "must be a Path"
-    return [
-        read_fn_nll_facts(p) for p in facts_path.iterdir()
-        if p.is_dir() and not p.stem[0] == "."
-    ]
+    return (read_fn_nll_facts(p) for p in facts_path.iterdir()
+            if p.is_dir() and not p.stem[0] == ".")
 
 
 def facts_to_row(fn_facts):
     assert isinstance(fn_facts, FnFacts), "must be a FnFacts instance!"
     return [fn_facts.name, *[len(fact) for fact in fn_facts[1:]]]
+
+
+def has_all_facts(d):
+    for fn_dir in d.iterdir():
+        if fn_dir.is_dir() and not fn_dir.stem[0] == ".":
+            facts_exist = [(fn_dir / Path(f"{field}.facts")).is_file()
+                           for field in FACT_NAMES]
+            if not all(facts_exist):
+                return False
+
+    return True
 
 
 def read_dirs(dirs):
@@ -78,12 +88,10 @@ def read_dirs(dirs):
     for p in dirs:
         facts_path = p / "nll-facts"
         program_name = p.stem
-        if not facts_path.is_dir():
-            facts_path = p
-        try:
+        if facts_path.is_dir() and has_all_facts(facts_path):
             yield (program_name, read_nll_facts(facts_path))
-        except FileNotFoundError:
-            continue
+        else:
+            print(f"invalid repository: {p}", file=sys.stderr)
 
 
 def unique_loans(fn_facts):
@@ -128,6 +136,8 @@ def dirs_to_csv(dirs, out_fp):
 
     for program_name, facts in dirs:
         for fn_facts in facts:
+            print(
+                f"processing {program_name}::{fn_facts.name}", file=sys.stderr)
             cfg = block_cfg_from_facts(fn_facts)
             writer.writerow([
                 program_name,
@@ -140,6 +150,7 @@ def dirs_to_csv(dirs, out_fp):
                 nx.transitivity(cfg),
                 nx.number_attracting_components(cfg),
             ])
+        #gc.collect()
 
 
 def parse_point(p):
@@ -163,11 +174,7 @@ def block_cfg_from_facts(facts):
 
 def main(args):
     crate_fact_list = inputs_or_workdir()
-
     dirs_to_csv(read_dirs(crate_fact_list), sys.stdout)
-    #G = block_cfg_from_facts(program_data[0][1][0])
-    #nx.draw(G, with_labels=True, font_weight='bold')
-    #plt.show()
 
 
 if __name__ == '__main__':
