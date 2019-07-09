@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 import csv
+import os
 import re
+import shutil
 import sys
 from collections import namedtuple
 from pathlib import Path
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import networkx as nx
 
 from benchmark import inputs_or_workdir
@@ -24,6 +26,7 @@ FACT_NAMES = [
     "var_used",
     "var_uses_region",
 ]
+MAX_SIZE_BYTES = 4 * (1024**3)
 
 FnFacts = namedtuple("FnFacts", ['name', *FACT_NAMES])
 Point = namedtuple("Point", ['level', 'block', 'offset'])
@@ -31,6 +34,7 @@ Point = namedtuple("Point", ['level', 'block', 'offset'])
 
 def read_tuples(path):
     assert isinstance(path, Path), "must be a Path"
+
     with open(path) as fp:
         for line in fp:
             tpl = line\
@@ -65,15 +69,26 @@ def facts_to_row(fn_facts):
     return [fn_facts.name, *[len(fact) for fact in fn_facts[1:]]]
 
 
-def has_all_facts(d):
+def missing_facts(d):
+    files_missing = []
+    if not d.is_dir():
+        return [d]
     for fn_dir in d.iterdir():
         if fn_dir.is_dir() and not fn_dir.stem[0] == ".":
-            facts_exist = [(fn_dir / Path(f"{field}.facts")).is_file()
-                           for field in FACT_NAMES]
-            if not all(facts_exist):
-                return False
+            for fact_name in FACT_NAMES:
+                fact_file = fn_dir / Path(f"{fact_name}.facts")
+                if not fact_file.is_file():
+                    files_missing.append(fact_file)
+                    continue
 
-    return True
+                fact_file_size_b = fact_file.stat().st_size
+                if fact_file_size_b > MAX_SIZE_BYTES:
+                    print(
+                        f"W: {fact_file} > {MAX_SIZE_BYTES / (1024 **3 )}GB",
+                        file=sys.stderr)
+                    files_missing.append(fact_file)
+
+    return files_missing
 
 
 def read_dirs(dirs):
@@ -88,38 +103,43 @@ def read_dirs(dirs):
     for p in dirs:
         facts_path = p / "nll-facts"
         program_name = p.stem
-        if facts_path.is_dir() and has_all_facts(facts_path):
+        fact_files_missing = missing_facts(facts_path)
+        if facts_path.is_dir() and not fact_files_missing:
             yield (program_name, read_nll_facts(facts_path))
         else:
-            print(f"invalid repository: {p}", file=sys.stderr)
+            print(
+                f"invalid repository: {p}, missing facts: {', '.join([str(pth) for pth in fact_files_missing])}",
+                file=sys.stderr)
+            with open("missing-files.txt", "a") as fp:
+                fp.write(f"{p}\n")
 
 
 def unique_loans(fn_facts):
-    loans = set([l for (_r, l, _p) in fn_facts.borrow_region])
-    loans |= set([l for (l, _p) in fn_facts.killed])
-    loans |= set([l for (_p, l) in fn_facts.invalidates])
+    loans = {l for (_r, l, _p) in fn_facts.borrow_region}
+    loans |= {l for (l, _p) in fn_facts.killed}
+    loans |= {l for (_p, l) in fn_facts.invalidates}
     return len(loans)
 
 
 def unique_variables(fn_facts):
-    variables = set([v for (v, _p) in fn_facts.var_used])
-    variables |= set([v for (v, _p) in fn_facts.var_defined])
-    variables |= set([v for (v, _p) in fn_facts.var_drop_used])
-    variables |= set([v for (v, _r) in fn_facts.var_uses_region])
-    variables |= set([v for (v, _r) in fn_facts.var_drops_region])
+    variables = {v for (v, _p) in fn_facts.var_used}
+    variables |= {v for (v, _p) in fn_facts.var_defined}
+    variables |= {v for (v, _p) in fn_facts.var_drop_used}
+    variables |= {v for (v, _r) in fn_facts.var_uses_region}
+    variables |= {v for (v, _r) in fn_facts.var_drops_region}
     return len(variables)
 
 
 def unique_regions(fn_facts):
-    regions = set([r for (r, _l, _p) in fn_facts.borrow_region])
-    regions |= set([r for (_v, r) in fn_facts.var_uses_region])
-    regions |= set([r for (_v, r) in fn_facts.var_drops_region])
-    regions |= set([r1 for (r1, _r2, p) in fn_facts.outlives])
-    regions |= set([r2 for (_r1, r2, p) in fn_facts.outlives])
+    regions = {r for (r, _l, _p) in fn_facts.borrow_region}
+    regions |= {r for (_v, r) in fn_facts.var_uses_region}
+    regions |= {r for (_v, r) in fn_facts.var_drops_region}
+    regions |= {r1 for (r1, _r2, p) in fn_facts.outlives}
+    regions |= {r2 for (_r1, r2, p) in fn_facts.outlives}
     return len(regions)
 
 
-def dirs_to_csv(dirs, out_fp):
+def dirs_to_csv(dirs, out_fp, nr_crates):
     writer = csv.writer(out_fp)
     writer.writerow([
         "program",
@@ -134,10 +154,13 @@ def dirs_to_csv(dirs, out_fp):
         "cfg number of attracting components",
     ])
 
-    for program_name, facts in dirs:
+    for crate_count, (program_name, facts) in enumerate(dirs):
         for fn_facts in facts:
             print(
-                f"processing {program_name}::{fn_facts.name}", file=sys.stderr)
+                f"processing crate #{crate_count}/{nr_crates} {program_name}::{fn_facts.name}"\
+                .ljust(os.get_terminal_size(0).columns),
+                file=sys.stderr,
+                end="\r")
             cfg = block_cfg_from_facts(fn_facts)
             writer.writerow([
                 program_name,
@@ -150,7 +173,6 @@ def dirs_to_csv(dirs, out_fp):
                 nx.transitivity(cfg),
                 nx.number_attracting_components(cfg),
             ])
-        #gc.collect()
 
 
 def parse_point(p):
@@ -174,7 +196,22 @@ def block_cfg_from_facts(facts):
 
 def main(args):
     crate_fact_list = inputs_or_workdir()
-    dirs_to_csv(read_dirs(crate_fact_list), sys.stdout)
+
+    # Reset the missing files database
+    with open("missing-files.txt", "w") as fp:
+        fp.write("")
+
+    for crate_path in crate_fact_list:
+        git_dir = crate_path / ".git/"
+        if git_dir.is_dir():
+            print(
+                f"Cleaing up the Git repo for {crate_path}".ljust(
+                    os.get_terminal_size(0).columns),
+                file=sys.stderr,
+                end="\r")
+            shutil.rmtree(git_dir)
+
+    dirs_to_csv(read_dirs(crate_fact_list), sys.stdout, len(crate_fact_list))
 
 
 if __name__ == '__main__':

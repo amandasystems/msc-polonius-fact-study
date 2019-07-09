@@ -37,7 +37,7 @@ with open("blacklist.txt") as fp:
 def inputs_or_workdir():
     if len(sys.argv) == 1:
         print("Using directory work", file=sys.stderr)
-        crate_fact_list = [p for p in Path("work").iterdir()]
+        crate_fact_list = [p for p in Path("./work").iterdir()]
     else:
         crate_fact_list = [Path(p) for p in sys.argv[1:]]
 
@@ -133,8 +133,6 @@ def repo_name_from(url):
 
 
 def clone_repo(url, keep_files=False):
-    print(f"Cloning {url}")
-
     workdir = pathlib.Path("work")
     repo_name = repo_name_from(url)
     with chdir(workdir):
@@ -165,20 +163,18 @@ def git_url_in_set(url, url_set):
         ".git", "") in url_set
 
 
-def clone_repos(repo_file, shuffle=True, keep_files=False):
-    global NR_BENCHES
-    global BLACKLIST
-    print("Cloning repositories...")
-    repo_urls = [
+def read_repo_file(repo_file):
+    return [
         url.strip() for url in open(repo_file)
         if url.strip()[0] != "#" and not repo_name_from(url) in SEEN_REPOS
     ]
-    if shuffle:
-        random.shuffle(repo_urls)
+
+
+def clone_repos(repo_urls, keep_files=False):
+    global NR_BENCHES
+    global BLACKLIST
+
     NR_BENCHES = len(repo_urls)
-    print(
-        f"Read {len(repo_urls)} repos, already have stats for {len(SEEN_REPOS)}"
-    )
 
     for url in repo_urls:
         if git_url_in_set(url, BLACKLIST):
