@@ -31,14 +31,14 @@ def get_facts_for_targets(package, targets):
         return
 
     for target in targets:
-        if target['kind'][0] == "bin":
+        if "bin" in target['kind']:
             bin_name = target['name']
             run_command([
                 "timeout", f"--kill-after={HARD_TIMEOUT}", SOFT_TIMEOUT,
                 "cargo", RUST_VERSION, "rustc", "--package", package, "--bin",
                 bin_name, "--", "-Znll-facts"
             ])
-        else:
+        elif "lib" in target['kind']:
             run_command([
                 "timeout", f"--kill-after={HARD_TIMEOUT}", SOFT_TIMEOUT,
                 "cargo", RUST_VERSION, "rustc", "--package", package, "--lib",
