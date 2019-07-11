@@ -6064,3 +6064,7 @@ https://github.com/J-F-Liu/kong-log-server.git
 https://github.com/gnzlbg/mimallocator
 https://github.com/nickelc/modio-bot
 https://github.com/nuclearfurnace/hotmic-stdout
+https://github.com/alexcrichton/stacker
+https://github.com/actix/actix-web.git
+https://github.com/rust-lang-nursery/polonius
+https://github.com/rust-lang-nursery/chalk
