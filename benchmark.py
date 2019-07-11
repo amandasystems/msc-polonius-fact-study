@@ -4,14 +4,10 @@ import csv
 import datetime
 import os
 import pathlib
-import random
-import re
 import shutil
-import statistics
 import subprocess
 import sys
 import time
-from collections import defaultdict
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -178,12 +174,14 @@ def clone_repos(repo_urls, keep_files=False):
 
     for url in repo_urls:
         if git_url_in_set(url, BLACKLIST):
-            print(f"clone_repos: {url} is blacklisted!")
+            print(f"clone_repos: {url} is blacklisted!", file=sys.stderr)
             continue
         try:
             yield clone_repo(url, keep_files)
         except RuntimeError:
-            print(f"clone_repos: error cloning {url}, blacklisting it...")
+            print(
+                f"clone_repos: error cloning {url}, blacklisting it...",
+                file=sys.stderr)
             blacklist_repo(url)
 
 

@@ -5,6 +5,7 @@
 # benchmark-solving <my-crate> <my-other-crate>
 
 import csv
+import os
 import sys
 import timeit
 from pathlib import Path
@@ -56,7 +57,12 @@ def benchmark_crates_to_csv(dirs, out_fp):
         "program", "function",
         *[f"min({NR_REPEATS}) {a} runtime" for a in ALGORITHMS]
     ])
-    for c in crate_fact_list:
+    for crate_count, c in enumerate(dirs, start=1):
+        print(
+            f"processing crate #{crate_count}/{len(dirs)}: {c.stem}"\
+            .ljust(os.get_terminal_size(0).columns),
+            file=sys.stderr,
+            end="\r")
         writer.writerows(benchmark_crate_folder(c))
 
 

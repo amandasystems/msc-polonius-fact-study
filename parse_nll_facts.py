@@ -2,15 +2,15 @@
 import csv
 import os
 import re
+import resource
 import shutil
 import sys
 from collections import namedtuple
 from pathlib import Path
 
-#import matplotlib.pyplot as plt
 import networkx as nx
 
-from benchmark import inputs_or_workdir
+from benchmark import inputs_or_workdir, run_command
 
 FACT_NAMES = [
     "borrow_region",
@@ -26,7 +26,11 @@ FACT_NAMES = [
     "var_used",
     "var_uses_region",
 ]
-MAX_SIZE_BYTES = 4 * (1024**3)
+
+MAX_MEM_BYTES_SOFT = 8 * (1024**3)
+MAX_MEM_BYTES_HARD = 10 * (1024**3)
+SOFT_TIMEOUT = "30m"
+HARD_TIMEOUT = "35m"
 
 FnFacts = namedtuple("FnFacts", ['name', *FACT_NAMES])
 Point = namedtuple("Point", ['level', 'block', 'offset'])
@@ -58,9 +62,9 @@ def read_fn_nll_facts(fn_path):
         })
 
 
-def read_nll_facts(facts_path):
+def nll_fn_paths(facts_path):
     assert isinstance(facts_path, Path), "must be a Path"
-    return (read_fn_nll_facts(p) for p in facts_path.iterdir()
+    return (p for p in facts_path.iterdir()
             if p.is_dir() and not p.stem[0] == ".")
 
 
@@ -81,37 +85,7 @@ def missing_facts(d):
                     files_missing.append(fact_file)
                     continue
 
-                fact_file_size_b = fact_file.stat().st_size
-                if fact_file_size_b > MAX_SIZE_BYTES:
-                    print(
-                        f"W: {fact_file} > {MAX_SIZE_BYTES / (1024 **3 )}GB",
-                        file=sys.stderr)
-                    files_missing.append(fact_file)
-
     return files_missing
-
-
-def read_dirs(dirs):
-    """Read the facts from a list of directories and return tuples of program
-    name, facts.
-
-    The expected format of a directory is either some
-    path/<program_name>/nll-facts/<function>/<field>.facts, or some path
-    <program_name>/<function>/<field>.facts. There can be any number of
-    <program_name>s or <function>s.
-    """
-    for p in dirs:
-        facts_path = p / "nll-facts"
-        program_name = p.stem
-        fact_files_missing = missing_facts(facts_path)
-        if facts_path.is_dir() and not fact_files_missing:
-            yield (program_name, read_nll_facts(facts_path))
-        else:
-            print(
-                f"invalid repository: {p}, missing facts: {', '.join([str(pth) for pth in fact_files_missing])}",
-                file=sys.stderr)
-            with open("missing-files.txt", "a") as fp:
-                fp.write(f"{p}\n")
 
 
 def unique_loans(fn_facts):
@@ -139,7 +113,15 @@ def unique_regions(fn_facts):
     return len(regions)
 
 
-def dirs_to_csv(dirs, out_fp, nr_crates):
+def run_external_analysis(crate_path):
+    # call myself with different args
+    return run_command([
+        "timeout", f"--kill-after={HARD_TIMEOUT}", SOFT_TIMEOUT, sys.argv[0],
+        str(crate_path)
+    ]).stdout
+
+
+def dirs_to_csv(dirs, out_fp):
     writer = csv.writer(out_fp)
     writer.writerow([
         "program",
@@ -154,25 +136,16 @@ def dirs_to_csv(dirs, out_fp, nr_crates):
         "cfg number of attracting components",
     ])
 
-    for crate_count, (program_name, facts) in enumerate(dirs):
-        for fn_facts in facts:
-            print(
-                f"processing crate #{crate_count}/{nr_crates} {program_name}::{fn_facts.name}"\
-                .ljust(os.get_terminal_size(0).columns),
-                file=sys.stderr,
-                end="\r")
-            cfg = block_cfg_from_facts(fn_facts)
-            writer.writerow([
-                program_name,
-                *facts_to_row(fn_facts),
-                unique_loans(fn_facts),
-                unique_variables(fn_facts),
-                unique_regions(fn_facts),
-                cfg.number_of_nodes(),
-                nx.density(cfg),
-                nx.transitivity(cfg),
-                nx.number_attracting_components(cfg),
-            ])
+    for crate_count, crate_path in enumerate(dirs):
+        print(
+            f"processing crate #{crate_count}/{len(dirs)}: {crate_path.stem}"\
+            .ljust(os.get_terminal_size(0).columns),
+            file=sys.stderr,
+            end="\r")
+        try:
+            out_fp.write(run_external_analysis(crate_path))
+        except RuntimeError as e:
+            print(f"\n====Error\n{e}\n=====", file=sys.stderr)
 
 
 def parse_point(p):
@@ -197,22 +170,48 @@ def block_cfg_from_facts(facts):
 def main(args):
     crate_fact_list = inputs_or_workdir()
 
-    # Reset the missing files database
-    with open("missing-files.txt", "w") as fp:
-        fp.write("")
+    ok_crates = list(read_crates(crate_fact_list))
+    dirs_to_csv(ok_crates, sys.stdout)
 
-    for crate_path in crate_fact_list:
-        git_dir = crate_path / ".git/"
-        if git_dir.is_dir():
-            print(
-                f"Cleaing up the Git repo for {crate_path}".ljust(
-                    os.get_terminal_size(0).columns),
-                file=sys.stderr,
-                end="\r")
-            shutil.rmtree(git_dir)
 
-    dirs_to_csv(read_dirs(crate_fact_list), sys.stdout, len(crate_fact_list))
+def set_ulimit():
+    resource.setrlimit(resource.RLIMIT_AS,
+                       (MAX_MEM_BYTES_SOFT, MAX_MEM_BYTES_HARD))
+
+
+def do_analysis(crate_path):
+    crate_name = crate_path.stem
+    facts_path = crate_path / "nll-facts"
+    writer = csv.writer(sys.stdout)
+    for fn_path in nll_fn_paths(facts_path):
+        fn_facts = read_fn_nll_facts(fn_path)
+        cfg = block_cfg_from_facts(fn_facts)
+        crate_name = crate_path.stem
+        writer.writerow([
+            crate_name,
+            *facts_to_row(fn_facts),
+            unique_loans(fn_facts),
+            unique_variables(fn_facts),
+            unique_regions(fn_facts),
+            cfg.number_of_nodes(),
+            nx.density(cfg),
+            nx.transitivity(cfg),
+            nx.number_attracting_components(cfg),
+        ])
+
+
+def single_main(args):
+    """
+    This main function is called if we were called like parse_nll_facts
+    <path-to-a-crate>.
+
+    """
+    set_ulimit()
+    do_analysis(Path(sys.argv[1]))
 
 
 if __name__ == '__main__':
-    main(sys.argv)
+    if len(sys.argv) == 1:
+        main(sys.argv)
+    else:
+        single_main(sys.argv)

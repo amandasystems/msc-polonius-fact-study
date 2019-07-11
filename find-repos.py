@@ -2,6 +2,7 @@
 import itertools
 import os
 import shutil
+import sys
 import time
 
 import requests
@@ -26,9 +27,9 @@ def populate_serialised_url_set(filename, sets_to_exclude=None):
     return url_set
 
 
-WHITELIST = populate_serialised_url_set("repositories.txt")
-BLACKLIST = populate_serialised_url_set(
-    "blacklist.txt", sets_to_exclude=[WHITELIST])
+BLACKLIST = populate_serialised_url_set("blacklist.txt")
+WHITELIST = populate_serialised_url_set(
+    "repositories.txt", sets_to_exclude=[BLACKLIST])
 
 SEEN = populate_serialised_url_set(
     "repositories.seen.txt", sets_to_exclude=[WHITELIST, BLACKLIST])
@@ -73,11 +74,6 @@ def get_github_repos():
             yield None
 
         yield r.clone_url
-
-
-def git_url_in_set(url, url_set):
-    return url in url_set or "{url}.git" in url_set or url.replace(
-        ".git", "") in url_set
 
 
 def verify_repo(url):
@@ -162,10 +158,11 @@ if __name__ == '__main__':
     SEEN -= WHITELIST
     SEEN -= BLACKLIST
 
-    ## go through the backlog from .seen.txt and verify_and_whitelist
-    if SEEN:
-        empty_inbox()
-        exit(0)
+    if sys.argv[1] == "empty-inbox":
+        ## go through the backlog from .seen.txt and verify_and_whitelist
+        if SEEN:
+            empty_inbox()
+            exit(0)
 
     for repo_url in interleave_iterators(get_github_repos(),
                                          get_crates_io_repos()):
@@ -182,8 +179,3 @@ if __name__ == '__main__':
             continue
 
         seen_repo(repo_url)
-
-        # if count % 15 == 0:
-        #     print("Sleeping...")
-        #     time.sleep(10)
-        #     count += 1
