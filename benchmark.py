@@ -149,21 +149,29 @@ def clone_repo(url, keep_files=False):
     return workdir / repo_name
 
 
+def drop_git_ending(url):
+    url = url.rstrip("/")
+    if url[-4:] == ".git":
+        return url[:-4]
+    return url
+
+
 def print_experiment(results):
     polonius, nll, p = results
     print(f"{polonius}\t{nll}\t{p}")
 
 
 def git_url_in_set(url, url_set):
-    return url in url_set or "{url}.git" in url_set or url.replace(
-        ".git", "") in url_set
+    return url in url_set or "{url}.git" in url_set or drop_git_ending(
+        url) in url_set
 
 
 def read_repo_file(repo_file):
-    return [
-        url.strip() for url in open(repo_file)
+    return {
+        url.strip()
+        for url in open(repo_file)
         if url.strip()[0] != "#" and not repo_name_from(url) in SEEN_REPOS
-    ]
+    }
 
 
 def clone_repos(repo_urls, keep_files=False):

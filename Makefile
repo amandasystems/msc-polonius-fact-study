@@ -9,6 +9,7 @@ repositories.seen.txt:
 .PRECIOUS: repositories.txt
 repositories.txt: repositories.seen.txt
 	time ./find-repos.py "empty-inbox"
+	./dedup-repositories.py > dedup.log
 
 # Generate Polonius inputs for repositories.txt
 work/.sentinel: repositories.txt
@@ -39,7 +40,7 @@ repo-stats.csv: solve.csv facts.csv
 
 .PHONY:
 clean:
-	rm -rf work/.sentinel missing-facts.csv repo-errors.log repo-ok.csv fetched-repos.log
+	rm -rf work/.sentinel missing-facts.csv repo-errors.log repo-ok.csv fetched-repos.log dedup.log
 	./cleanup-repos.py
 
 .PHONY:

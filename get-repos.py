@@ -5,7 +5,7 @@
 import json
 import multiprocessing as mp
 import os
-import shutil
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -22,25 +22,28 @@ COMPLETED_LOGFILE = Path.cwd() / "repo-ok.csv"
 NR_WORKERS = 10
 
 
+def run_with_timeout(command):
+    return run_command(
+        ["timeout", f"--kill-after={HARD_TIMEOUT}", SOFT_TIMEOUT, *command])
+
+
 def get_facts_for_targets(package, targets):
     if len(targets) == 1:
-        run_command([
-            "timeout", f"--kill-after={HARD_TIMEOUT}", SOFT_TIMEOUT, "cargo",
-            RUST_VERSION, "rustc", "--package", package, "--", "-Znll-facts"
+        run_with_timeout([
+            "cargo", RUST_VERSION, "rustc", "--package", package, "--",
+            "-Znll-facts"
         ])
         return
 
     for target in targets:
         if "bin" in target['kind']:
             bin_name = target['name']
-            run_command([
-                "timeout", f"--kill-after={HARD_TIMEOUT}", SOFT_TIMEOUT,
+            run_with_timeout([
                 "cargo", RUST_VERSION, "rustc", "--package", package, "--bin",
                 bin_name, "--", "-Znll-facts"
             ])
         elif "lib" in target['kind']:
-            run_command([
-                "timeout", f"--kill-after={HARD_TIMEOUT}", SOFT_TIMEOUT,
+            run_with_timeout([
                 "cargo", RUST_VERSION, "rustc", "--package", package, "--lib",
                 "--", "-Znll-facts"
             ])
@@ -48,18 +51,18 @@ def get_facts_for_targets(package, targets):
 
 def get_this_crates_facts():
     packages = json.loads(
-        run_command(["cargo", "metadata", "--no-deps",
-                     "--format-version=1"]).stdout)['packages']
+        subprocess.run(
+            ["cargo", "metadata", "--no-deps", "--format-version=1"],
+            capture_output=True,
+            text=True,
+            check=True).stdout)['packages']
 
     for package in packages:
         get_facts_for_targets(package['name'], package['targets'])
 
 
 def rm_path(p):
-    if p.is_dir():
-        shutil.rmtree(p)
-    else:
-        os.remove(p)
+    subprocess.run(["rm", "-rf", str(p)])
 
 
 def cleanup_repo(repo_path):
