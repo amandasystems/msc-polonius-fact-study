@@ -168,10 +168,8 @@ def block_cfg_from_facts(facts):
 
 
 def main(args):
-    crate_fact_list = inputs_or_workdir()
-
-    ok_crates = list(read_crates(crate_fact_list))
-    dirs_to_csv(ok_crates, sys.stdout)
+    repos = inputs_or_workdir()
+    dirs_to_csv(repos, sys.stdout)
 
 
 def set_ulimit():
