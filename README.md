@@ -13,3 +13,5 @@ poorly!). These facts are then used by `benchmark-solving.py`, which benchmarks
 Polonius' runtime solving the facts, and `parse_nll_facts.py`, which generates
 statistics on the input data, including some light graph analysis on the CFG
 using networkx.
+
+In practice, you probably want to use the Makefile rules.

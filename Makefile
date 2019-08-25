@@ -8,8 +8,9 @@ repositories.seen.txt:
 # Build a list of ok repositores (and a blacklist)
 .PRECIOUS: repositories.txt
 repositories.txt: repositories.seen.txt
+	./dedup-repositories.py "repositories.seen.txt" >> dedup.log
 	time ./find-repos.py "empty-inbox"
-	./dedup-repositories.py > dedup.log
+	./dedup-repositories.py "repositories.txt" >> dedup.log
 
 # Generate Polonius inputs for repositories.txt
 work/.sentinel: repositories.txt

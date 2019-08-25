@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 from benchmark import drop_git_ending
+from pathlib import Path
+import sys
 
 
 def username_and_repo_name(url):
@@ -22,6 +24,8 @@ def repo_url_to_id(url):
 
 
 def main():
+    target_file = Path(sys.argv[1])
+
     with open("blacklist.txt") as blacklist_fp:
         blacklist_ids = {
             repo_url_to_id(url.strip())
@@ -31,7 +35,7 @@ def main():
     deduped_whitelist = list()
     seen_whitelist_ids = set()
 
-    with open("repositories.txt") as whitelist_fp:
+    with open(target_file) as whitelist_fp:
         for url in whitelist_fp:
             url = url.strip()
             if not url:
@@ -47,7 +51,7 @@ def main():
             seen_whitelist_ids.add(url_id)
             deduped_whitelist.append((url_id, url))
 
-    with open("repositories.txt", "w") as whitelist_fp:
+    with open(target_file, "w") as whitelist_fp:
         whitelist_fp.writelines((f"{url}\n" for _, url in deduped_whitelist))
 
     print(f"Wrote {len(deduped_whitelist)} urls!")

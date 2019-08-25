@@ -109,7 +109,7 @@ def interleave_iterators(iter_a, iter_b):
 
 def whitelist_repo(repo_url):
     global WHITELIST
-    WHITELIST.add(url)
+    WHITELIST.add(repo_url)
     with open("repositories.txt", "a") as fp:
         fp.write(f"{repo_url}\n")
         fp.flush()
@@ -117,7 +117,7 @@ def whitelist_repo(repo_url):
 
 def seen_repo(repo_url):
     global SEEN
-    SEEN.add(url)
+    SEEN.add(repo_url)
     with open("repositories.seen.txt", "a") as fp:
         fp.write(f"{repo_url}\n")
         fp.flush()
