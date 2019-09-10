@@ -12,12 +12,19 @@ from pathlib import Path
 
 from benchmark import inputs_or_workdir, run_command
 
-POLONIUS_OPTIONS = ["--skip-timing", "--ignore-region-live-at"]
+POLONIUS_OPTIONS = ["--skip-timing"]
 POLONIUS_PATH = "../polonius/target/release/polonius"
 POLONIUS_COMMAND = [POLONIUS_PATH, *POLONIUS_OPTIONS]
-NR_REPEATS = 3
+NR_REPEATS = 2
+HARD_TIMEOUT = "10m"
+SOFT_TIMEOUT = "5m"
 
 ALGORITHMS = ["Naive", "Hybrid", "DatafrogOpt"]
+
+
+def run_with_timeout(command):
+    return run_command(
+        ["timeout", f"--kill-after={HARD_TIMEOUT}", SOFT_TIMEOUT, *command])
 
 
 def benchmark_crate_fn(p, algorithm):
@@ -25,7 +32,7 @@ def benchmark_crate_fn(p, algorithm):
     Perform benchmarks on a function's input data, located in p
     """
     benchmark_timer = timeit.Timer(
-        lambda: run_command([*POLONIUS_COMMAND, "-a", algorithm, "--", str(p)]))
+        lambda: run_with_timeout([*POLONIUS_COMMAND, "-a", algorithm, "--", str(p)]))
     try:
         return min(benchmark_timer.repeat(NR_REPEATS, number=1))
     except RuntimeError:

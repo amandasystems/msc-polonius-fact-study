@@ -37,7 +37,7 @@ update-data:
 # duplicated columns from the join:
 repo-stats.csv: solve.csv facts.csv
 	xsv join program,function solve.csv program,function facts.csv \
-		| xsv select 1-5,8-26 > $@
+		| xsv select 1-5,8-30 > $@
 
 .PHONY:
 clean:
